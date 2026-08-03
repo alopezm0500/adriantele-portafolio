@@ -1,5 +1,6 @@
 ---
 // Layout base
+import { ViewTransitions } from 'astro:transitions';
 const { title = 'Adrian — Portafolio' } = Astro.props;
 ---
 <!doctype html>
@@ -9,6 +10,7 @@ const { title = 'Adrian — Portafolio' } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portafolio y blog de Adrian Lopez — desarrollador y creador de contenido tech." />
     <title>{title}</title>
+    <ViewTransitions />
     <style>
       :root {
         --indigo: #2B21E0;
@@ -60,6 +62,19 @@ const { title = 'Adrian — Portafolio' } = Astro.props;
         margin-top: .8rem;
       }
       footer { text-align: center; color: var(--muted); padding: 2rem; border-top: 1px solid #262a36; font-size: .9rem; }
+      /* Animación de entrada suave para el contenido */
+      main { animation: fadeUp .5s ease both; }
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(12px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      /* Transición de página con View Transitions API */
+      ::view-transition-old(root) { animation: fadeOut .25s ease both; }
+      ::view-transition-new(root) { animation: fadeUp .35s ease both; }
+      @keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
+      @media (prefers-reduced-motion: reduce) {
+        main, ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+      }
     </style>
   </head>
   <body>
