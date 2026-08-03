@@ -1,0 +1,79 @@
+---
+// Layout base
+const { title = 'Adrian — Portafolio' } = Astro.props;
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portafolio y blog de Adrian Lopez — desarrollador y creador de contenido tech." />
+    <title>{title}</title>
+    <style>
+      :root {
+        --indigo: #2B21E0;
+        --bg: #0f1117;
+        --card: #1a1d27;
+        --text: #e6e8ee;
+        --muted: #9aa0b0;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      header {
+        padding: 1.5rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #262a36;
+      }
+      .logo { font-weight: 700; font-size: 1.2rem; color: #fff; }
+      .logo span { color: var(--indigo); }
+      nav a { color: var(--muted); text-decoration: none; margin-left: 1.5rem; }
+      nav a:hover { color: #fff; }
+      main { max-width: 900px; margin: 0 auto; padding: 3rem 2rem; }
+      .hero h1 { font-size: 2.6rem; line-height: 1.2; margin-bottom: 1rem; }
+      .hero h1 .accent { color: var(--indigo); }
+      .hero p { color: var(--muted); font-size: 1.15rem; max-width: 600px; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+      .card {
+        background: var(--card);
+        border: 1px solid #262a36;
+        border-radius: 12px;
+        padding: 1.5rem;
+        transition: transform .2s, border-color .2s;
+      }
+      .card:hover { transform: translateY(-4px); border-color: var(--indigo); }
+      .card h3 { margin-bottom: .5rem; }
+      .card p { color: var(--muted); font-size: .95rem; }
+      .tag {
+        display: inline-block;
+        background: rgba(43,33,224,.15);
+        color: #8b85ff;
+        font-size: .75rem;
+        padding: .2rem .6rem;
+        border-radius: 20px;
+        margin-top: .8rem;
+      }
+      footer { text-align: center; color: var(--muted); padding: 2rem; border-top: 1px solid #262a36; font-size: .9rem; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Adrian<span>.</span>dev</div>
+      <nav>
+        <a href="/">Inicio</a>
+        <a href="/blog">Blog</a>
+        <a href="/proyectos">Proyectos</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>© 2026 Adrian Lopez · Hecho con Astro · Hosteado en Cloudflare Pages</footer>
+  </body>
+</html>
