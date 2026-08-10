@@ -1,14 +1,56 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+);
+const catNames = {
+  'techco-e-ia': 'Techco e IA',
+  'por-si-no-sabias': 'Por si no sabías',
+  'sociedad-y-telecom': 'Sociedad y Telecom',
+  'technical': 'Technical',
+  'portafolio': 'Portafolio',
+  'sin-categoria': 'Sin categoría',
+};
 ---
 <Layout title="Blog — Adrian">
   <h1>📝 Blog</h1>
-  <p style="color:var(--muted);margin-top:.5rem">Aquí irán mis artículos sobre IA, desarrollo y tecnología.</p>
+  <p style="color:var(--muted);margin-top:.5rem">Artículos sobre telecomunicaciones, IA y tecnología.</p>
+
   <section class="grid">
-    <div class="card">
-      <h3>Próximamente</h3>
-      <p>Este es un sitio de prueba para ver cómo funciona Astro + Cloudflare Pages. Pronto habrá contenido real.</p>
-      <span class="tag">Demo</span>
-    </div>
+    {
+      posts.map((post) => (
+        <a class="card post" href={`/blog/${post.slug}/`}>
+          <div class="post-meta">
+            <span class="tag">{catNames[post.data.categories[0]] || post.data.categories[0]}</span>
+            <time datetime={post.data.pubDate}>
+              {new Date(post.data.pubDate).toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </time>
+          </div>
+          <h3>{post.data.title}</h3>
+          <p>{post.data.description}</p>
+        </a>
+      ))
+    }
   </section>
 </Layout>
+
+<style>
+  .post {
+    text-decoration: none;
+    display: block;
+  }
+  .post h3 { color: var(--text); }
+  .post:hover h3 { color: #8b85ff; }
+  .post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .8rem;
+  }
+  .post-meta time {
+    color: var(--muted);
+    font-size: .8rem;
+  }
+</style>

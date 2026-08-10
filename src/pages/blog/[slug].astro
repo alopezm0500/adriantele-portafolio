@@ -1,0 +1,110 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const catNames = {
+  'techco-e-ia': 'Techco e IA',
+  'por-si-no-sabias': 'Por si no sabías',
+  'sociedad-y-telecom': 'Sociedad y Telecom',
+  'technical': 'Technical',
+  'portafolio': 'Portafolio',
+  'sin-categoria': 'Sin categoría',
+};
+---
+<Layout title={`${post.data.title} — Adrian`}>
+  <article class="post">
+    <header class="post-header">
+      <div class="post-meta">
+        <span class="tag">{catNames[post.data.categories[0]] || post.data.categories[0]}</span>
+        <time datetime={post.data.pubDate}>
+          {new Date(post.data.pubDate).toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </time>
+      </div>
+      <h1>{post.data.title}</h1>
+      <p class="description">{post.data.description}</p>
+    </header>
+
+    <div class="content">
+      <Content />
+    </div>
+
+    <footer class="post-footer">
+      <a href="/blog">← Volver al blog</a>
+    </footer>
+  </article>
+</Layout>
+
+<style>
+  .post-header { margin-bottom: 2rem; }
+  .post-header h1 { font-size: 2.2rem; line-height: 1.2; margin-bottom: .8rem; }
+  .post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .post-meta time { color: var(--muted); font-size: .85rem; }
+  .description { color: var(--muted); font-size: 1.05rem; }
+
+  .content { line-height: 1.75; }
+  .content h2 { margin: 2rem 0 1rem; font-size: 1.6rem; }
+  .content h3 { margin: 1.5rem 0 .8rem; font-size: 1.25rem; }
+  .content p { margin-bottom: 1.2rem; }
+  .content ul, .content ol { margin: 0 0 1.2rem 1.5rem; }
+  .content li { margin-bottom: .4rem; }
+  .content code {
+    background: rgba(43,33,224,.12);
+    color: #8b85ff;
+    padding: .15rem .4rem;
+    border-radius: 4px;
+    font-size: .9em;
+  }
+  .content pre {
+    background: #0a0c12;
+    border: 1px solid #262a36;
+    border-radius: 8px;
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 0 0 1.2rem;
+  }
+  .content pre code { background: none; color: #e6e8ee; padding: 0; }
+  .content blockquote {
+    border-left: 3px solid var(--indigo);
+    padding-left: 1rem;
+    color: var(--muted);
+    margin: 0 0 1.2rem;
+    font-style: italic;
+  }
+  .content img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 1rem 0;
+  }
+  .content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 1.2rem;
+    font-size: .95rem;
+  }
+  .content th, .content td {
+    border: 1px solid #262a36;
+    padding: .5rem .8rem;
+    text-align: left;
+  }
+  .content th { background: var(--card); }
+  .content hr { border: none; border-top: 1px solid #262a36; margin: 2rem 0; }
+
+  .post-footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #262a36; }
+  .post-footer a { color: var(--muted); text-decoration: none; }
+  .post-footer a:hover { color: #8b85ff; }
+</style>
