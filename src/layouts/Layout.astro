@@ -20,7 +20,7 @@ const {
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="alternate" type="application/rss+xml" title="Blog de Adrian — RSS" href="/rss.xml" />
-    <meta name="theme-color" content="#0f1117" />
+    <meta name="theme-color" content="#282828" />
     <meta property="og:type" content={type} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -41,11 +41,11 @@ const {
     <ViewTransitions />
     <style>
       :root {
-        --indigo: #2B21E0;
-        --bg: #0f1117;
-        --card: #1a1d27;
-        --text: #e6e8ee;
-        --muted: #9aa0b0;
+        --indigo: #83a598;
+        --bg: #282828;
+        --card: #3c3836;
+        --text: #ebdbb2;
+        --muted: #a89984;
       }
       * { box-sizing: border-box; margin: 0; padding: 0; }
       body {
@@ -59,12 +59,12 @@ const {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid #262a36;
+        border-bottom: 1px solid #504945;
       }
-      .logo { font-weight: 700; font-size: 1.2rem; color: #fff; }
+      .logo { font-weight: 700; font-size: 1.2rem; color: #fbf1c7; }
       .logo span { color: var(--indigo); }
       nav a { color: var(--muted); text-decoration: none; margin-left: 1.5rem; }
-      nav a:hover { color: #fff; }
+      nav a:hover { color: #fbf1c7; }
       main { max-width: 900px; margin: 0 auto; padding: 3rem 2rem; }
       .hero h1 { font-size: 2.6rem; line-height: 1.2; margin-bottom: 1rem; }
       .hero h1 .accent { color: var(--indigo); }
@@ -72,7 +72,7 @@ const {
       .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
       .card {
         background: var(--card);
-        border: 1px solid #262a36;
+        border: 1px solid #504945;
         border-radius: 12px;
         padding: 1.5rem;
         transition: transform .2s, border-color .2s;
@@ -81,18 +81,18 @@ const {
       .card h3 { margin-bottom: .5rem; }
       .card p { color: var(--muted); font-size: .95rem; }
       .tag {
-        --cat: #8b85ff;
+        --cat: #d3869b;
         display: inline-block;
         background: color-mix(in srgb, var(--cat) 20%, transparent);
         border: 1px solid color-mix(in srgb, var(--cat) 40%, transparent);
-        color: color-mix(in srgb, var(--cat) 72%, #fff);
+        color: color-mix(in srgb, var(--cat) 72%, #fbf1c7);
         font-weight: 600;
         font-size: .75rem;
         padding: .18rem .65rem;
         border-radius: 20px;
         margin-top: .8rem;
       }
-      footer { text-align: center; color: var(--muted); padding: 2rem; border-top: 1px solid #262a36; font-size: .9rem; }
+      footer { text-align: center; color: var(--muted); padding: 2rem; border-top: 1px solid #504945; font-size: .9rem; }
       /* Animación de entrada suave para el contenido */
       main { animation: fadeUp .5s ease both; }
       @keyframes fadeUp {

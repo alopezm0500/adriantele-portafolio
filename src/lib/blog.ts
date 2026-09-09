@@ -16,19 +16,19 @@ export function catName(key: string): string {
 
 /** Acentos de color por categoría (pensados para fondo oscuro). */
 export const CAT_COLORS: Record<string, string> = {
-  'tech-en-rojo': '#d97b7b',
-  'tech-humano': '#d9a36b',
-  'tech-abierto': '#82ad92',
-  'techco-e-ia': '#8b85ff',
-  'por-si-no-sabias': '#86aee0',
-  'sociedad-y-telecom': '#6fb3bd',
-  technical: '#9d8bd9',
-  portafolio: '#d9a0b8',
-  'sin-categoria': '#9aa0b0',
+  'tech-en-rojo': '#fb4934',
+  'tech-humano': '#fe8019',
+  'tech-abierto': '#b8bb26',
+  'techco-e-ia': '#83a598',
+  'por-si-no-sabias': '#8ec07c',
+  'sociedad-y-telecom': '#689d6a',
+  technical: '#b16286',
+  portafolio: '#d3869b',
+  'sin-categoria': '#a89984',
 };
 
 export function catColor(key: string): string {
-  return CAT_COLORS[key] ?? '#8b85ff';
+  return CAT_COLORS[key] ?? '#d3869b';
 }
 
 export function fmtDate(iso: string): string {
