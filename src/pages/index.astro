@@ -66,6 +66,10 @@ const SECTIONS: { key: string; icon: string; desc: string }[] = [
         </a>
       ))}
     </div>
+    <p class="blog-note">
+      📡 ¿Buscas contenido especializado de Telecom? Visita mi blog especializado:{' '}
+      <a href="https://adrianlopez.tech.blog" target="_blank" rel="noopener">adrianlopez.tech.blog</a>
+    </p>
   </section>
 
   <section class="grid">
@@ -113,6 +117,24 @@ const SECTIONS: { key: string; icon: string; desc: string }[] = [
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1rem;
+  }
+  .blog-note {
+    margin: 1.25rem 0 0;
+    padding: 0.9rem 1.1rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+    background: var(--card);
+    border: 1px dashed rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    line-height: 1.5;
+  }
+  .blog-note a {
+    color: var(--indigo);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .blog-note a:hover {
+    text-decoration: underline;
   }
   .sec {
     display: flex;
