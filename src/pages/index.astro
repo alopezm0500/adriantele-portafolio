@@ -72,18 +72,20 @@ const SECTIONS: { key: string; icon: string; desc: string }[] = [
     </p>
   </section>
 
-  <section class="grid">
-    <div class="card">
-      <h3>💬 Tech con Sentido</h3>
-      <p>Divulgación de tecnología con pensamiento crítico. Por una IA al servicio de la humanidad.</p>
-      <span class="tag">Contenido · IA</span>
+  <section class="projects">
+    <h2>Mis proyectos actuales</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>💬 Tech con Sentido</h3>
+        <p>Divulgación de tecnología con pensamiento crítico. Por una IA al servicio de la humanidad.</p>
+        <span class="tag">Contenido · IA</span>
+      </div>
+      <div class="card">
+        <h3>🪪 Identik</h3>
+        <p>Identidad profesional con NFC + QR + PWA. Convierte cualquier objeto en tarjeta de presentación inteligente.</p>
+        <span class="tag">NFC · QR · PWA</span>
+      </div>
     </div>
-    <div class="card">
-      <h3>🪪 Identik</h3>
-      <p>Identidad profesional con NFC + QR + PWA. Convierte cualquier objeto en tarjeta de presentación inteligente.</p>
-      <span class="tag">NFC · QR · PWA</span>
-    </div>
-
   </section>
 </Layout>
 
@@ -135,6 +137,16 @@ const SECTIONS: { key: string; icon: string; desc: string }[] = [
   }
   .blog-note a:hover {
     text-decoration: underline;
+  }
+  .projects {
+    margin-bottom: 3.5rem;
+  }
+  .projects h2 {
+    font-size: 1.7rem;
+    margin: 0 0 1.25rem;
+  }
+  .projects .grid {
+    margin-top: 0;
   }
   .sec {
     display: flex;
