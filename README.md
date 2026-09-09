@@ -1,4 +1,13 @@
-# Astro Starter Kit: Minimal
+# Portafolio / Blog de Adrian (Astro)
+
+## 🎨 Nota de diseño — paleta Gruvbox
+
+El sitio usa la paleta **Gruvbox dark** (morhetz/gruvbox). Aprobada por Adrian el 2026-09-09: **se queda** como tema oficial del sitio. No cambiarla sin avisar.
+
+- Fondo `#282828` · tarjetas `#3c3836` · bordes `#504945` · texto `#ebdbb2` · secundario `#a89984`
+- Acento (enlaces / "índigo"): `#83a598` (gruvbox blue)
+- Los tokens viven en el bloque `:root` de `src/layouts/Layout.astro` (`--bg`, `--card`, `--text`, `--muted`, `--indigo`)
+- Colores por categoría en `CAT_COLORS` (`src/lib/blog.ts`), mapeados a Gruvbox: tech-en-rojo `#fb4934`, tech-humano `#fe8019`, tech-abierto `#b8bb26`, techco-e-ia `#83a598`, portafolio `#d3869b` (mauve)… fallback `#d3869b`
 
 ```sh
 npm create astro@latest -- --template minimal
