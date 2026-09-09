@@ -3,7 +3,7 @@ title: "AI 2027: El escenario que nadie quiere leer (y deberíamos)"
 pubDate: "2026-06-03"
 description: "Hay un documento circulando en ciertos círculos desde abril de 2025. Se llama AI 2027. Lo escribieron Daniel Kokotajlo (ex-OpenAI), Scott Alexander, T"
 categories: [tech-en-rojo]
-heroImage: "https://dangerousdottechdotblog.wordpress.com/wp-content/uploads/2026/06/generated-image-june-03-2026-10_07pm.png"
+heroImage: "../../assets/blog/ai-2027-el-escenario-que-nadie-quiere-leer-y-deberiamos.png"
 ---
 
 Hay un documento circulando en ciertos círculos desde abril de 2025. Se llama AI 2027. Lo escribieron Daniel Kokotajlo (ex-OpenAI), Scott Alexander, Thomas Larsen, Eli Lifland y Romeo Dean. No es un paper académico ni un artículo de divulgación. Es un escenario detallado, concreto y cuantitativo de cómo podría desarrollarse la inteligencia artificial superhumana en los próximos años.

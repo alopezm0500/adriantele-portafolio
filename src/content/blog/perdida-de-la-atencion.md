@@ -3,7 +3,7 @@ title: "Perdida de la atención"
 pubDate: "2025-06-22"
 description: "Vivimos en una época de paradojas. La tecnología, diseñada para liberarnos, nos encadena a distracciones infinitas. Promete conexión, pero fragmenta n"
 categories: [tech-humano]
-heroImage: "https://dangerousdottechdotblog.wordpress.com/wp-content/uploads/2025/06/celular-300x200-1.png"
+heroImage: "../../assets/blog/perdida-de-la-atencion.png"
 ---
 
 Vivimos en una época de paradojas. La tecnología, diseñada para liberarnos, nos encadena a distracciones infinitas. Promete conexión, pero fragmenta nuestra atención. Ofrece conocimiento, pero erosiona nuestra capacidad de profundizar. El artículo de *Neuromindset* sobre la crisis de la atención en la era digital no solo describe un problema educativo; revela un síntoma de una humanidad en riesgo de perder su esencia: **la capacidad de pensar, crear y sentir con intencionalidad**.  

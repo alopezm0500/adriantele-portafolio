@@ -1,0 +1,80 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import { catName, fmtDate, readingTime } from '../lib/blog';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+  eager?: boolean;
+}
+
+const { post, eager = false } = Astro.props;
+const minutes = readingTime(post.body);
+---
+<a class="card post" href={`/blog/${post.slug}/`}>
+  {
+    post.data.heroImage && (
+      <Image
+        class="cover"
+        src={post.data.heroImage}
+        alt={`Portada de: ${post.data.title}`}
+        width={640}
+        loading={eager ? 'eager' : 'lazy'}
+      />
+    )
+  }
+  <div class="body">
+    <div class="post-meta">
+      <div class="chips">
+        {post.data.categories.map((c) => <span class="tag">{catName(c)}</span>)}
+      </div>
+      <time datetime={post.data.pubDate}>{fmtDate(post.data.pubDate)}</time>
+    </div>
+    <h3>{post.data.title}</h3>
+    <p class="excerpt">{post.data.description}</p>
+    <span class="readmore">
+      {minutes} min de lectura · Leer →
+    </span>
+  </div>
+</a>
+
+<style>
+  .post {
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+    padding: 0;
+  }
+  .cover {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #262a36;
+  }
+  .post .body { padding: 1.25rem 1.5rem 1.5rem; }
+  .post h3 { color: var(--text); font-size: 1.15rem; line-height: 1.3; }
+  .post:hover h3 { color: #8b85ff; }
+  .post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .6rem;
+    margin-bottom: .8rem;
+    flex-wrap: wrap;
+  }
+  .chips { display: flex; gap: .35rem; flex-wrap: wrap; }
+  .chips .tag { margin-top: 0; }
+  .post-meta time {
+    color: var(--muted);
+    font-size: .78rem;
+  }
+  .excerpt {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: .9rem;
+  }
+  .readmore { color: #8b85ff; font-size: .85rem; }
+</style>

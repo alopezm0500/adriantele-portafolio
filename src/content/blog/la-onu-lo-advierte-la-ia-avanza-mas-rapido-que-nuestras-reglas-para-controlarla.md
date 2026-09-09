@@ -3,7 +3,7 @@ title: "La ONU lo advierte: la IA avanza más rápido que nuestras reglas para c
 pubDate: "2026-07-02"
 description: "Esta semana la ONU publicó el informe preliminar de su Panel Científico Internacional Independiente sobre Inteligencia Artificial. 40 expertos de toda"
 categories: [tech-en-rojo, tech-humano]
-heroImage: "https://dangerousdottechdotblog.wordpress.com/wp-content/uploads/2026/07/onu_ia.png"
+heroImage: "../../assets/blog/la-onu-lo-advierte-la-ia-avanza-mas-rapido-que-nuestras-reglas-para-controlarla.png"
 ---
 
 Esta semana la ONU publicó el informe preliminar de su Panel Científico Internacional Independiente sobre Inteligencia Artificial. 40 expertos de todas las regiones del mundo, actuando a título personal, se sentaron a analizar la evidencia más reciente sobre el estado de la IA. Y su conclusión merece atención.

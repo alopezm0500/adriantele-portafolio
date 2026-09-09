@@ -3,7 +3,7 @@ title: "Socialismo digital"
 pubDate: "2025-06-26"
 description: "La tecnología ha sido, desde sus orígenes, una fuerza ambivalente. Por un lado, promete liberación: automatización que elimina el trabajo tedioso, int"
 categories: [tech-en-rojo]
-heroImage: "https://dangerousdottechdotblog.wordpress.com/wp-content/uploads/2025/06/image-2.png"
+heroImage: "../../assets/blog/socialismo-digital.png"
 ---
 
 La tecnología ha sido, desde sus orígenes, una fuerza ambivalente. Por un lado, promete liberación: automatización que elimina el trabajo tedioso, inteligencia artificial que resuelve problemas complejos, y redes globales que conectan a la humanidad como nunca antes. Por otro, amenaza con formas inéditas de control: vigilancia masiva, desempleo estructural, y sistemas económicos que podrían mutar en distopías algorítmicas.  

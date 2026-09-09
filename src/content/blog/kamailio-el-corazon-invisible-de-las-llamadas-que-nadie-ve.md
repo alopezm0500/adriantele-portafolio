@@ -3,7 +3,7 @@ title: "Kamailio: el corazón invisible de las llamadas que nadie ve"
 pubDate: "2026-06-12"
 description: "Si trabajas en operaciones de telecomunicaciones como yo, seguro has visto “Kamailio” aparecer en dashboards de Grafana, en logs de tu SBC, o en diagr"
 categories: [techco-e-ia]
-heroImage: "https://adrianlopeztech.wordpress.com/wp-content/uploads/2026/06/generated-image-june-12-2026-5_49pm.png"
+heroImage: "../../assets/blog/kamailio-el-corazon-invisible-de-las-llamadas-que-nadie-ve.png"
 ---
 
 Si trabajas en operaciones de telecomunicaciones como yo, seguro has visto “Kamailio” aparecer en dashboards de Grafana, en logs de tu SBC, o en diagramas de arquitectura de los proveedores. Y si eres como yo hace unos años, probablemente pensaste: “es otro softswitch open source más”.

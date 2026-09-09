@@ -3,7 +3,7 @@ title: "Salud mental y tech"
 pubDate: "2025-06-19"
 description: "Vivimos en una era sin precedentes. La tecnología, ese prodigio de la inteligencia humana, ha transformado radicalmente nuestra forma de vivir, trabaj"
 categories: [tech-humano]
-heroImage: "https://dangerousdottechdotblog.wordpress.com/wp-content/uploads/2025/06/image.png"
+heroImage: "../../assets/blog/salud-mental-y-tech.png"
 ---
 
 Vivimos en una era sin precedentes. La tecnología, ese prodigio de la inteligencia humana, ha transformado radicalmente nuestra forma de vivir, trabajar y conectarnos. Nos ha dado herramientas para curar enfermedades, democratizar el conocimiento y acortar distancias. Sin embargo, como todo poder, conlleva una sombra: su impacto en nuestra salud mental es innegable y preocupante.

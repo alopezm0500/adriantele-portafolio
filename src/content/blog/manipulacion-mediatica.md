@@ -3,7 +3,7 @@ title: "Manipulación mediática"
 pubDate: "2025-06-26"
 description: "Vivimos en una era de contradicciones tecnológicas. Por un lado, la innovación nos ha brindado herramientas sin precedentes para la comunicación, la e"
 categories: [tech-en-rojo]
-heroImage: "https://dangerousdottechdotblog.wordpress.com/wp-content/uploads/2025/06/captura-de-pantalla-2025-06-26-114355.png"
+heroImage: "../../assets/blog/manipulacion-mediatica.png"
 ---
 
 Vivimos en una era de contradicciones tecnológicas. Por un lado, la innovación nos ha brindado herramientas sin precedentes para la comunicación, la educación y el desarrollo humano. Por otro, estas mismas herramientas han sido pervertidas para manipular, controlar y alienar. La *manipulación mediática* es un recordatorio crudo de cómo la tecnología, en manos equivocadas, puede convertirse en un arma de doble filo.

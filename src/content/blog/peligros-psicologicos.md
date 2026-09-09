@@ -3,7 +3,7 @@ title: "Peligros psicologicos"
 pubDate: "2025-06-19"
 description: "La tecnología ha tejido una red invisible alrededor de nuestra existencia. Nos conecta, nos entretiene, nos educa y, en ocasiones, nos consume. El art"
 categories: [tech-humano]
-heroImage: "https://dangerousdottechdotblog.wordpress.com/wp-content/uploads/2025/06/image-1.png"
+heroImage: "../../assets/blog/peligros-psicologicos.png"
 ---
 
 La tecnología ha tejido una red invisible alrededor de nuestra existencia. Nos conecta, nos entretiene, nos educa y, en ocasiones, nos consume. El artículo *”Adicción a las nuevas tecnologías: El peligro psicológico de las redes y el internet”* de MundoPsicologos expone con crudeza una realidad innegable: estamos en riesgo de convertirnos en esclavos de nuestras propias creaciones.  

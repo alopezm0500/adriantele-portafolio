@@ -3,7 +3,7 @@ title: "TM Forum: el estándar que (quizá) no sabías que necesitabas para oper
 pubDate: "2026-07-10"
 description: "Si trabajas en operaciones de redes de telecomunicaciones, probablemente conoces bien el momento en que un nuevo aplicativo o plataforma llega desde e"
 categories: [techco-e-ia]
-heroImage: "https://adrianlopeztech.wordpress.com/wp-content/uploads/2026/07/generated-image-july-10-2026-5_44pm.png"
+heroImage: "../../assets/blog/tm-forum-el-estandar-que-quiza-no-sabias-que-necesitabas-para-operar-tu-red.png"
 ---
 
 Si trabajas en operaciones de redes de telecomunicaciones, probablemente conoces bien el momento en que un nuevo aplicativo o plataforma llega desde el equipo de deployment. Te entregan una carpeta —física o digital— con documentos: diagramas de arquitectura, planes de conectividad, dimensionamiento, KPIs, SLA, manuales de soporte. Tú revisas, marcas check, firmas y el aplicativo queda bajo tu responsabilidad.

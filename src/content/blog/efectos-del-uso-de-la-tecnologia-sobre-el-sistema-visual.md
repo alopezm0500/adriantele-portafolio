@@ -3,7 +3,7 @@ title: "Efectos del uso de la tecnología sobre el sistema visual"
 pubDate: "2025-06-26"
 description: "Vivimos en una era de contradicciones tecnológicas. Por un lado, los avances digitales han democratizado el conocimiento, conectado culturas y mejorad"
 categories: [tech-humano]
-heroImage: "https://dangerousdottechdotblog.wordpress.com/wp-content/uploads/2025/06/fatigaocu.png"
+heroImage: "../../assets/blog/efectos-del-uso-de-la-tecnologia-sobre-el-sistema-visual.png"
 ---
 
 Vivimos en una era de contradicciones tecnológicas. Por un lado, los avances digitales han democratizado el conocimiento, conectado culturas y mejorado la calidad de vida. Por otro, su uso excesivo o irresponsable genera nuevos riesgos, algunos tan sutiles que apenas los percibimos hasta que es demasiado tarde.

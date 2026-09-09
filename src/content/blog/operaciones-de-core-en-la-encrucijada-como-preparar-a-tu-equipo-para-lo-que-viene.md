@@ -3,7 +3,7 @@ title: "Operaciones de Core en la encrucijada: cómo preparar a tu equipo para l
 pubDate: "2026-06-09"
 description: "Llevo poco coordinando operaciones de IMS y CS Core para el manejo de voz celular. Y recientemente algo ha cambiado.No es que antes fuera fácil —opera"
 categories: [techco-e-ia]
-heroImage: "https://adrianlopeztech.wordpress.com/wp-content/uploads/2026/06/generated-image-june-03-2026-10_27pm.png"
+heroImage: "../../assets/blog/operaciones-de-core-en-la-encrucijada-como-preparar-a-tu-equipo-para-lo-que-viene.png"
 ---
 
 Llevo poco coordinando operaciones de IMS y CS Core para el manejo de voz celular. Y recientemente algo ha cambiado.No es que antes fuera fácil —operar una red de voz nunca lo ha sido— pero el ritmo al que están llegando nuevas tecnologías, nuevas arquitecturas y nuevas expectativas está poniendo presión sobre los equipos de operaciones de una forma que no había visto antes.

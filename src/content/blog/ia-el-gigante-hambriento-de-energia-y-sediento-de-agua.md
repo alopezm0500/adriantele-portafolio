@@ -3,7 +3,7 @@ title: "IA: El Gigante Hambriento de Energía y Sediento de Agua"
 pubDate: "2025-08-19"
 description: "La inteligencia artificial representa, quizás, el punto más álgido de nuestra capacidad creativa, una herramienta de potencial prometeico que puede de"
 categories: [tech-en-rojo]
-heroImage: "https://dangerousdottechdotblog.wordpress.com/wp-content/uploads/2025/08/ia2.jpg"
+heroImage: "../../assets/blog/ia-el-gigante-hambriento-de-energia-y-sediento-de-agua.jpg"
 ---
 
 La inteligencia artificial representa, quizás, el punto más álgido de nuestra capacidad creativa, una herramienta de potencial prometeico que puede descifrar los secretos de la vida, optimizar los recursos globales y amplificar nuestra inteligencia colectiva. Sin embargo, esta misma fuerza titánica lleva consigo una sombra alargada, un coste oculto que, si lo ignoramos, podría erosionar los mismos cimientos sobre los que aspiramos a construir un futuro mejor.

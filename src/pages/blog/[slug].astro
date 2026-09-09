@@ -1,6 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { Image, getImage } from 'astro:assets';
 import { getCollection, render } from 'astro:content';
+import { catName, fmtDate, readingTime } from '../../lib/blog';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -12,28 +14,49 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
-const catNames = {
-  'techco-e-ia': 'Techco e IA',
-  'por-si-no-sabias': 'Por si no sabías',
-  'sociedad-y-telecom': 'Sociedad y Telecom',
-  'technical': 'Technical',
-  'portafolio': 'Portafolio',
-  'sin-categoria': 'Sin categoría',
-  'tech-en-rojo': 'Tech en Rojo',
-  'tech-humano': 'Tech Humano',
-  'tech-abierto': 'Tech Abierto',
-};
+const minutes = readingTime(post.body);
+const date = fmtDate(post.data.pubDate);
+const related = (await getCollection('blog'))
+  .filter((p) => p.slug !== post.slug && p.data.categories.some((c) => post.data.categories.includes(c)))
+  .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf())
+  .slice(0, 3);
+
+let ogImage;
+if (post.data.heroImage) {
+  const optimized = await getImage({
+    src: post.data.heroImage,
+    width: 1200,
+  });
+  ogImage = new URL(optimized.src, Astro.site).href;
+}
+const pageUrl = new URL(`/blog/${post.slug}/`, Astro.site).href;
 ---
-<Layout title={`${post.data.title} — Adrian`}>
+<Layout
+  title={`${post.data.title} — Adrian`}
+  description={post.data.description}
+  ogImage={ogImage}
+  type="article"
+>
   <article class="post">
+    {
+      post.data.heroImage && (
+        <Image
+          class="hero-img"
+          src={post.data.heroImage}
+          alt={`Portada de: ${post.data.title}`}
+          width={1200}
+        />
+      )
+    }
     <header class="post-header">
       <div class="post-meta">
-        <span class="tag">{catNames[post.data.categories[0]] || post.data.categories[0]}</span>
-        <time datetime={post.data.pubDate}>
-          {new Date(post.data.pubDate).toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' })}
-        </time>
+        <div class="chips">
+          {post.data.categories.map((c) => <span class="tag">{catName(c)}</span>)}
+        </div>
+        <time datetime={post.data.pubDate}>{date}</time>
       </div>
       <h1>{post.data.title}</h1>
+      <p class="meta-line">✍️ Por Adrian López · 📖 {minutes} min de lectura</p>
       <p class="description">{post.data.description}</p>
     </header>
 
@@ -42,29 +65,80 @@ const catNames = {
     </div>
 
     <footer class="post-footer">
-      <a href="/blog">← Volver al blog</a>
+      <div class="footer-row">
+        <a href="/blog">← Volver al blog</a>
+      </div>
+      {
+        related.length > 0 && (
+          <section class="related">
+            <h2>📚 Sigue leyendo</h2>
+            <div class="related-grid">
+              {related.map((p) => (
+                <a class="related-card" href={`/blog/${p.slug}/`}>
+                  <span class="tag">{catName(p.data.categories[0])}</span>
+                  <h3>{p.data.title}</h3>
+                  <time datetime={p.data.pubDate}>{fmtDate(p.data.pubDate)}</time>
+                </a>
+              ))}
+            </div>
+          </section>
+        )
+      }
     </footer>
   </article>
+
+  {
+    post.data.heroImage && (
+      <script type="application/ld+json" set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        headline: post.data.title,
+        description: post.data.description,
+        image: ogImage,
+        datePublished: post.data.pubDate,
+        inLanguage: 'es-MX',
+        author: { '@type': 'Person', name: 'Adrian Lopez', url: 'https://github.com/alopezm0500' },
+        publisher: { '@type': 'Person', name: 'Adrian Lopez' },
+        mainEntityOfPage: pageUrl,
+      })} />
+    )
+  }
 </Layout>
 
 <style>
+  .post { max-width: 860px; margin: 0 auto; }
+  .hero-img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #262a36;
+    margin-bottom: 2rem;
+  }
   .post-header { margin-bottom: 2rem; }
   .post-header h1 { font-size: 2.2rem; line-height: 1.2; margin-bottom: .8rem; }
   .post-meta {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: .6rem;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
   }
+  .chips { display: flex; gap: .35rem; flex-wrap: wrap; }
+  .chips .tag { margin-top: 0; }
   .post-meta time { color: var(--muted); font-size: .85rem; }
+  .meta-line { color: var(--muted); font-size: .9rem; margin-bottom: .8rem; }
   .description { color: var(--muted); font-size: 1.05rem; }
 
   .content { line-height: 1.75; }
   .content h2 { margin: 2rem 0 1rem; font-size: 1.6rem; }
   .content h3 { margin: 1.5rem 0 .8rem; font-size: 1.25rem; }
+  .content h4 { margin: 1.4rem 0 .6rem; font-size: 1.05rem; }
   .content p { margin-bottom: 1.2rem; }
   .content ul, .content ol { margin: 0 0 1.2rem 1.5rem; }
   .content li { margin-bottom: .4rem; }
+  .content strong { color: #fff; }
   .content code {
     background: rgba(43,33,224,.12);
     color: #8b85ff;
@@ -93,6 +167,7 @@ const catNames = {
     border-radius: 8px;
     margin: 1rem 0;
   }
+  .content a { color: #8b85ff; }
   .content table {
     width: 100%;
     border-collapse: collapse;
@@ -110,4 +185,22 @@ const catNames = {
   .post-footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #262a36; }
   .post-footer a { color: var(--muted); text-decoration: none; }
   .post-footer a:hover { color: #8b85ff; }
+  .related { margin-top: 2.5rem; }
+  .related h2 { font-size: 1.3rem; margin-bottom: 1rem; }
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+  .related-card {
+    background: var(--card);
+    border: 1px solid #262a36;
+    border-radius: 12px;
+    padding: 1.1rem 1.25rem;
+    transition: transform .2s, border-color .2s;
+  }
+  .related-card:hover { transform: translateY(-3px); border-color: var(--indigo); }
+  .related-card .tag { margin-top: 0; margin-bottom: .6rem; }
+  .related-card h3 { color: var(--text); font-size: 1rem; line-height: 1.35; margin-bottom: .5rem; }
+  .related-card time { color: var(--muted); font-size: .8rem; }
 </style>

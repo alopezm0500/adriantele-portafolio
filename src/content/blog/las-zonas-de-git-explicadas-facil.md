@@ -3,7 +3,7 @@ title: "Las zonas de Git explicadas fácil"
 pubDate: "2026-07-10"
 description: "Si estás aprendiendo Git como yo, probablemente ya has usado comandos como add, commit, push o pull. Pero antes de memorizar comandos, hay algo mucho "
 categories: [por-si-no-sabias]
-heroImage: "https://adrianlopeztech.wordpress.com/wp-content/uploads/2026/07/captura-de-pantalla-de-2026-07-10-11-35-14.png"
+heroImage: "../../assets/blog/las-zonas-de-git-explicadas-facil.png"
 ---
 
 Si estás aprendiendo Git como yo, probablemente ya has usado comandos como `add`, `commit`, `push` o `pull`.

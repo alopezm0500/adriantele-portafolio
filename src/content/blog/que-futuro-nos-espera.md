@@ -3,7 +3,7 @@ title: "¿Qué futuro nos espera?"
 pubDate: "2025-11-18"
 description: "Nos preocupa la privacidad, pero anhelamos la personalización. Deseamos seguridad, pero adoramos la conveniencia. Esta contradicción es el caldo de cu"
 categories: [tech-en-rojo]
-heroImage: "https://dangerousdottechdotblog.wordpress.com/wp-content/uploads/2025/11/futuro-1-scaled-1.jpg"
+heroImage: "../../assets/blog/que-futuro-nos-espera.jpg"
 ---
 
 Nos preocupa la privacidad, pero anhelamos la personalización. Deseamos seguridad, pero adoramos la conveniencia. Esta contradicción es el caldo de cultivo perfecto para los peligros que se ciernen sobre nosotros, peligros que son más insidiosos que cualquier distopía de ciencia ficción.

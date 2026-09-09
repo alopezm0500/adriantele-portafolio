@@ -1,59 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+import PostCard from '../components/PostCard.astro';
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
 );
-const catNames = {
-  'techco-e-ia': 'Techco e IA',
-  'por-si-no-sabias': 'Por si no sabías',
-  'sociedad-y-telecom': 'Sociedad y Telecom',
-  'technical': 'Technical',
-  'portafolio': 'Portafolio',
-  'sin-categoria': 'Sin categoría',
-  'tech-en-rojo': 'Tech en Rojo',
-  'tech-humano': 'Tech Humano',
-  'tech-abierto': 'Tech Abierto',
-};
 ---
-<Layout title="Blog — Adrian">
-  <h1>📝 Blog</h1>
-  <p style="color:var(--muted);margin-top:.5rem">Artículos sobre telecomunicaciones, IA y tecnología.</p>
+<Layout
+  title="Blog — Adrian"
+  description="Artículos sobre telecomunicaciones, IA y tecnología con pensamiento crítico."
+>
+  <section class="blog-head">
+    <h1>📝 Blog</h1>
+    <p>Telecomunicaciones, IA y tecnología con pensamiento crítico. {posts.length} artículos publicados.</p>
+  </section>
 
   <section class="grid">
-    {
-      posts.map((post) => (
-        <a class="card post" href={`/blog/${post.slug}/`}>
-          <div class="post-meta">
-            <span class="tag">{catNames[post.data.categories[0]] || post.data.categories[0]}</span>
-            <time datetime={post.data.pubDate}>
-              {new Date(post.data.pubDate).toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' })}
-            </time>
-          </div>
-          <h3>{post.data.title}</h3>
-          <p>{post.data.description}</p>
-        </a>
-      ))
-    }
+    {posts.map((post, i) => <PostCard post={post} eager={i === 0} />)}
   </section>
 </Layout>
 
 <style>
-  .post {
-    text-decoration: none;
-    display: block;
-  }
-  .post h3 { color: var(--text); }
-  .post:hover h3 { color: #8b85ff; }
-  .post-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: .8rem;
-  }
-  .post-meta time {
-    color: var(--muted);
-    font-size: .8rem;
-  }
+  .blog-head h1 { font-size: 2.2rem; }
+  .blog-head p { color: var(--muted); margin-top: .5rem; }
+  .grid { margin-top: 2.5rem; }
 </style>

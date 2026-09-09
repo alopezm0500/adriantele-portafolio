@@ -1,15 +1,43 @@
 ---
 // Layout base
 import { ViewTransitions } from 'astro:transitions';
-const { title = 'Adrian — Portafolio' } = Astro.props;
+const {
+  title = 'Adrian — Portafolio',
+  description = 'Portafolio y blog de Adrian Lopez — desarrollador y creador de contenido tech.',
+  ogImage,
+  canonical = new URL(Astro.url.pathname, Astro.site),
+  type = 'website',
+} = Astro.props;
 ---
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portafolio y blog de Adrian Lopez — desarrollador y creador de contenido tech." />
+    <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title="Blog de Adrian — RSS" href="/rss.xml" />
+    <meta name="theme-color" content="#0f1117" />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="Adrian — Portafolio" />
+    {
+      ogImage && (
+        <>
+          <meta property="og:image" content={ogImage} />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:image" content={ogImage} />
+        </>
+      )
+    }
+    {
+      !ogImage && <meta name="twitter:card" content="summary" />
+    }
     <ViewTransitions />
     <style>
       :root {
@@ -89,6 +117,9 @@ const { title = 'Adrian — Portafolio' } = Astro.props;
     <main>
       <slot />
     </main>
-    <footer>© 2026 Adrian Lopez · Hecho con Astro · Hosteado en Cloudflare Pages</footer>
+    <footer>
+      © 2026 Adrian Lopez · Hecho con Astro · Hosteado en Cloudflare Pages
+      · <a href="/rss.xml">RSS</a>
+    </footer>
   </body>
 </html>

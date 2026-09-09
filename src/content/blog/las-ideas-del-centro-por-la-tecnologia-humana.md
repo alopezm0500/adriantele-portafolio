@@ -3,7 +3,7 @@ title: "Las ideas del &#8220;centro por la tecnología humana&#8221;"
 pubDate: "2025-07-01"
 description: "El siguiente texto esta inspirado por los problemas clave indicados por el equipo de “Center For Human Technology” un grupo cuyos esfuerzos son parale"
 categories: [tech-abierto]
-heroImage: "https://dangerousdottechdotblog.wordpress.com/wp-content/uploads/2025/07/captura-de-pantalla-2025-07-01-175451.png"
+heroImage: "../../assets/blog/las-ideas-del-centro-por-la-tecnologia-humana.png"
 ---
 
 El siguiente texto esta inspirado por los problemas clave indicados por el equipo de “Center For Human Technology” un grupo cuyos esfuerzos son paralelos a este espacio, puedes leerlo integro en: [https://www.humanetech.com/key-issues](https://www.humanetech.com/key-issues)
