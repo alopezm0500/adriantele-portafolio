@@ -37,8 +37,40 @@ const SECTIONS: { key: string; icon: string; desc: string }[] = [
 ---
 <Layout title="Adrian — Portafolio">
   <section class="hero">
-    <h1>Hola, soy <span class="accent">Adrian</span> 👋<br />Ingeniero Telecom, desarrollador, entusiasta y creador de contenido tech</h1>
-    <p>Construyo productos con IA y software libre. Comparto lo que aprendo en mi blog y redes sociales.</p>
+    <div class="hero-text">
+      <h1>Hola, soy <span class="accent">Adrian</span> 👋<br />Ingeniero Telecom, desarrollador, entusiasta y creador de contenido tech</h1>
+      <p>Construyo productos con IA y software libre. Comparto lo que aprendo en mi blog y redes sociales.</p>
+    </div>
+    <aside class="ik-card">
+      <a class="ik-head" href="https://identik.lat/u/adrian_l_m" target="_blank" rel="noopener">
+        <span>🪪 Mi Identik</span><span class="ik-ext">abrir →</span>
+      </a>
+      <div class="ik-body">
+        <img class="ik-photo" src="/identik/adrian.png" alt="Foto de perfil de Adrian en Identik" width="80" height="80" />
+        <div class="ik-id">
+          <span class="ik-name">Adrian Lopez</span>
+          <span class="ik-user">@adrian_l_m · Identik</span>
+        </div>
+      </div>
+      <p class="ik-role">Ingeniero Telecom · AT&T Mexico</p>
+      <p class="ik-bio">Líder Técnico | Core Voz VoLTE/VoWiFi/CS | Entusiasta de IA, Software Libre y Código abierto.</p>
+      <div class="ik-links">
+        <a href="https://adrianlopez.tech.blog/" target="_blank" rel="noopener">📝 Blog</a>
+        <a href="https://identik.lat/" target="_blank" rel="noopener">🏷️ Identik</a>
+      </div>
+      <div class="ik-social">
+        <a href="https://x.com/adrian_l_m" target="_blank" rel="noopener">X</a>
+        <a href="https://github.com/alopezm0500" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/adrian-l-m" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div class="ik-foot">
+        <img class="ik-qr" src="/identik/qr.png" alt="Código QR del perfil Identik de Adrian" width="76" height="76" />
+        <a class="ik-cta" href="https://identik.lat/u/adrian_l_m" target="_blank" rel="noopener">
+          Ver mi perfil
+          <small>Pega. Toca. Conecta.</small>
+        </a>
+      </div>
+    </aside>
   </section>
 
   <section class="blog-secs">
@@ -90,6 +122,143 @@ const SECTIONS: { key: string; icon: string; desc: string }[] = [
 </Layout>
 
 <style>
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    gap: 2.5rem;
+    align-items: center;
+  }
+  @media (max-width: 860px) {
+    .hero {
+      grid-template-columns: 1fr;
+    }
+  }
+  .ik-card {
+    background: var(--card);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 1.1rem 1.25rem 1.25rem;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+  }
+  .ik-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  }
+  .ik-ext {
+    color: var(--indigo);
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  .ik-body {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0 0.4rem;
+  }
+  .ik-photo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--indigo);
+  }
+  .ik-id {
+    display: flex;
+    flex-direction: column;
+  }
+  .ik-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .ik-user {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .ik-role {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--indigo);
+    margin-bottom: 0.3rem;
+  }
+  .ik-bio {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .ik-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin: 0.8rem 0;
+  }
+  .ik-links a {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 10px;
+    padding: 0.45rem 0.7rem;
+    font-size: 0.85rem;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .ik-links a:hover {
+    border-color: var(--indigo);
+  }
+  .ik-social {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.9rem;
+  }
+  .ik-social a {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--muted);
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 999px;
+    padding: 0.15rem 0.6rem;
+  }
+  .ik-social a:hover {
+    color: var(--text);
+    border-color: var(--indigo);
+  }
+  .ik-foot {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+  }
+  .ik-qr {
+    width: 76px;
+    height: 76px;
+    border-radius: 8px;
+  }
+  .ik-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--indigo);
+    text-decoration: none;
+  }
+  .ik-cta small {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--muted);
+  }
+  .ik-cta:hover small {
+    color: var(--text);
+  }
   .blog-secs {
     margin-bottom: 3.5rem;
   }
