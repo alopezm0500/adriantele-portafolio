@@ -9,11 +9,15 @@ const posts = (await getCollection('blog')).sort(
 ---
 <Layout
   title="Blog — Adrian"
-  description="Artículos sobre telecomunicaciones, IA y tecnología con pensamiento crítico."
+  description="Artículos sobre tecnología con pensamiento crítico: Tech con Sentido, portafolio y proyectos."
 >
   <section class="blog-head">
     <h1>📝 Blog</h1>
-    <p>Telecomunicaciones, IA y tecnología con pensamiento crítico. {posts.length} artículos publicados.</p>
+    <p>Tecnología con pensamiento crítico: riesgos, humanidad, código abierto e IA. {posts.length} artículos publicados.</p>
+    <p class="telecom-note">
+      📡 ¿Buscas Telecom y operaciones (Core, IMS, 5G, DevOps telco)? Ese contenido vive en
+      <a href="https://adrianlopez.tech.blog" target="_blank" rel="noopener">adrianlopez.tech.blog</a>.
+    </p>
   </section>
 
   <section class="grid">
@@ -24,6 +28,17 @@ const posts = (await getCollection('blog')).sort(
 <style>
   .blog-head h1 { font-size: 2.2rem; }
   .blog-head p { color: var(--muted); margin-top: .5rem; }
+  .telecom-note {
+    margin-top: 1rem;
+    color: var(--muted);
+    font-size: .92rem;
+    padding: .7rem 1rem;
+    background: color-mix(in srgb, var(--indigo) 10%, transparent);
+    border: 1px solid color-mix(in srgb, var(--indigo) 30%, transparent);
+    border-radius: 10px;
+  }
+  .telecom-note a { color: var(--text); font-weight: 600; }
+  .telecom-note a:hover { color: #fff; text-decoration: underline; }
   /* Listado editorial: tarjetas horizontales a una columna */
   .grid {
     margin-top: 2.5rem;
