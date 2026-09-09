@@ -1,7 +1,68 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { catName, catColor } from '../lib/blog';
+
+const posts = await getCollection('blog');
+const count = (key: string) =>
+  posts.filter((p) => (p.data.categories ?? []).includes(key)).length;
+
+const SECTIONS: { key: string; icon: string; desc: string }[] = [
+  {
+    key: 'tech-en-rojo',
+    icon: '⚠️',
+    desc: 'Riesgos, sesgos, privacidad y regulación: los excesos de la tecnología bajo la lupa.',
+  },
+  {
+    key: 'tech-humano',
+    icon: '💬',
+    desc: 'Cómo la tecnología nos cambia por dentro: atención, salud mental, psicología y hábitos.',
+  },
+  {
+    key: 'tech-abierto',
+    icon: '🌐',
+    desc: 'Open source, descentralización, comunidades y conocimiento libre.',
+  },
+  {
+    key: 'techco-e-ia',
+    icon: '🛠️',
+    desc: 'Telecom, operaciones e IA: estándares y automatización contados desde la trinchera.',
+  },
+  {
+    key: 'por-si-no-sabias',
+    icon: '💡',
+    desc: 'Curiosidades y explicaciones sencillas de los temas tech que usas a diario.',
+  },
+].filter((s) => count(s.key) > 0);
 ---
 <Layout title="Adrian — Portafolio">
+  <section class="blog-secs">
+    <header class="blog-secs-head">
+      <div>
+        <h2>En el blog</h2>
+        <p>Escribo sobre tecnología con pensamiento crítico. Estas son las secciones que abordo:</p>
+      </div>
+      <a class="all" href="/blog">Ver todos →</a>
+    </header>
+    <div class="secs">
+      {SECTIONS.map((s) => (
+        <a class="sec" href="/blog" style={`--sec: ${catColor(s.key)}`}>
+          <span class="sec-name">
+            <span class="sec-icon">{s.icon}</span>
+            {catName(s.key)}
+          </span>
+          <span class="sec-desc">{s.desc}</span>
+          <span class="sec-meta">
+            <span class="sec-count">
+              {count(s.key)} {count(s.key) === 1 ? 'artículo' : 'artículos'}
+            </span>
+            <span class="sec-go">Leer →</span>
+          </span>
+        </a>
+      ))}
+    </div>
+  </section>
+
   <section class="hero">
     <h1>Hola, soy <span class="accent">Adrian</span> 👋<br />Desarrollador y creador de contenido tech.</h1>
     <p>Construyo productos con IA, NFC y web. Comparto lo que aprendo en mi blog y promuevo mis proyectos open source.</p>
@@ -21,3 +82,87 @@ import Layout from '../layouts/Layout.astro';
 
   </section>
 </Layout>
+
+<style>
+  .blog-secs {
+    margin-bottom: 3.5rem;
+  }
+  .blog-secs-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+  }
+  .blog-secs-head h2 {
+    font-size: 1.7rem;
+    margin: 0;
+  }
+  .blog-secs-head p {
+    color: var(--muted);
+    margin: 0.35rem 0 0;
+  }
+  .blog-secs-head .all {
+    color: var(--indigo);
+    text-decoration: none;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .secs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+  .sec {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1.15rem 1.25rem;
+    background: var(--card);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-top: 3px solid var(--sec);
+    border-radius: 14px;
+    text-decoration: none;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+  .sec:hover {
+    border-color: var(--sec);
+    transform: translateY(-2px);
+  }
+  .sec-name {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--text);
+  }
+  .sec-icon {
+    margin-right: 0.4rem;
+  }
+  .sec-desc {
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.45;
+    flex: 1;
+  }
+  .sec-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+  }
+  .sec-count {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--sec);
+    background: color-mix(in srgb, var(--sec) 14%, transparent);
+    border: 1px solid color-mix(in srgb, var(--sec) 35%, transparent);
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+  }
+  .sec-go {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--indigo);
+  }
+</style>
