@@ -24,5 +24,10 @@ const posts = (await getCollection('blog')).sort(
 <style>
   .blog-head h1 { font-size: 2.2rem; }
   .blog-head p { color: var(--muted); margin-top: .5rem; }
-  .grid { margin-top: 2.5rem; }
+  /* Listado editorial: tarjetas horizontales a una columna */
+  .grid {
+    margin-top: 2.5rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 </style>

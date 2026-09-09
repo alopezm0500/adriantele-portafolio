@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { Image, getImage } from 'astro:assets';
 import { getCollection, render } from 'astro:content';
-import { catName, fmtDate, readingTime } from '../../lib/blog';
+import { catColor, catName, fmtDate, readingTime } from '../../lib/blog';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -51,7 +51,7 @@ const pageUrl = new URL(`/blog/${post.slug}/`, Astro.site).href;
     <header class="post-header">
       <div class="post-meta">
         <div class="chips">
-          {post.data.categories.map((c) => <span class="tag">{catName(c)}</span>)}
+          {post.data.categories.map((c) => <span class="tag" style={`--cat:${catColor(c)}`}>{catName(c)}</span>)}
         </div>
         <time datetime={post.data.pubDate}>{date}</time>
       </div>
@@ -75,7 +75,7 @@ const pageUrl = new URL(`/blog/${post.slug}/`, Astro.site).href;
             <div class="related-grid">
               {related.map((p) => (
                 <a class="related-card" href={`/blog/${p.slug}/`}>
-                  <span class="tag">{catName(p.data.categories[0])}</span>
+                  <span class="tag" style={`--cat:${catColor(p.data.categories[0])}`}>{catName(p.data.categories[0])}</span>
                   <h3>{p.data.title}</h3>
                   <time datetime={p.data.pubDate}>{fmtDate(p.data.pubDate)}</time>
                 </a>
