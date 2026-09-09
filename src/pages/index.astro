@@ -36,6 +36,11 @@ const SECTIONS: { key: string; icon: string; desc: string }[] = [
 ].filter((s) => count(s.key) > 0);
 ---
 <Layout title="Adrian — Portafolio">
+  <section class="hero">
+    <h1>Hola, soy <span class="accent">Adrian</span> 👋<br />Ingeniero Telecom, desarrollador, entusiasta y creador de contenido tech</h1>
+    <p>Construyo productos con IA, NFC y web. Comparto lo que aprendo en mi blog y promuevo mis proyectos open source.</p>
+  </section>
+
   <section class="blog-secs">
     <header class="blog-secs-head">
       <div>
@@ -61,11 +66,6 @@ const SECTIONS: { key: string; icon: string; desc: string }[] = [
         </a>
       ))}
     </div>
-  </section>
-
-  <section class="hero">
-    <h1>Hola, soy <span class="accent">Adrian</span> 👋<br />Desarrollador y creador de contenido tech.</h1>
-    <p>Construyo productos con IA, NFC y web. Comparto lo que aprendo en mi blog y promuevo mis proyectos open source.</p>
   </section>
 
   <section class="grid">
