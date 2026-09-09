@@ -71,7 +71,7 @@ const SECTIONS: { key: string; icon: string; desc: string }[] = [
     </header>
     <div class="secs">
       {SECTIONS.map((s) => (
-        <a class="sec" href="/blog" style={`--sec: ${catColor(s.key)}`}>
+        <a class="sec" href={`/blog/categoria/${s.key}`} style={`--sec: ${catColor(s.key)}`}>
           <span class="sec-name">
             <span class="sec-icon">{s.icon}</span>
             {catName(s.key)}

@@ -1,0 +1,58 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import PostCard from '../../../components/PostCard.astro';
+import { CATEGORIES, catName, catColor } from '../../../lib/blog';
+
+export function getStaticPaths() {
+  return Object.keys(CATEGORIES).map((key) => ({ params: { slug: key } }));
+}
+
+const { slug } = Astro.params;
+const posts = (await getCollection('blog'))
+  .filter((p) => (p.data.categories ?? []).includes(slug!))
+  .sort(
+    (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+  );
+const name = catName(slug!);
+const color = catColor(slug!);
+const total = posts.length;
+---
+
+<Layout
+  title={`${name} — Blog de Adrian`}
+  description={`Artículos de ${name}: tecnología con pensamiento crítico, riesgos, humanidad, código abierto e IA.`}
+>
+  <section class="cat-head">
+    <a class="back" href="/blog">← Ver todos</a>
+    <h1 style={`--cat: ${color}`}>{name}</h1>
+    <p>{total} {total === 1 ? 'artículo' : 'artículos'} en esta sección.</p>
+  </section>
+
+  <section class="grid">
+    {posts.map((post, i) => <PostCard post={post} eager={i === 0} />)}
+  </section>
+</Layout>
+
+<style>
+  .cat-head { margin-top: 1rem; }
+  .back {
+    color: var(--muted);
+    font-size: .92rem;
+    text-decoration: none;
+  }
+  .back:hover { color: var(--text); text-decoration: underline; }
+  .cat-head h1 {
+    font-size: 2.2rem;
+    margin-top: .75rem;
+    color: color-mix(in srgb, var(--cat) 85%, var(--text));
+  }
+  .cat-head p { color: var(--muted); margin-top: .5rem; }
+  /* Mismo listado editorial que /blog */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+</style>
