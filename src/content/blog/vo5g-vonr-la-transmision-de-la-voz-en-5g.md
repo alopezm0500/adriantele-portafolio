@@ -1,0 +1,17 @@
+---
+title: "Vo5G, VoNR, la transmisión de la voz en 5G"
+pubDate: "2022-03-02"
+description: "Todos hablan de las posibilidades, de las nuevas prestaciones, las elevadas velocidades de transmisión, el IoT, los autos autónomos; y si, suena genial, pero dentro de todas las posibilidades hemos de"
+categories: [technical]
+heroImage: "../../assets/blog/vo5g-vonr-la-transmision-de-la-voz-en-5g.jpg"
+---
+
+Todos hablan de las posibilidades, de las nuevas prestaciones, las elevadas velocidades de transmisión, el IoT, los autos autónomos; y si, suena genial, pero dentro de todas las posibilidades hemos de admitir que las personas seguirán realizando llamadas telefónicas ya que como decía con anterioridad, [la transmisión de la voz provee de humanidad a las comunicaciones](https://adrianlopez.tech.blog/2020/02/03/transmision-de-la-voz/). Así que, ¿Cómo se llevara a cabo la transmisión de la voz en las redes de 5G que también se conoce como Vo5G o VoNR?
+5G es un sistema de conmutación de paquetes y debido a ello no es capaz de realizar la conmutación de circuitos que era la forma antigua de transmitir la voz, mas bien tendremos que pensar en la forma que se transmite la voz con LTE (4G) que también es un sistema de conmutación de paquetes.
+Vo5G (Voice Over 5G) y VoNR (Voice Over New Radio) pueden ser utilizadas como sinónimos y para fortuna de los técnicos en la transmisión de la voz, las funcionalidades serán manejadas como en VoLTE por el Core de IMS.
+Recordemos por lo tanto que IMS se trata de un subsistema y por ello al menos en teoria el modo de acceso a usarse para transmitir la voz es indistinto en el momento del procesado, asi sabemos que la transmision seguira siendo a traves de IP (Conmutacion de paquetes).
+Ahora, pensemos entonces en como evolucionara la transmision pensando en una red comercial que ya posee VoLTE (4G) y que poco a poco se adaptara a proporcionar servicio a terminales 5G. Con este pensamiento en mente pensariamos en [la opcion 3 de despliegue de red 5G](https://adrianlopez.tech.blog/2022/01/16/despliegue-5g/).
+![](https://adrianlopeztech.wordpress.com/wp-content/uploads/2022/02/img_20220302_170536.jpg?w=890)
+Como podemos apreciar nuestros puntos de contacto se conocen con diferentes nombres ya sea para 4G o 5G, sin embargo podemos delimitar que en 5G tendremos acceso al core de IMS a través de UPF (User Plane Function) y AMF (Access Management and Mobility Function) [que como ya hemos charlado](https://adrianlopez.tech.blog/2021/04/25/arquitectura-4g-a-5g/) son elementos que realizan las mismas funcionalidades que sus correspondientes en 4G S-GW y MME.
+Es interesante por lo tanto pensar que al inicio de la implementación y uso de voz en una red con 4G y 5G el core de IMS no notara diferencia sustancial entre los tipos de acceso que se tenga, sin embargo se deberá tener algún indicativo entre los accesos para identificarlos. Esto también nos lleva a pensar en el “fallback” ya que conforme se instalen mas elementos de gNBs, entonces será necesario hacer FallBack hacia eNBs; recordemos por ejemplo que en Estados Unidos ya se ha comenzado a apagar la red 3G por lo que no existirá fallback mas que a 4G.
+Y así podemos visualizar que al [IMS Core](https://adrianlopez.tech.blog/2020/08/24/ims/) le queda aun mucho tiempo de vida y su utilidad será reevaluada a futuro. En este espacio seguiremos charlando al respecto, hasta la próxima!

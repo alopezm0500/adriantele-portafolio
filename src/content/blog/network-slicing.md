@@ -1,0 +1,15 @@
+---
+title: "5G y Network Slicing"
+pubDate: "2020-09-23"
+description: "Con el avance de la tecnología, cuando hablamos de la siguiente generación de telecomunicaciones es evidente que a la par de nuevos elementos para manejar la señalización llegan nuevas funciones avanz"
+categories: [technical]
+---
+
+Con el avance de la tecnología, cuando hablamos de la siguiente generación de telecomunicaciones es evidente que a la par de nuevos elementos para manejar la señalización llegan nuevas funciones avanzadas; en el caso de 5G una de las funciones que se espera sean protagónicas es la de Network Slicing.
+Network Slicing se interpretaría como “Corte de Red” aunque en realidad se trata de una segmentación controlada y es una función que permite que la red física de un proveedor pueda ser utilizada como múltiples subredes virtuales.
+¿Cuál seria en si la ventaja de tener una red segmentada? Procuremos visualizar el futuro, un futuro donde una compañía de telecomunicaciones no solo proporciona servicios de telefonía e internet a celulares y ya comenzamos a ver esos avances con los relojes inteligentes y el IoT por ejemplo. En un futuro tendremos sistemas autónomos, mIoT y hasta maquinas que se comunicaran con otras maquinas; por obvias razones, no todos los servicios finales requerirán de las mismas capacidades y funciones que otros si podrían necesitar. Así que si tenemos una red basada en Software para 5G, valdría separar las redes que proporcionan servicios a cada usuario final para así delimitar el soporte y las capacidades especificas.
+Como se aprecia en el dibujo, el esquema nos permite asignar funciones especificas a diversos tipos de subredes. Recordemos que las funciones en 5G ya se virtualizan por Software así que las Network Functions (NF) se pueden asignar o eliminar para cualquier servicio que se desee sin necesidad de grandes movimientos, se hace por Software.
+![](https://adrianlopeztech.wordpress.com/wp-content/uploads/2021/08/scanpro-2020-09-23-13.55.50-scaled-1.jpg?w=1024)
+Un ejemplo muy simple de lo anterior seria que consideremos dos casos diferentes en una misma red, pensemos en un sistema IoT con múltiples sensores que requiere proporcionar los datos a un sistema centralizado y por otro lado pensemos en un Auto autónomo. Seria poco redituable que una compañía instalara una red especializada en las latencias de IoT (y sin embargo para 4G se hace aunque compartiendo elementos con la red mas veloz) y otra red especial para las necesidades mas veloces.
+Un equipo IoT no requiere de grandes velocidades de transferencia por lo que se adecua a mMTC (massive Machine Time Communications) que en 5G podríamos definir como una red y por su parte el automóvil autónomo si requiere de transferencias rápidas con gran ancho de banda por lo que podríamos asignarle una red de ultra baja latencia. Ambos casos son atendidos por la misma red, pero debido a las funciones es recomendable tenerlos en diferentes redes aunque sean virtuales.
+Así mostramos una de las grandes promesas de 5G y terminamos por el día de hoy, no olvides comentar y nos saludamos en las siguientes. Hasta la próxima.
