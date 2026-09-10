@@ -34,8 +34,37 @@ const SECTIONS: { key: string; icon: string; desc: string }[] = [
     desc: 'Apuntes técnicos de redes y core: IMS, 4G/5G, señalización y operaciones en campo.',
   },
 ].filter((s) => count(s.key) > 0);
+
+const siteUrl = Astro.site!.href;
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Tech con Sentido',
+    url: siteUrl,
+    inLanguage: 'es-MX',
+    description:
+      'Tecnología con pensamiento crítico: IA, telecom, privacidad, código abierto e impacto social.',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Adrian López',
+    url: siteUrl,
+    jobTitle: 'Ingeniero en Telecomunicaciones',
+    sameAs: ['https://github.com/alopezm0500'],
+    knowsAbout: [
+      'Telecomunicaciones',
+      'IMS',
+      'VoLTE',
+      'Redes 5G',
+      'Inteligencia artificial',
+      'Software libre',
+    ],
+  },
+];
 ---
-<Layout title="Tech con Sentido">
+<Layout title="Tech con Sentido" jsonLd={jsonLd}>
   <section class="hero">
     <div class="hero-text">
       <h1>Hola, soy <span class="accent">Adrian</span> 👋<br />Ingeniero Telecom, desarrollador, entusiasta y creador de contenido tech</h1>

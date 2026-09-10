@@ -7,7 +7,14 @@ const {
   ogImage,
   canonical = new URL(Astro.url.pathname, Astro.site),
   type = 'website',
+  jsonLd,
 } = Astro.props;
+
+const jsonLdBlocks: Record<string, unknown>[] = jsonLd
+  ? Array.isArray(jsonLd)
+    ? jsonLd
+    : [jsonLd]
+  : [];
 ---
 <!doctype html>
 <html lang="es">
@@ -19,13 +26,15 @@ const {
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="alternate" type="application/rss+xml" title="Blog de Adrian — RSS" href="/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Tech con Sentido — RSS" href="/rss.xml" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <meta name="theme-color" content="#282828" />
     <meta property="og:type" content={type} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:site_name" content="Adrian — Portafolio" />
+    <meta property="og:site_name" content="Tech con Sentido" />
+    <meta property="og:locale" content="es_MX" />
     {
       ogImage && (
         <>
@@ -37,6 +46,11 @@ const {
     }
     {
       !ogImage && <meta name="twitter:card" content="summary" />
+    }
+    {
+      jsonLdBlocks.map((block) => (
+        <script type="application/ld+json" set:html={JSON.stringify(block)} />
+      ))
     }
     <ViewTransitions />
     <style>

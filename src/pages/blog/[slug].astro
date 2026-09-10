@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { Image, getImage } from 'astro:assets';
 import { getCollection, render } from 'astro:content';
-import { catColor, catName, fmtDate, readingTime } from '../../lib/blog';
+import { CATEGORIES, catColor, catName, fmtDate, readingTime } from '../../lib/blog';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -30,12 +30,66 @@ if (post.data.heroImage) {
   ogImage = new URL(optimized.src, Astro.site).href;
 }
 const pageUrl = new URL(`/blog/${post.slug}/`, Astro.site).href;
+const siteUrl = Astro.site!.href;
+const words = post.body.trim().split(/\s+/).length;
+const sectionNames = post.data.categories.map((c) => catName(c));
+const primaryCat = post.data.categories.find((c) => c in CATEGORIES);
+
+// Datos estructurados: artículo + migas de pan (para resultados enriquecidos).
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.data.title,
+    description: post.data.description,
+    ...(ogImage ? { image: [ogImage] } : {}),
+    datePublished: post.data.pubDate,
+    dateModified: post.data.pubDate,
+    inLanguage: 'es-MX',
+    wordCount: words,
+    articleSection: sectionNames,
+    url: pageUrl,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
+    author: {
+      '@type': 'Person',
+      name: 'Adrian López',
+      url: siteUrl,
+      sameAs: ['https://github.com/alopezm0500'],
+    },
+    publisher: { '@type': 'Person', name: 'Adrian López' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: siteUrl },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: new URL('/blog/', Astro.site).href },
+      ...(primaryCat
+        ? [
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: catName(primaryCat),
+              item: new URL(`/blog/categoria/${primaryCat}/`, Astro.site).href,
+            },
+          ]
+        : []),
+      {
+        '@type': 'ListItem',
+        position: primaryCat ? 4 : 3,
+        name: post.data.title,
+        item: pageUrl,
+      },
+    ],
+  },
+];
 ---
 <Layout
   title={`${post.data.title} — Tech con Sentido`}
   description={post.data.description}
   ogImage={ogImage}
   type="article"
+  jsonLd={jsonLd}
 >
   <article class="post">
     {
@@ -87,22 +141,6 @@ const pageUrl = new URL(`/blog/${post.slug}/`, Astro.site).href;
     </footer>
   </article>
 
-  {
-    post.data.heroImage && (
-      <script type="application/ld+json" set:html={JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'BlogPosting',
-        headline: post.data.title,
-        description: post.data.description,
-        image: ogImage,
-        datePublished: post.data.pubDate,
-        inLanguage: 'es-MX',
-        author: { '@type': 'Person', name: 'Adrian Lopez', url: 'https://github.com/alopezm0500' },
-        publisher: { '@type': 'Person', name: 'Adrian Lopez' },
-        mainEntityOfPage: pageUrl,
-      })} />
-    )
-  }
 </Layout>
 
 <style>

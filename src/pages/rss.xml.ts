@@ -8,7 +8,7 @@ export async function GET(context: APIContext) {
     (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
   );
   return rss({
-    title: 'Blog de Adrian — Telecom, IA y tecnología con sentido',
+    title: 'Tech con Sentido — Telecom, IA y tecnología con pensamiento crítico',
     description: 'Artículos sobre telecomunicaciones, IA y tecnología con pensamiento crítico.',
     site: context.site!,
     items: posts.map((post) => ({
