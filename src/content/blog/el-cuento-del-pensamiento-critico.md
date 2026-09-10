@@ -3,6 +3,7 @@ title: "El cuento del pensamiento crítico"
 pubDate: "2026-09-10"
 description: "«Sé crítico y creativo»: el consejo que repiten CEOs, gurús y universidades. Tres estudios de 2025 sugieren que el mercado no va a pagar por eso, y que delegar el pensamiento tiene un costo medible."
 categories: [tech-humano, techco-e-ia]
+heroImage: "../../assets/blog/el-cuento-del-pensamiento-critico.jpg"
 ---
 
 **O: Por qué "sé crítico y creativo" no es la respuesta que te están vendiendo**
