@@ -1,0 +1,316 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import { catColor, catName, fmtDate, readingTime } from '../lib/blog';
+
+interface Props {
+  posts: CollectionEntry<'blog'>[];
+  limit?: number;
+}
+
+const { posts, limit = 6 } = Astro.props;
+const slides = posts.slice(0, limit);
+---
+
+<section class="c-wrap" data-carousel title="Artículos recientes">
+  <header class="c-head">
+    <div>
+      <h2>Lo más reciente</h2>
+      <p class="c-sub">Desliza para explorar los últimos artículos</p>
+    </div>
+    <div class="c-nav">
+      <button type="button" class="c-btn" data-carousel-prev aria-label="Artículos anteriores">‹</button>
+      <button type="button" class="c-btn" data-carousel-next aria-label="Artículos siguientes">›</button>
+    </div>
+  </header>
+
+  <ul class="c-track" data-carousel-track>
+    {
+      slides.map((post, i) => {
+        const cat = post.data.categories?.[0] ?? 'sin-categoria';
+        return (
+          <li class="c-slide">
+            <a class="c-card" href={`/blog/${post.slug}/`}>
+              {post.data.heroImage ? (
+                <Image
+                  class="c-cover"
+                  src={post.data.heroImage}
+                  alt={`Portada de: ${post.data.title}`}
+                  width={560}
+                  loading={i === 0 ? 'eager' : 'lazy'}
+                />
+              ) : (
+                <div class="c-cover c-cover-alt" style={`--cat:${catColor(cat)}`}>
+                  <span>{catName(cat)}</span>
+                </div>
+              )}
+              <div class="c-body">
+                <div class="c-chips">
+                  {post.data.categories.map((c) => (
+                    <span class="c-tag" style={`--cat:${catColor(c)}`}>{catName(c)}</span>
+                  ))}
+                </div>
+                <h3>{post.data.title}</h3>
+                <span class="c-meta">
+                  {fmtDate(post.data.pubDate)} · {readingTime(post.body)} min
+                </span>
+              </div>
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
+
+  <div class="c-dots" data-carousel-dots></div>
+</section>
+
+<script>
+  function setupCarousel(root: HTMLElement) {
+    if (root.dataset.ready === '1') return;
+    root.dataset.ready = '1';
+
+    const track = root.querySelector<HTMLElement>('[data-carousel-track]');
+    const prev = root.querySelector<HTMLButtonElement>('[data-carousel-prev]');
+    const next = root.querySelector<HTMLButtonElement>('[data-carousel-next]');
+    const dotBox = root.querySelector<HTMLElement>('[data-carousel-dots]');
+    if (!track || !prev || !next || !dotBox) return;
+
+    const slides = Array.from(track.children) as HTMLElement[];
+    if (slides.length < 2) return;
+
+    const step = () => slides[0].getBoundingClientRect().width + 20;
+
+    prev.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
+    next.addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
+
+    slides.forEach((slide, i) => {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'c-dot';
+      dot.setAttribute('aria-label', `Ir al artículo ${i + 1}`);
+      dot.addEventListener('click', () =>
+        slide.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' })
+      );
+      dotBox.appendChild(dot);
+    });
+
+    const dots = Array.from(dotBox.children) as HTMLButtonElement[];
+
+    const update = () => {
+      const center = track.scrollLeft + track.clientWidth / 2;
+      let active = 0;
+      let best = Infinity;
+      slides.forEach((slide, i) => {
+        const mid = slide.offsetLeft + slide.offsetWidth / 2;
+        const dist = Math.abs(mid - center);
+        if (dist < best) {
+          best = dist;
+          active = i;
+        }
+      });
+      dots.forEach((dot, i) => dot.classList.toggle('on', i === active));
+
+      const max = track.scrollWidth - track.clientWidth - 2;
+      root.classList.toggle('c-single', max <= 0);
+      prev.disabled = track.scrollLeft <= 2;
+      next.disabled = track.scrollLeft >= max;
+    };
+
+    track.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  }
+
+  function initCarousels() {
+    document.querySelectorAll<HTMLElement>('[data-carousel]').forEach(setupCarousel);
+  }
+
+  document.addEventListener('astro:page-load', initCarousels);
+  if (document.readyState === 'complete') initCarousels();
+</script>
+
+<style>
+  .c-wrap {
+    margin-top: 2.5rem;
+  }
+  .c-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .c-head h2 {
+    font-size: 1.35rem;
+  }
+  .c-sub {
+    color: var(--muted);
+    font-size: .85rem;
+    margin-top: .15rem;
+  }
+  .c-nav {
+    display: flex;
+    gap: .5rem;
+    flex: 0 0 auto;
+  }
+  .c-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--card);
+    border: 1px solid #504945;
+    color: var(--text);
+    font-size: 1.3rem;
+    line-height: 1;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: border-color .2s, color .2s, opacity .2s;
+  }
+  .c-btn:hover:not(:disabled) {
+    border-color: var(--indigo);
+    color: #fbf1c7;
+  }
+  .c-btn:disabled {
+    opacity: .3;
+    cursor: default;
+  }
+  .c-track {
+    list-style: none;
+    display: flex;
+    gap: 1.25rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: .25rem;
+    padding: .25rem .25rem 1rem;
+    margin: 0;
+    scrollbar-width: none;
+  }
+  .c-track::-webkit-scrollbar {
+    display: none;
+  }
+  .c-slide {
+    flex: 0 0 min(300px, 76vw);
+    scroll-snap-align: start;
+    display: flex;
+  }
+  .c-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: var(--card);
+    border: 1px solid #504945;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform .2s, border-color .2s;
+  }
+  .c-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--indigo);
+  }
+  .c-cover {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #504945;
+  }
+  .c-cover-alt {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--cat) 48%, transparent),
+      color-mix(in srgb, var(--cat) 12%, transparent)
+    );
+    color: #fbf1c7;
+    font-weight: 600;
+    font-size: .9rem;
+    letter-spacing: .02em;
+  }
+  .c-body {
+    padding: .95rem 1.1rem 1.15rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    flex: 1;
+  }
+  .c-chips {
+    display: flex;
+    gap: .35rem;
+    flex-wrap: wrap;
+  }
+  .c-tag {
+    --cat: #d3869b;
+    display: inline-block;
+    background: color-mix(in srgb, var(--cat) 20%, transparent);
+    border: 1px solid color-mix(in srgb, var(--cat) 40%, transparent);
+    color: color-mix(in srgb, var(--cat) 72%, #fbf1c7);
+    font-weight: 600;
+    font-size: .72rem;
+    padding: .16rem .6rem;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  .c-body h3 {
+    font-size: 1.02rem;
+    line-height: 1.32;
+    color: var(--text);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .c-card:hover h3 {
+    color: #d3869b;
+  }
+  .c-meta {
+    color: var(--muted);
+    font-size: .78rem;
+    margin-top: auto;
+    padding-top: .3rem;
+  }
+  .c-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .4rem;
+    margin-top: .9rem;
+    min-height: 8px;
+  }
+  .c-dot {
+    width: 7px;
+    height: 7px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: #504945;
+    cursor: pointer;
+    transition: background .2s, width .2s;
+  }
+  .c-dot:hover {
+    background: var(--muted);
+  }
+  .c-dot.on {
+    background: #d3869b;
+    width: 20px;
+    border-radius: 4px;
+  }
+  .c-single .c-nav,
+  .c-single .c-dots {
+    display: none;
+  }
+  @media (max-width: 720px) {
+    .c-head {
+      align-items: flex-start;
+    }
+    .c-nav {
+      display: none;
+    }
+    .c-slide {
+      flex-basis: min(262px, 80vw);
+    }
+  }
+</style>
