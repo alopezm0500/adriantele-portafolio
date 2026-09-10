@@ -36,7 +36,7 @@ const slides = posts.slice(0, limit);
                   class="c-cover"
                   src={post.data.heroImage}
                   alt={`Portada de: ${post.data.title}`}
-                  width={560}
+                  width={220}
                   loading={i === 0 ? 'eager' : 'lazy'}
                 />
               ) : (
@@ -45,11 +45,7 @@ const slides = posts.slice(0, limit);
                 </div>
               )}
               <div class="c-body">
-                <div class="c-chips">
-                  {post.data.categories.map((c) => (
-                    <span class="c-tag" style={`--cat:${catColor(c)}`}>{catName(c)}</span>
-                  ))}
-                </div>
+                <span class="c-tag" style={`--cat:${catColor(cat)}`}>{catName(cat)}</span>
                 <h3>{post.data.title}</h3>
                 <span class="c-meta">
                   {fmtDate(post.data.pubDate)} · {readingTime(post.body)} min
@@ -132,22 +128,22 @@ const slides = posts.slice(0, limit);
 
 <style>
   .c-wrap {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
   }
   .c-head {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: .7rem;
   }
   .c-head h2 {
-    font-size: 1.35rem;
+    font-size: 1.12rem;
   }
   .c-sub {
     color: var(--muted);
-    font-size: .85rem;
-    margin-top: .15rem;
+    font-size: .78rem;
+    margin-top: .1rem;
   }
   .c-nav {
     display: flex;
@@ -155,13 +151,13 @@ const slides = posts.slice(0, limit);
     flex: 0 0 auto;
   }
   .c-btn {
-    width: 38px;
-    height: 38px;
+    width: 29px;
+    height: 29px;
     border-radius: 50%;
     background: var(--card);
     border: 1px solid #504945;
     color: var(--text);
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 1;
     cursor: pointer;
     display: grid;
@@ -179,11 +175,11 @@ const slides = posts.slice(0, limit);
   .c-track {
     list-style: none;
     display: flex;
-    gap: 1.25rem;
+    gap: .85rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-padding-left: .25rem;
-    padding: .25rem .25rem 1rem;
+    padding: .25rem .25rem .5rem;
     margin: 0;
     scrollbar-width: none;
   }
@@ -191,13 +187,12 @@ const slides = posts.slice(0, limit);
     display: none;
   }
   .c-slide {
-    flex: 0 0 min(300px, 76vw);
+    flex: 0 0 min(258px, 72vw);
     scroll-snap-align: start;
     display: flex;
   }
   .c-card {
     display: flex;
-    flex-direction: column;
     width: 100%;
     background: var(--card);
     border: 1px solid #504945;
@@ -207,15 +202,17 @@ const slides = posts.slice(0, limit);
     transition: transform .2s, border-color .2s;
   }
   .c-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-2px);
     border-color: var(--indigo);
   }
   .c-cover {
-    width: 100%;
-    aspect-ratio: 16 / 9;
+    width: 84px;
+    flex: 0 0 84px;
+    align-self: stretch;
+    min-height: 84px;
     object-fit: cover;
     display: block;
-    border-bottom: 1px solid #504945;
+    border-right: 1px solid #504945;
   }
   .c-cover-alt {
     display: grid;
@@ -227,20 +224,19 @@ const slides = posts.slice(0, limit);
     );
     color: #fbf1c7;
     font-weight: 600;
-    font-size: .9rem;
+    font-size: .62rem;
     letter-spacing: .02em;
+    text-align: center;
+    padding: 0 4px;
   }
   .c-body {
-    padding: .95rem 1.1rem 1.15rem;
+    padding: .6rem .75rem;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    justify-content: center;
+    gap: .3rem;
     flex: 1;
-  }
-  .c-chips {
-    display: flex;
-    gap: .35rem;
-    flex-wrap: wrap;
+    min-width: 0;
   }
   .c-tag {
     --cat: #d3869b;
@@ -249,17 +245,21 @@ const slides = posts.slice(0, limit);
     border: 1px solid color-mix(in srgb, var(--cat) 40%, transparent);
     color: color-mix(in srgb, var(--cat) 72%, #fbf1c7);
     font-weight: 600;
-    font-size: .72rem;
-    padding: .16rem .6rem;
+    font-size: .6rem;
+    padding: .1rem .45rem;
     border-radius: 20px;
     white-space: nowrap;
+    align-self: flex-start;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .c-body h3 {
-    font-size: 1.02rem;
-    line-height: 1.32;
+    font-size: .86rem;
+    line-height: 1.28;
     color: var(--text);
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
@@ -268,16 +268,19 @@ const slides = posts.slice(0, limit);
   }
   .c-meta {
     color: var(--muted);
-    font-size: .78rem;
+    font-size: .68rem;
     margin-top: auto;
-    padding-top: .3rem;
+    padding-top: .2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .c-dots {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: .4rem;
-    margin-top: .9rem;
+    margin-top: .45rem;
     min-height: 8px;
   }
   .c-dot {
@@ -310,7 +313,7 @@ const slides = posts.slice(0, limit);
       display: none;
     }
     .c-slide {
-      flex-basis: min(262px, 80vw);
+      flex-basis: min(232px, 78vw);
     }
   }
 </style>
