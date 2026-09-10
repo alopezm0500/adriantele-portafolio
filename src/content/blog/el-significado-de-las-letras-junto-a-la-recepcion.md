@@ -2,7 +2,7 @@
 title: "El significado de las letras junto a la recepción"
 pubDate: "2018-11-30"
 description: "Todo aquel que ha tenido un teléfono celular (conocido como “celular”) y sea un poco observador, habrá notado que en la parte superior de su celular regularmente junto al indicador de la señal de rece"
-categories: [por-si-no-sabias]
+categories: [sociedad-y-telecom]
 ---
 
 ![](https://adrianlopeztech.wordpress.com/wp-content/uploads/2018/11/img_20181130_124857.png)

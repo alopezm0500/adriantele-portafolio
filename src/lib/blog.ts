@@ -1,6 +1,5 @@
 export const CATEGORIES: Record<string, string> = {
   'techco-e-ia': 'Techco e IA',
-  'por-si-no-sabias': 'Por si no sabías',
   'sociedad-y-telecom': 'Sociedad y Telecom',
   technical: 'Technical',
   portafolio: 'Portafolio',
@@ -20,7 +19,6 @@ export const CAT_COLORS: Record<string, string> = {
   'tech-humano': '#fe8019',
   'tech-abierto': '#b8bb26',
   'techco-e-ia': '#83a598',
-  'por-si-no-sabias': '#8ec07c',
   'sociedad-y-telecom': '#689d6a',
   technical: '#b16286',
   portafolio: '#d3869b',

@@ -2,7 +2,7 @@
 title: "La evolución y virtualización en las Telecom"
 pubDate: "2020-09-11"
 description: "Hace años, cuando aun estudiaba la ingeniería, recuerdo que tuvimos una platica con un profesor que expreso una opinión acerca del futuro de los equipos de Telecomunicaciones; la conclusión a la que l"
-categories: [por-si-no-sabias, technical]
+categories: [technical, sociedad-y-telecom]
 ---
 
 Hace años, cuando aun estudiaba la ingeniería, recuerdo que tuvimos una platica con un profesor que expreso una opinión acerca del futuro de los equipos de Telecomunicaciones; la conclusión a la que llegamos es que en el futuro el hardware de los equipos de diferentes compañías serian similares o iguales, básicamente un equipo de computo genérico con gran capacidad y las compañías se dedicarían a diseñar el software y proporcionar soporte a las plataformas. Aquellos pensamientos parecieron ser ciertas en la forma de la Virtualización de las Telecomunicaciones.

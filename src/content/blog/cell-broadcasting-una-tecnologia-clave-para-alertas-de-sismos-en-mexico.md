@@ -2,7 +2,7 @@
 title: "Cell Broadcasting: Una Tecnologia Clave para Alertas de Sismos en Mexico"
 pubDate: "2025-09-19"
 description: "¿Como funciona el Cell Broadcasting?El CB utiliza las torres de telecomunicaciones para transmitir mensajes a todos los dispositivos moviles compatibles dentro de su alcance. Esto significa que cualqu"
-categories: [por-si-no-sabias, technical]
+categories: [technical, sociedad-y-telecom]
 heroImage: "../../assets/blog/cell-broadcasting-una-tecnologia-clave-para-alertas-de-sismos-en-mexico.png"
 ---
 

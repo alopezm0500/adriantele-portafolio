@@ -2,7 +2,7 @@
 title: "¿Por qué deberías comenzar a pensar profesionalmente?"
 pubDate: "2019-10-07"
 description: "Yo lo se, yo lo viví, como la gran mayoría de profesionistas provenientes de universidades publicas… Afortunadamente tuviste la oportunidad de que tu familia te apoyase a estudiar, has asistido a comp"
-categories: [por-si-no-sabias]
+categories: [sociedad-y-telecom]
 heroImage: "../../assets/blog/pensar-profesionalmente.jpg"
 ---
 

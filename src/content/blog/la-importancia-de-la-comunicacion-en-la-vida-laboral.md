@@ -2,7 +2,7 @@
 title: "La importancia de la comunicación en la vida laboral"
 pubDate: "2019-05-23"
 description: "Uno de los aspectos más importantes que definen a un profesional (no solo ingenieros) es una de las soft-skills de las que menos se habla en la universidad: La comunicación. Me hubiese encantado que a"
-categories: [por-si-no-sabias]
+categories: [sociedad-y-telecom]
 heroImage: "../../assets/blog/la-importancia-de-la-comunicacion-en-la-vida-laboral.jpg"
 ---
 

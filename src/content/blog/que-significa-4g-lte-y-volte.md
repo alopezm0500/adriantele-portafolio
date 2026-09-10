@@ -2,7 +2,7 @@
 title: "¿Qué significa 4G LTE y VoLTE?"
 pubDate: "2019-03-05"
 description: "Hoy en día es muy común escuchar o leer sobre estas siglas, pero ¿sabemos que significan? Ciertamente nos lo venden como la tecnología de punta y en el caso de VoLTE ni siquiera nos lo han vendido com"
-categories: [por-si-no-sabias]
+categories: [sociedad-y-telecom]
 heroImage: "../../assets/blog/que-significa-4g-lte-y-volte.jpg"
 ---
 

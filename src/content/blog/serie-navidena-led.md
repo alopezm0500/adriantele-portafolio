@@ -2,7 +2,7 @@
 title: "Tres razones para comprar una serie de luces navideñas de LED"
 pubDate: "2019-11-10"
 description: "Época navideña, hermosa temporada; desde semanas previas ya estamos revisando los adornos y poniéndolos en posición. Desempolvamos las viejas esferas y el árbol de navidad que nos lleva al tema de est"
-categories: [por-si-no-sabias]
+categories: [sociedad-y-telecom]
 heroImage: "../../assets/blog/serie-navidena-led.jpg"
 ---
 

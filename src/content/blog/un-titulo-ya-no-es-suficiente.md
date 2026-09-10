@@ -2,7 +2,7 @@
 title: "Un título ya no es suficiente"
 pubDate: "2019-10-14"
 description: "Y quizás ni necesario… Revisando en internet algunas opciones laborales, reafirmo un concepto que lleva por lo menos un par de años rondando mi psique y que ciertamente es necesario que alguien te dig"
-categories: [por-si-no-sabias]
+categories: [sociedad-y-telecom]
 heroImage: "../../assets/blog/un-titulo-ya-no-es-suficiente.jpg"
 ---
 

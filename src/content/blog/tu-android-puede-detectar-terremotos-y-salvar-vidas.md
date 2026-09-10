@@ -2,7 +2,7 @@
 title: "Tu Android puede detectar terremotos y salvar vidas"
 pubDate: "2026-06-25"
 description: "Así funciona el sistema que acaba de alertar a millones de personas en Venezuela antes del sismo del 24 de junio de 2026. El 24 de junio de 2026, un terremoto de magnitud 7.2 sacudió Venezuela. Minuto"
-categories: [por-si-no-sabias, sociedad-y-telecom]
+categories: [sociedad-y-telecom]
 heroImage: "../../assets/blog/tu-android-puede-detectar-terremotos-y-salvar-vidas.png"
 ---
 

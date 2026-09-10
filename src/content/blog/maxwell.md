@@ -2,7 +2,7 @@
 title: "Maxwell, el maestro del electromagnetismo"
 pubDate: "2022-02-17"
 description: "Es interesante pensar, que cuando somos parte de una profesión y el día a día nos trae de un lado a otro, analizamos, pensamos y vivimos por ella; no nos detenemos a pensar en los orígenes de lo que n"
-categories: [por-si-no-sabias, sociedad-y-telecom]
+categories: [sociedad-y-telecom]
 heroImage: "../../assets/blog/maxwell.jpg"
 ---
 

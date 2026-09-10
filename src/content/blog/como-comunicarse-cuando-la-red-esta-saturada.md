@@ -2,7 +2,7 @@
 title: "¿Como comunicarse cuando la red esta saturada?"
 pubDate: "2019-02-18"
 description: "México, en el ombligo de la luna; México, nación de cerros y montañas, Popos e Iztatzihuatls, picos y volcanes. Nuestro país se encuentra en una de las zonas mas ricas y multifaceticas del mundo, tene"
-categories: [por-si-no-sabias, sociedad-y-telecom]
+categories: [sociedad-y-telecom]
 heroImage: "../../assets/blog/como-comunicarse-cuando-la-red-esta-saturada.jpg"
 ---
 

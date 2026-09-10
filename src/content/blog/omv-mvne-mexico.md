@@ -2,7 +2,7 @@
 title: "OMVs y sus MVNEs en México"
 pubDate: "2020-09-05"
 description: "Las MVNE (Mobile Virtual Network Enabler) son a grandes rasgos las redes físicas que proporcionan el servicio de Virtualización para las Operadoras Móviles Virtuales (OMVs). Es importante saber esto c"
-categories: [por-si-no-sabias, sociedad-y-telecom]
+categories: [sociedad-y-telecom]
 ---
 
 Las MVNE (Mobile Virtual Network Enabler) son a grandes rasgos las redes físicas que proporcionan el servicio de Virtualización para las Operadoras Móviles Virtuales (OMVs). Es importante saber esto considerando que al momento de contratar los servicios de una OMV, las características técnicas que obtendrás serán las mismas de las redes que proporcionan el servicio.

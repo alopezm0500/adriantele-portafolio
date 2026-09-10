@@ -2,7 +2,7 @@
 title: "OMVs en México, competencia y mercado"
 pubDate: "2020-09-02"
 description: "En el articulo de hoy haremos un experimento analítico respecto a las Telecomunicaciones en México, desde que se realizo la legislación para habilitar las OMVs, estas se han multiplicado y han aumenta"
-categories: [por-si-no-sabias, technical]
+categories: [technical, sociedad-y-telecom]
 ---
 
 En el articulo de hoy haremos un experimento analítico respecto a las Telecomunicaciones en México, desde que se realizo la legislación para habilitar las OMVs, estas se han multiplicado y han aumentado a la par de los usuarios que las utilizan.

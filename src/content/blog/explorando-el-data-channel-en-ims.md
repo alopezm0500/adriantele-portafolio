@@ -2,7 +2,7 @@
 title: "Explorando el “Data Channel” en IMS"
 pubDate: "2025-05-07"
 description: "Como ingeniero en telecomunicaciones, siempre estoy buscando tecnologías que puedan transformar la manera en que nos comunicamos. Una de las innovaciones más prometedoras en este campo es el “Data Cha"
-categories: [por-si-no-sabias, technical]
+categories: [technical, sociedad-y-telecom]
 heroImage: "../../assets/blog/explorando-el-data-channel-en-ims.png"
 ---
 

@@ -2,7 +2,7 @@
 title: "Emergencia, difusión de alertas tempranas"
 pubDate: "2021-08-21"
 description: "Valle de México, zona sísmica, rodeada de montañas y con actividad volcánica cercana ahora se enfrenta a nuevas emergencias como inundaciones o el motivo de este articulo la entrada de un huracán por "
-categories: [por-si-no-sabias, sociedad-y-telecom]
+categories: [sociedad-y-telecom]
 heroImage: "../../assets/blog/difusion-alertas.jpg"
 ---
 

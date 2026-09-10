@@ -2,7 +2,7 @@
 title: "Deberías tener Elevator pitch"
 pubDate: "2019-11-04"
 description: "Siendo profesionales y profesionistas nunca deberíamos tener problemas al responder a la simple pregunta: “¿A qué te dedicas?”, al contrario deberíamos tener la preparación y capacidad de dar una resp"
-categories: [por-si-no-sabias]
+categories: [sociedad-y-telecom]
 heroImage: "../../assets/blog/elevator-pitch.png"
 ---
 

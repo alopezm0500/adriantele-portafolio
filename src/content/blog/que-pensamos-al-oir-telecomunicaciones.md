@@ -2,7 +2,7 @@
 title: "Telecomunicaciones, una historia que contar"
 pubDate: "2018-12-03"
 description: "Octubre, año 1918, el mayor Whittlesey y su batallón se encuentran atrapados en medio de la batalla de Marne sin comida ni municiones; rodeados por alemanes (y aliados que no conocían su posición) en "
-categories: [por-si-no-sabias]
+categories: [sociedad-y-telecom]
 heroImage: "../../assets/blog/que-pensamos-al-oir-telecomunicaciones.jpg"
 ---
 

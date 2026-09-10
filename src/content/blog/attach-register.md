@@ -2,7 +2,7 @@
 title: "Attach y Register"
 pubDate: "2020-08-26"
 description: "Attach y Register son dos conceptos sencillos, sin embargo fundamentales en la lógica para proporcionar servicio a los celulares (terminales) sin importar la tecnología de la que estemos hablando; es "
-categories: [por-si-no-sabias, technical]
+categories: [technical, sociedad-y-telecom]
 ---
 
 Attach y Register son dos conceptos sencillos, sin embargo fundamentales en la lógica para proporcionar servicio a los celulares (terminales) sin importar la tecnología de la que estemos hablando; es necesario comprenderlos para entender como funcionan los celulares y sus redes.

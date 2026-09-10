@@ -2,7 +2,7 @@
 title: "La red Tor y los sitios .onion no son lo que crees"
 pubDate: "2026-06-27"
 description: "Más allá de la deep web y los mitos, existe una de las herramientas más poderosas para la libertad de expresión en el mundo. Seguro has escuchado hablar de la “deep web”, de los sitios .onion, de que "
-categories: [por-si-no-sabias]
+categories: [sociedad-y-telecom]
 heroImage: "../../assets/blog/la-red-tor-y-los-sitios-onion-no-son-lo-que-crees.png"
 ---
 

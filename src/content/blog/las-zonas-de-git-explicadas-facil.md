@@ -2,7 +2,7 @@
 title: "Las zonas de Git explicadas fácil"
 pubDate: "2026-07-10"
 description: "Si estás aprendiendo Git como yo, probablemente ya has usado comandos como add, commit, push o pull. Pero antes de memorizar comandos, hay algo mucho más importante: entender las zonas de Git. Git no "
-categories: [por-si-no-sabias]
+categories: [sociedad-y-telecom]
 heroImage: "../../assets/blog/las-zonas-de-git-explicadas-facil.png"
 ---
 

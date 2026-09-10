@@ -2,7 +2,7 @@
 title: "¿Qué es un Operador Móvil Virtual (OMV)?"
 pubDate: "2020-09-01"
 description: "Todos conocemos a los grandes Operadores Móviles en nuestro pais, de hecho mencionar sus nombres me parece redundante pero digamos que los tres mas grandes tienen nombres que comienzan con Telcel, AT&"
-categories: [por-si-no-sabias]
+categories: [sociedad-y-telecom]
 ---
 
 Todos conocemos a los grandes Operadores Móviles en nuestro pais, de hecho mencionar sus nombres me parece redundante pero digamos que los tres mas grandes tienen nombres que comienzan con Telcel, AT&T y Movistar; algunos con mejores propuestas que otros, mejores servicios que otros, etc. A mi parecer no significa que exista una mejor que otra, cada una tiene su por que dentro del mercado mexicano (y algunos siguen tratando de descubrir su lugar).Y dentro de esta ya reñida competencia por los usuarios se ha integrado un modelo diferente que alude a la moda de las ITs de hoy en día, la virtualización y el servicio proporcionado que en este caso se conoce como OMV (Operador Móvil Virtual).
