@@ -116,6 +116,45 @@ const slides = posts.slice(0, limit);
     track.addEventListener('scroll', update, { passive: true });
     window.addEventListener('resize', update);
     update();
+
+    // Autoplay: avanza solo, se pausa al interactuar
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let timer: number | undefined;
+
+    const stop = () => {
+      if (timer !== undefined) {
+        clearInterval(timer);
+        timer = undefined;
+      }
+    };
+
+    const tick = () => {
+      if (document.hidden) return;
+      const max = track.scrollWidth - track.clientWidth - 2;
+      if (max <= 0) {
+        stop();
+        return;
+      }
+      if (track.scrollLeft >= max - 2) {
+        track.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        track.scrollBy({ left: step(), behavior: 'smooth' });
+      }
+    };
+
+    const start = () => {
+      if (reduce) return;
+      stop();
+      timer = window.setInterval(tick, 5000);
+    };
+
+    root.addEventListener('pointerenter', stop);
+    root.addEventListener('pointerleave', start);
+    root.addEventListener('focusin', stop);
+    root.addEventListener('focusout', start);
+    root.addEventListener('touchstart', stop, { passive: true });
+    document.addEventListener('visibilitychange', () => (document.hidden ? stop() : start()));
+    start();
   }
 
   function initCarousels() {
