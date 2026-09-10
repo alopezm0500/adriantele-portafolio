@@ -102,7 +102,6 @@ const jsonLd = [
       </div>
       <a class="all" href="/blog">Ver todos →</a>
     </header>
-    <PostCarousel posts={latestPosts} limit={6} />
     <div class="secs">
       {SECTIONS.map((s) => (
         <a class="sec" href={`/blog/categoria/${s.key}`} style={`--sec: ${catColor(s.key)}`}>
@@ -120,6 +119,8 @@ const jsonLd = [
         </a>
       ))}
     </div>
+
+    <PostCarousel posts={latestPosts} limit={6} />
 
   </section>
 
