@@ -6,7 +6,6 @@ export const CATEGORIES: Record<string, string> = {
   'sin-categoria': 'Sin categoría',
   'tech-en-rojo': 'Tech en Rojo',
   'tech-humano': 'Tech Humano',
-  'tech-abierto': 'Tech Abierto',
 };
 
 export function catName(key: string): string {
@@ -17,7 +16,6 @@ export function catName(key: string): string {
 export const CAT_COLORS: Record<string, string> = {
   'tech-en-rojo': '#fb4934',
   'tech-humano': '#fe8019',
-  'tech-abierto': '#b8bb26',
   'techco-e-ia': '#83a598',
   'sociedad-y-telecom': '#689d6a',
   technical: '#b16286',

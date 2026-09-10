@@ -2,7 +2,7 @@
 title: "Las ideas del &#8220;centro por la tecnología humana&#8221;"
 pubDate: "2025-07-01"
 description: "El siguiente texto esta inspirado por los problemas clave indicados por el equipo de “Center For Human Technology” un grupo cuyos esfuerzos son parale"
-categories: [tech-abierto]
+categories: [tech-en-rojo]
 heroImage: "../../assets/blog/las-ideas-del-centro-por-la-tecnologia-humana.png"
 ---
 
