@@ -2,8 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { catName, catColor } from '../lib/blog';
+import PostCarousel from '../components/PostCarousel.astro';
 
 const posts = await getCollection('blog');
+const latestPosts = [...posts].sort(
+  (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+);
 const count = (key: string) =>
   posts.filter((p) => (p.data.categories ?? []).includes(key)).length;
 
@@ -98,6 +102,7 @@ const jsonLd = [
       </div>
       <a class="all" href="/blog">Ver todos →</a>
     </header>
+    <PostCarousel posts={latestPosts} limit={6} />
     <div class="secs">
       {SECTIONS.map((s) => (
         <a class="sec" href={`/blog/categoria/${s.key}`} style={`--sec: ${catColor(s.key)}`}>
