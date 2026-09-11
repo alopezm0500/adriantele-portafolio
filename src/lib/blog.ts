@@ -1,5 +1,5 @@
 export const CATEGORIES: Record<string, string> = {
-  'techco-e-ia': 'Techco e IA',
+  'techco-e-ia': 'Techco Sentido',
   'sociedad-y-telecom': 'Sociedad y Telecom',
   technical: 'Technical',
   portafolio: 'Portafolio',
