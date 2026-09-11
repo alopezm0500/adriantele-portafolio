@@ -105,6 +105,8 @@ const jsonLd = [
     ],
   },
 ];
+
+import LikeButton from '../../components/LikeButton.astro';
 ---
 <Layout
   title={`${post.data.title} — Tech con Sentido`}
@@ -142,6 +144,7 @@ const jsonLd = [
       </div>
 
       <footer class="post-footer">
+        <LikeButton slug={post.slug} />
         <div class="footer-row">
           <a href="/blog">← Volver al blog</a>
         </div>
