@@ -1,0 +1,4 @@
+# El anexo práctico se movió a su propia ruta dentro del libro.
+# Conserva los links privados que ya se habían compartido (/anexo).
+/anexo /aprendizaje-aumentado/anexo/ 301
+/anexo/ /aprendizaje-aumentado/anexo/ 301

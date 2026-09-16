@@ -237,7 +237,7 @@ const autor = {
           <h2 class="aa-h2">Descargas</h2>
           <p class="aa-sub">
             Sin registro y sin correo: los PDF se descargan directo. Si es tu primera vez, empieza por la muestra;
-            el anexo, todavía en preparación, se comparte por link privado a quien lo solicite.
+            el anexo práctico ya está disponible y se comparte por link privado.
           </p>
 
           <div class="aa-dl-grid">
@@ -267,11 +267,11 @@ const autor = {
             </article>
 
             <article class="aa-card aa-dl-card">
-              <p class="aa-dl-badge aa-dl-badge-alt">Próximamente · Por definir</p>
+              <p class="aa-dl-badge aa-dl-badge-alt">Disponible · link privado</p>
               <h3>El anexo práctico</h3>
               <p class="aa-dl-text">
-                El libro te explica el método; el anexo es lo que usarás mientras estudias. Está en preparación y se
-                comparte por link privado a quien lo solicite.
+                El libro te explica el método; el anexo es lo que usarás mientras estudias. Ya está disponible y se
+                comparte por link privado, sin formularios ni correo.
               </p>
               <ul class="aa-anexo-list aa-dl-list">
                 {anexo.map((a) => (
@@ -284,9 +284,30 @@ const autor = {
                   </li>
                 ))}
               </ul>
-              <span class="aa-btn aa-btn-ghost aa-btn-block aa-btn-disabled" aria-disabled="true">Próximamente (por definir)</span>
+              <a class="aa-btn aa-btn-ghost aa-btn-block" href="/aprendizaje-aumentado/anexo/">Ver el anexo práctico</a>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section class="aa-section" id="libro-completo">
+        <div class="aa-wrap">
+          <p class="aa-eyebrow">El libro completo</p>
+          <h2 class="aa-h2">Próximamente a la venta</h2>
+          <p class="aa-sub">
+            El anexo es el material de trabajo y la muestra es una pieza de arranque. El libro completo —los cuatro
+            bloques, con sus técnicas y su plan— es lo que sigue: lo estamos preparando para su venta e incluye el
+            acceso al anexo práctico.
+          </p>
+          <article class="aa-card aa-dl-card aa-card-solo">
+            <p class="aa-dl-badge aa-dl-badge-alt">Próximamente · Por definir</p>
+            <h3>El libro completo — Aprendizaje Aumentado</h3>
+            <p class="aa-dl-text">
+              La guía en la que se basa todo este material: cómo aprende un adulto, los métodos que funcionan y un
+              plan de cuatro semanas. Su compra incluye el acceso al anexo práctico.
+            </p>
+            <span class="aa-btn aa-btn-ghost aa-btn-block aa-btn-disabled" aria-disabled="true">A la venta próximamente</span>
+          </article>
         </div>
       </section>
 
@@ -578,6 +599,9 @@ const autor = {
   }
   .aa-dl-list {
     margin-bottom: 22px;
+  }
+  .aa-card-solo {
+    max-width: 640px;
   }
   .aa-dl-card .aa-btn {
     margin-top: auto;

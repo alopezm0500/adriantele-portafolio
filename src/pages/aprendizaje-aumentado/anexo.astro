@@ -1,11 +1,11 @@
 ---
 // Página privada del anexo práctico de "Aprendizaje Aumentado".
-// Ruta: /anexo — se comparte por link privado (noindex), no por buscadores ni correo.
+// Ruta: /aprendizaje-aumentado/anexo/ — se comparte por link privado (noindex), no por buscadores.
 const site = Astro.site ?? new URL('https://adriantele-portafolio.pages.dev');
-const canonical = new URL('/anexo', site);
+const canonical = new URL('/aprendizaje-aumentado/anexo/', site);
 const titulo = 'Anexo práctico — Aprendizaje Aumentado';
 const descripcion =
-  'Anexo práctico de Aprendizaje Aumentado: promptario de 20 prompts, plantillas, checklists y un plan de 4 semanas. En preparación; se comparte por link privado.';
+  'Anexo práctico de Aprendizaje Aumentado: promptario de 20 prompts, plantillas, checklists y un plan de 4 semanas. Descarga en PDF por link privado.';
 ---
 
 <!doctype html>
@@ -73,21 +73,24 @@ const descripcion =
       <section class="gb-hero">
         <div class="gb-wrap">
           <p class="gb-eyebrow">Anexo práctico · link privado</p>
-          <h1>El anexo está en preparación</h1>
+          <h1>El anexo práctico ya está disponible</h1>
           <p class="gb-lead">
             El <strong>anexo práctico</strong> reúne el promptario de 20 prompts, las plantillas de estudio
             (fichas de Feynman, repaso espaciado y mapas mentales), los checklists de sesión y un plan de 4
             semanas día por día.
           </p>
           <p class="gb-lead">
-            Todavía no está publicado: lo estamos terminando. Cuando esté listo, se compartirá por
-            <strong>link privado</strong> a quien lo solicite, sin pasar por formularios ni correo.
-          </p>
-          <p class="gb-note">
-            Si llegaste aquí por el libro, escríbele a Adrian y te avisamos en cuanto esté disponible.
+            Puedes descargarlo aquí mismo en PDF, sin formularios ni correo. Si lo prefieres, también se
+            comparte por <strong>link privado</strong> a quien lo solicite.
           </p>
           <p class="gb-cta-row">
-            <a class="gb-btn" href="/aprendizaje-aumentado">Volver a la página del libro</a>
+            <a class="gb-btn" href="/aprendizaje-aumentado/anexo-aprendizaje-aumentado.pdf" download>
+              Descargar el anexo (PDF)
+            </a>
+          </p>
+          <p class="gb-note">
+            Si prefieres que te lo comparta por link privado, escríbele a Adrian. También puedes
+            <a href="/aprendizaje-aumentado">volver a la página del libro</a>.
           </p>
         </div>
       </section>
