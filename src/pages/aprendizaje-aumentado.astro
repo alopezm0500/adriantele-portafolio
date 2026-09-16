@@ -69,6 +69,24 @@ const bloques = [
   },
 ];
 
+const versionMinima = [
+  {
+    icono: '🧭',
+    titulo: 'Los 3 movimientos',
+    texto: 'Recuperación activa, técnica Feynman y mapas mentales: lo que de verdad mueve la aguja.',
+  },
+  {
+    icono: '🤖',
+    titulo: '5 arquetipos de IA',
+    texto: 'Tutor, compañero de proyectos, espejo de progreso, arquitecto de rutas y generador de mundos.',
+  },
+  {
+    icono: '📅',
+    titulo: 'Reto de 7 días',
+    texto: 'Una acción pequeña por día, quince minutos diarios, para estudiar distinto desde esta semana.',
+  },
+];
+
 const anexo = [
   { icono: '✍️', titulo: '20 prompts listos para copiar', texto: 'Organizados por etapa: definir el objetivo, entender, practicar, evaluarte.' },
   { icono: '🗺️', titulo: 'Plantillas de estudio', texto: 'Fichas de Feynman, mazo de repaso espaciado y mapa mental en blanco.' },
@@ -147,7 +165,7 @@ const autor = {
         </a>
         <nav class="aa-bar-nav">
           <a href="#libro">El libro</a>
-          <a href="#anexo">Anexo</a>
+          <a href="#descargas">Descargas</a>
           <a href="/blog">Blog ↗</a>
         </nav>
       </div>
@@ -167,7 +185,11 @@ const autor = {
             inteligencia artificial como tutor.
           </p>
           <div class="aa-cta-row">
-            <a class="aa-btn" href="#anexo">Quiero el anexo práctico</a>
+            <a
+              class="aa-btn"
+              href="/aprendizaje-aumentado/version-minima-aprendizaje-aumentado.pdf"
+              download>Descargar la versión mínima (gratis)</a
+            >
             <a class="aa-btn aa-btn-ghost" href="#libro">Ver de qué va</a>
           </div>
           <p class="aa-note">Sin registro para leer.</p>
@@ -209,35 +231,66 @@ const autor = {
         </div>
       </section>
 
-      <section class="aa-section" id="anexo">
-        <div class="aa-wrap aa-anexo-grid">
-          <div>
-            <p class="aa-eyebrow">Material complementario</p>
-            <h2 class="aa-h2">El anexo práctico</h2>
-            <p class="aa-sub">
-              El libro te explica el método; el anexo es lo que usarás mientras estudias. Se descarga gratis y lo
-              actualizo cuando algo mejora.
-            </p>
-            <ul class="aa-anexo-list">
-              {anexo.map((a) => (
-                <li>
-                  <span class="aa-card-icon">{a.icono}</span>
-                  <div>
-                    <strong>{a.titulo}</strong>
-                    <p>{a.texto}</p>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
+      <section class="aa-section" id="descargas">
+        <div class="aa-wrap">
+          <p class="aa-eyebrow">Material gratuito</p>
+          <h2 class="aa-h2">Descargas</h2>
+          <p class="aa-sub">
+            Sin registro y sin correo: los PDF se descargan directo. Si es tu primera vez, empieza por la versión
+            mínima; el anexo es el material que usarás mientras estudias.
+          </p>
 
-          <aside class="aa-form-card">
-            <h3>Descarga el anexo</h3>
-            <p class="aa-form-sub">
-              Sin registro y sin correo: el PDF se descarga directo. Es gratis y lo actualizo cuando algo mejora.
-            </p>
-            <a class="aa-btn aa-btn-block" href="/aprendizaje-aumentado/anexo-aprendizaje-aumentado.pdf" download>Descargar el anexo (PDF)</a>
-          </aside>
+          <div class="aa-dl-grid">
+            <article class="aa-card aa-dl-card">
+              <p class="aa-dl-badge">Empieza aquí · gratis</p>
+              <h3>Versión mínima (gratis)</h3>
+              <p class="aa-dl-text">
+                Una pieza corta e independiente para empezar hoy: los tres movimientos de la guía, los cinco
+                arquetipos de IA y un reto de 7 días.
+              </p>
+              <ul class="aa-anexo-list aa-dl-list">
+                {versionMinima.map((v) => (
+                  <li>
+                    <span class="aa-card-icon">{v.icono}</span>
+                    <div>
+                      <strong>{v.titulo}</strong>
+                      <p>{v.texto}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+              <a
+                class="aa-btn aa-btn-block"
+                href="/aprendizaje-aumentado/version-minima-aprendizaje-aumentado.pdf"
+                download>Descargar la versión mínima (PDF)</a
+              >
+            </article>
+
+            <article class="aa-card aa-dl-card">
+              <p class="aa-dl-badge aa-dl-badge-alt">Material de trabajo</p>
+              <h3>El anexo práctico</h3>
+              <p class="aa-dl-text">
+                El libro te explica el método; el anexo es lo que usarás mientras estudias. Gratis y lo actualizo
+                cuando algo mejora.
+              </p>
+              <ul class="aa-anexo-list aa-dl-list">
+                {anexo.map((a) => (
+                  <li>
+                    <span class="aa-card-icon">{a.icono}</span>
+                    <div>
+                      <strong>{a.titulo}</strong>
+                      <p>{a.texto}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+              <a
+                class="aa-btn aa-btn-ghost aa-btn-block"
+                href="/aprendizaje-aumentado/anexo-aprendizaje-aumentado.pdf"
+                download>Descargar el anexo (PDF)</a
+              >
+            </article>
+          </div>
         </div>
       </section>
 
@@ -484,6 +537,46 @@ const autor = {
     color: var(--aa-muted);
   }
 
+  .aa-dl-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    align-items: start;
+  }
+  .aa-dl-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .aa-dl-badge {
+    align-self: flex-start;
+    margin: 0 0 12px;
+    padding: 3px 11px;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 650;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #201b10;
+    background: linear-gradient(135deg, var(--aa-accent), var(--aa-accent-2));
+  }
+  .aa-dl-badge-alt {
+    color: var(--aa-muted);
+    background: transparent;
+    border: 1px solid var(--aa-line);
+  }
+  .aa-dl-text {
+    margin: 0 0 18px;
+    font-size: 0.92rem;
+  }
+  .aa-dl-list {
+    margin-bottom: 22px;
+  }
+  .aa-dl-card .aa-btn {
+    margin-top: auto;
+  }
+
   .aa-form-card {
     padding: 26px;
     border: 1px solid var(--aa-line);
@@ -564,6 +657,7 @@ const autor = {
   @media (max-width: 860px) {
     .aa-grid-3,
     .aa-anexo-grid,
+    .aa-dl-grid,
     .aa-autor {
       grid-template-columns: 1fr;
     }
