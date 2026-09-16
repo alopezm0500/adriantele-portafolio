@@ -24,6 +24,7 @@ export async function GET(context: APIContext) {
     { loc: '/', lastmod: newest },
     { loc: '/blog/', lastmod: newest },
     { loc: '/proyectos/' },
+    { loc: '/aprendizaje-aumentado/' },
     ...categories.map(({ loc, lastmod }) => ({ loc, lastmod })),
     ...posts.map((p) => ({ loc: `/blog/${p.slug}/`, lastmod: p.data.pubDate })),
   ];
