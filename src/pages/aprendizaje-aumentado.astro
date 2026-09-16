@@ -233,11 +233,11 @@ const autor = {
 
       <section class="aa-section" id="descargas">
         <div class="aa-wrap">
-          <p class="aa-eyebrow">Material gratuito</p>
+          <p class="aa-eyebrow">Material del libro</p>
           <h2 class="aa-h2">Descargas</h2>
           <p class="aa-sub">
-            Sin registro y sin correo: los PDF se descargan directo. Si es tu primera vez, empieza por la muestra;
-            el anexo práctico ya está disponible y se comparte por link privado.
+            La muestra es libre: se descarga directo, sin registro ni correo. El anexo (promptario y plantillas)
+            no se descarga por separado: viene incluido al comprar el libro, que estará próximamente a la venta.
           </p>
 
           <div class="aa-dl-grid">
@@ -267,11 +267,12 @@ const autor = {
             </article>
 
             <article class="aa-card aa-dl-card">
-              <p class="aa-dl-badge aa-dl-badge-alt">Disponible · link privado</p>
-              <h3>El anexo práctico</h3>
+              <p class="aa-dl-badge aa-dl-badge-alt">Incluido con el libro · próximamente</p>
+              <h3>El anexo práctico (incluido con el libro)</h3>
               <p class="aa-dl-text">
-                El libro te explica el método; el anexo es lo que usarás mientras estudias. Ya está disponible y se
-                comparte por link privado, sin formularios ni correo.
+                El libro te explica el método; el anexo es lo que usarás mientras estudias. Viene incluido al
+                comprar el libro y no se ofrece como descarga pública: se accede con la página que se indica
+                dentro del libro, una vez comprado.
               </p>
               <ul class="aa-anexo-list aa-dl-list">
                 {anexo.map((a) => (
@@ -284,7 +285,7 @@ const autor = {
                   </li>
                 ))}
               </ul>
-              <a class="aa-btn aa-btn-ghost aa-btn-block" href="/aprendizaje-aumentado/anexo/">Ver el anexo práctico</a>
+              <span class="aa-btn aa-btn-ghost aa-btn-block aa-btn-disabled" aria-disabled="true">Incluido al comprar el libro</span>
             </article>
           </div>
         </div>
