@@ -1,0 +1,587 @@
+---
+// Landing del libro "Aprendizaje Aumentado" (proyecto Tech para Mortales)
+// Página autocontenida: identidad visual propia, sin dependencias externas.
+// No usa Layout.astro a propósito, para no heredar la identidad de "Tech con Sentido".
+const site = Astro.site ?? new URL('https://adriantele-portafolio.pages.dev');
+const canonical = new URL('/aprendizaje-aumentado', site);
+const titulo = 'Aprendizaje Aumentado — Aprende cualquier cosa con IA y métodos científicos';
+const descripcion =
+  'Guía para adultos que quieren aprender de verdad: cómo aprende un adulto, los métodos que funcionan (Feynman, repaso espaciado, mapas mentales) y cómo usar la IA como tutor, no como atajo.';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Book',
+  name: 'Aprendizaje Aumentado',
+  alternateName:
+    'La guía definitiva para adultos: aprende cualquier cosa usando inteligencia artificial y métodos científicos',
+  inLanguage: 'es-MX',
+  author: { '@type': 'Person', name: 'Adrian López', url: site.origin },
+  url: canonical.href,
+  bookFormat: 'https://schema.org/EBook',
+  abstract: descripcion,
+};
+
+const problemas = [
+  {
+    icono: '🌊',
+    titulo: 'Demasiada información, poco criterio',
+    texto:
+      'Guardas 40 videos "para después" y no vuelves a abrir ninguno. El problema no es acceso: es no saber qué vale la pena aprender y en qué orden.',
+  },
+  {
+    icono: '🏃',
+    titulo: 'Cursos que se abandonan',
+    texto:
+      'Terminas el 12% de lo que empiezas. No es falta de disciplina: nadie te enseñó cómo aprende de verdad un adulto con trabajo, familia y poco tiempo.',
+  },
+  {
+    icono: '🤖',
+    titulo: 'La IA como atajo que te apaga',
+    texto:
+      'Pedirle la respuesta a un chatbot se siente como aprender, pero no deja nada. La IA no sustituye el esfuerzo: lo reorganiza.',
+  },
+];
+
+const bloques = [
+  {
+    numero: '01',
+    titulo: 'Cómo aprende un adulto',
+    texto:
+      'Andragogía sin humo: por qué aprendes distinto a los 39 que a los 15, y qué implica eso en tu manera de estudiar (horizontalidad, participación, flexibilidad).',
+  },
+  {
+    numero: '02',
+    titulo: 'Los métodos que sí funcionan',
+    texto:
+      'Feynman, repaso espaciado y mapas mentales, explicados con la evidencia detrás y sin promesas mágicas. Cada método viene con su técnica, su uso con IA y su ejercicio.',
+  },
+  {
+    numero: '03',
+    titulo: 'La IA como tutor, no como oráculo',
+    texto:
+      'Los cinco arquetipos para trabajar con IA: tutor, compañero de proyectos, espejo de progreso, arquitecto de rutas y generador de mundos.',
+  },
+  {
+    numero: '04',
+    titulo: 'Un plan que cabe en tu semana',
+    texto:
+      'De la teoría a la práctica: cómo elegir qué aprender, armar un plan de cuatro semanas y medir si de verdad estás avanzando.',
+  },
+];
+
+const anexo = [
+  { icono: '✍️', titulo: '20 prompts listos para copiar', texto: 'Organizados por etapa: definir el objetivo, entender, practicar, evaluarte.' },
+  { icono: '🗺️', titulo: 'Plantillas de estudio', texto: 'Fichas de Feynman, mazo de repaso espaciado y mapa mental en blanco.' },
+  { icono: '✅', titulo: 'Checklists', texto: 'Antes de empezar, al cerrar cada sesión y al terminar el tema.' },
+  { icono: '📅', titulo: 'Plan de 4 semanas', texto: 'La secuencia completa, día por día, para el primer tema que elijas.' },
+];
+
+const autor = {
+  nombre: 'Adrian López',
+  rol: 'Ingeniero en Telecomunicaciones, docente y divulgador',
+  bio: 'Trabajo en operaciones de Core de voz en una operadora, fui profesor de preparatoria técnica y he capacitado a ingenieros. Pasé años estudiando con las mismas técnicas que enseño: método antes que motivación.',
+};
+---
+
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{titulo}</title>
+    <meta name="description" content={descripcion} />
+    <link rel="canonical" href={canonical.href} />
+    <meta property="og:type" content="book" />
+    <meta property="og:title" content={titulo} />
+    <meta property="og:description" content={descripcion} />
+    <meta property="og:url" content={canonical.href} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={titulo} />
+    <meta name="twitter:description" content={descripcion} />
+    <link rel="sitemap" href="/sitemap.xml" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <style is:global>
+      :root {
+        --aa-bg: #17150f;
+        --aa-bg-2: #201d15;
+        --aa-panel: #262218;
+        --aa-line: #3a3427;
+        --aa-text: #f2ead9;
+        --aa-muted: #b9ae95;
+        --aa-accent: #e8a33d;
+        --aa-accent-2: #d97b4a;
+        --aa-max: 1080px;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--aa-bg);
+        color: var(--aa-text);
+        font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+      .aa-wrap {
+        width: 100%;
+        max-width: var(--aa-max);
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      a {
+        color: inherit;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="aa-bar">
+      <div class="aa-wrap aa-bar-in">
+        <a class="aa-brand" href="/aprendizaje-aumentado">
+          <span class="aa-brand-dot"></span> Aprendizaje Aumentado
+        </a>
+        <nav class="aa-bar-nav">
+          <a href="#libro">El libro</a>
+          <a href="#anexo">Anexo</a>
+          <a href="/blog">Blog ↗</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="aa-hero">
+        <div class="aa-wrap">
+          <p class="aa-eyebrow">Guía para adultos · Tech para Mortales</p>
+          <h1>
+            Aprende cualquier cosa<br />
+            <span class="aa-hl">sin empezar de cero cada lunes</span>
+          </h1>
+          <p class="aa-lead">
+            <strong>Aprendizaje Aumentado</strong> es la guía para adultos que ya trabajan, ya tienen poco tiempo y
+            están hartos de acumular cursos que nunca terminan. Métodos científicos de estudio, aplicados con
+            inteligencia artificial como tutor.
+          </p>
+          <div class="aa-cta-row">
+            <a class="aa-btn" href="#anexo">Quiero el anexo práctico</a>
+            <a class="aa-btn aa-btn-ghost" href="#libro">Ver de qué va</a>
+          </div>
+          <p class="aa-note">Sin registro para leer. El anexo descargable llega por correo.</p>
+        </div>
+      </section>
+
+      <section class="aa-section" id="problema">
+        <div class="aa-wrap">
+          <h2 class="aa-h2">Si algo de esto te suena, el libro es para ti</h2>
+          <div class="aa-grid aa-grid-3">
+            {problemas.map((p) => (
+              <article class="aa-card">
+                <span class="aa-card-icon">{p.icono}</span>
+                <h3>{p.titulo}</h3>
+                <p>{p.texto}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="aa-section aa-section-alt" id="libro">
+        <div class="aa-wrap">
+          <h2 class="aa-h2">Qué vas a encontrar</h2>
+          <p class="aa-sub">
+            Cuatro bloques, una idea por bloque. Nada de teoría que no puedas usar el lunes.
+          </p>
+          <ol class="aa-steps">
+            {bloques.map((b) => (
+              <li class="aa-step">
+                <span class="aa-step-num">{b.numero}</span>
+                <div>
+                  <h3>{b.titulo}</h3>
+                  <p>{b.texto}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section class="aa-section" id="anexo">
+        <div class="aa-wrap aa-anexo-grid">
+          <div>
+            <p class="aa-eyebrow">Material complementario</p>
+            <h2 class="aa-h2">El anexo práctico</h2>
+            <p class="aa-sub">
+              El libro te explica el método; el anexo es lo que usarás mientras estudias. Se descarga gratis y lo
+              actualizo cuando algo mejora.
+            </p>
+            <ul class="aa-anexo-list">
+              {anexo.map((a) => (
+                <li>
+                  <span class="aa-card-icon">{a.icono}</span>
+                  <div>
+                    <strong>{a.titulo}</strong>
+                    <p>{a.texto}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <aside class="aa-form-card">
+            <h3>Te lo mando por correo</h3>
+            <p class="aa-form-sub">
+              Déjame tu correo y te llega el enlace de descarga. Nada de spam: solo el anexo y lo que publique del
+              libro.
+            </p>
+            <!--
+              TODO(Adrian): conectar la captura. Opciones: Beehiiv/MailerLite (gratis) o
+              un endpoint propio. Mientras tanto el formulario no envía nada.
+            -->
+            <form class="aa-form" method="post" action="#" data-pending="true">
+              <label for="aa-email">Tu correo</label>
+              <input id="aa-email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required />
+              <button class="aa-btn aa-btn-block" type="submit">Enviarme el anexo</button>
+            </form>
+            <p class="aa-form-foot">Descarga pendiente de publicación. Si quieres el anexo antes, respóndeme por <a href="/blog">el blog</a>.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="aa-section aa-section-alt" id="autor">
+        <div class="aa-wrap aa-autor">
+          <div>
+            <p class="aa-eyebrow">Quién lo escribe</p>
+            <h2 class="aa-h2">{autor.nombre}</h2>
+            <p class="aa-sub">{autor.rol}</p>
+            <p>{autor.bio}</p>
+            <p class="aa-note">Escribo de tecnología y sociedad en <a href="/blog">Tech con Sentido</a>.</p>
+          </div>
+          <blockquote class="aa-quote">
+            “Aprender de adulto no es echarle más ganas. Es dejar de estudiar como te enseñaron a los quince.”
+          </blockquote>
+        </div>
+      </section>
+    </main>
+
+    <footer class="aa-foot">
+      <div class="aa-wrap aa-foot-in">
+        <p>© {new Date().getFullYear()} Adrian López · Aprendizaje Aumentado</p>
+        <p><a href="/blog">Tech con Sentido</a> · <a href="/proyectos">Proyectos</a> · <a href="/aprendizaje-aumentado">Esta página</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .aa-bar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: color-mix(in srgb, var(--aa-bg) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--aa-line);
+  }
+  .aa-bar-in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    min-height: 62px;
+  }
+  .aa-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-weight: 650;
+    text-decoration: none;
+    letter-spacing: -0.01em;
+  }
+  .aa-brand-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--aa-accent), var(--aa-accent-2));
+  }
+  .aa-bar-nav {
+    display: flex;
+    gap: 18px;
+    font-size: 0.9rem;
+  }
+  .aa-bar-nav a {
+    text-decoration: none;
+    color: var(--aa-muted);
+  }
+  .aa-bar-nav a:hover {
+    color: var(--aa-text);
+  }
+
+  .aa-hero {
+    padding: 84px 0 64px;
+    background:
+      radial-gradient(900px 320px at 12% -10%, rgba(232, 163, 61, 0.16), transparent 70%),
+      radial-gradient(700px 300px at 92% 0%, rgba(217, 123, 74, 0.12), transparent 70%);
+  }
+  .aa-eyebrow {
+    margin: 0 0 14px;
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--aa-accent);
+  }
+  h1 {
+    margin: 0 0 22px;
+    font-size: clamp(2rem, 5.2vw, 3.4rem);
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    font-weight: 700;
+  }
+  .aa-hl {
+    color: var(--aa-muted);
+    font-weight: 500;
+  }
+  .aa-lead {
+    max-width: 64ch;
+    font-size: 1.06rem;
+    color: #ded4bf;
+  }
+  .aa-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 30px 0 14px;
+  }
+  .aa-btn {
+    display: inline-block;
+    padding: 13px 22px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--aa-accent), var(--aa-accent-2));
+    color: #201b10;
+    font-weight: 650;
+    font-size: 0.95rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, filter 0.15s ease;
+  }
+  .aa-btn:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+  }
+  .aa-btn-ghost {
+    background: transparent;
+    border-color: var(--aa-line);
+    color: var(--aa-text);
+  }
+  .aa-btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .aa-note {
+    font-size: 0.86rem;
+    color: var(--aa-muted);
+  }
+
+  .aa-section {
+    padding: 66px 0;
+    border-top: 1px solid var(--aa-line);
+  }
+  .aa-section-alt {
+    background: var(--aa-bg-2);
+  }
+  .aa-h2 {
+    margin: 0 0 10px;
+    font-size: clamp(1.35rem, 2.6vw, 1.85rem);
+    letter-spacing: -0.02em;
+  }
+  .aa-sub {
+    max-width: 62ch;
+    color: var(--aa-muted);
+    margin: 0 0 28px;
+  }
+
+  .aa-grid {
+    display: grid;
+    gap: 18px;
+  }
+  .aa-grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .aa-card {
+    padding: 22px;
+    border: 1px solid var(--aa-line);
+    border-radius: 14px;
+    background: var(--aa-panel);
+  }
+  .aa-card-icon {
+    font-size: 1.35rem;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .aa-card h3 {
+    margin: 0 0 8px;
+    font-size: 1.03rem;
+  }
+  .aa-card p {
+    margin: 0;
+    font-size: 0.93rem;
+    color: var(--aa-muted);
+  }
+
+  .aa-steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 16px;
+  }
+  .aa-step {
+    display: grid;
+    grid-template-columns: 58px 1fr;
+    gap: 18px;
+    padding: 22px;
+    border: 1px solid var(--aa-line);
+    border-radius: 14px;
+    background: var(--aa-panel);
+  }
+  .aa-step-num {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--aa-accent);
+  }
+  .aa-step h3 {
+    margin: 0 0 6px;
+    font-size: 1.05rem;
+  }
+  .aa-step p {
+    margin: 0;
+    font-size: 0.94rem;
+    color: var(--aa-muted);
+  }
+
+  .aa-anexo-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 0.95fr;
+    gap: 40px;
+    align-items: start;
+  }
+  .aa-anexo-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 14px;
+  }
+  .aa-anexo-list li {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    gap: 12px;
+    align-items: start;
+    padding-bottom: 14px;
+    border-bottom: 1px dashed var(--aa-line);
+  }
+  .aa-anexo-list li:last-child {
+    border-bottom: 0;
+  }
+  .aa-anexo-list p {
+    margin: 3px 0 0;
+    font-size: 0.9rem;
+    color: var(--aa-muted);
+  }
+
+  .aa-form-card {
+    padding: 26px;
+    border: 1px solid var(--aa-line);
+    border-radius: 16px;
+    background: var(--aa-panel);
+    box-shadow: 0 22px 50px rgba(0, 0, 0, 0.28);
+  }
+  .aa-form-card h3 {
+    margin: 0 0 6px;
+    font-size: 1.1rem;
+  }
+  .aa-form-sub {
+    margin: 0 0 18px;
+    font-size: 0.9rem;
+    color: var(--aa-muted);
+  }
+  .aa-form label {
+    display: block;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--aa-muted);
+    margin-bottom: 7px;
+  }
+  .aa-form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    border: 1px solid var(--aa-line);
+    border-radius: 10px;
+    background: #14120d;
+    color: var(--aa-text);
+    font-size: 0.95rem;
+  }
+  .aa-form input:focus {
+    outline: 2px solid var(--aa-accent);
+    outline-offset: 1px;
+  }
+  .aa-form-foot {
+    margin: 12px 0 0;
+    font-size: 0.8rem;
+    color: var(--aa-muted);
+  }
+
+  .aa-autor {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 34px;
+    align-items: center;
+  }
+  .aa-quote {
+    margin: 0;
+    padding: 22px 24px;
+    border-left: 3px solid var(--aa-accent);
+    background: var(--aa-panel);
+    border-radius: 0 14px 14px 0;
+    font-size: 1.02rem;
+    color: #e6dcc7;
+  }
+
+  .aa-foot {
+    padding: 30px 0;
+    border-top: 1px solid var(--aa-line);
+    font-size: 0.86rem;
+    color: var(--aa-muted);
+  }
+  .aa-foot-in {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .aa-foot a {
+    color: var(--aa-muted);
+  }
+
+  @media (max-width: 860px) {
+    .aa-grid-3,
+    .aa-anexo-grid,
+    .aa-autor {
+      grid-template-columns: 1fr;
+    }
+    .aa-bar-nav {
+      display: none;
+    }
+    .aa-hero {
+      padding: 60px 0 48px;
+    }
+  }
+</style>
