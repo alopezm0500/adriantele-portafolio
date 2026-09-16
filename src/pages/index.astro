@@ -94,6 +94,17 @@ const jsonLd = [
     </aside>
   </section>
 
+  <section class="book-strip">
+    <a class="book-strip-card" href="/aprendizaje-aumentado">
+      <span class="book-strip-emoji" aria-hidden="true">📘</span>
+      <span class="book-strip-txt">
+        <strong>Aprendizaje Aumentado</strong>
+        <span class="book-strip-sub">Mi libro: aprende cualquier cosa usando inteligencia artificial y métodos científicos.</span>
+      </span>
+      <span class="book-strip-go">Ver el libro →</span>
+    </a>
+  </section>
+
   <section class="blog-secs">
     <header class="blog-secs-head">
       <div>
@@ -333,5 +344,55 @@ const jsonLd = [
     font-size: 0.85rem;
     font-weight: 600;
     color: var(--indigo);
+  }
+
+  .book-strip {
+    margin: 2.25rem 0 0;
+  }
+  .book-strip-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: var(--card);
+    border-left: 4px solid #d3869b;
+    border-radius: 14px;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.15s ease, filter 0.15s ease;
+  }
+  .book-strip-card:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.06);
+  }
+  .book-strip-emoji {
+    font-size: 1.6rem;
+  }
+  .book-strip-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    min-width: 0;
+  }
+  .book-strip-sub {
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+  .book-strip-go {
+    margin-left: auto;
+    color: #d3869b;
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 640px) {
+    .book-strip-card {
+      flex-wrap: wrap;
+    }
+    .book-strip-go {
+      margin-left: 0;
+    }
   }
 </style>

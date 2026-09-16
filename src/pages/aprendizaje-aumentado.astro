@@ -170,7 +170,7 @@ const autor = {
             <a class="aa-btn" href="#anexo">Quiero el anexo práctico</a>
             <a class="aa-btn aa-btn-ghost" href="#libro">Ver de qué va</a>
           </div>
-          <p class="aa-note">Sin registro para leer. El anexo descargable llega por correo.</p>
+          <p class="aa-note">Sin registro para leer.</p>
         </div>
       </section>
 
@@ -232,21 +232,11 @@ const autor = {
           </div>
 
           <aside class="aa-form-card">
-            <h3>Te lo mando por correo</h3>
+            <h3>Descarga el anexo</h3>
             <p class="aa-form-sub">
-              Déjame tu correo y te llega el enlace de descarga. Nada de spam: solo el anexo y lo que publique del
-              libro.
+              Sin registro y sin correo: el PDF se descarga directo. Es gratis y lo actualizo cuando algo mejora.
             </p>
-            <!--
-              TODO(Adrian): conectar la captura. Opciones: Beehiiv/MailerLite (gratis) o
-              un endpoint propio. Mientras tanto el formulario no envía nada.
-            -->
-            <form class="aa-form" method="post" action="#" data-pending="true">
-              <label for="aa-email">Tu correo</label>
-              <input id="aa-email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required />
-              <button class="aa-btn aa-btn-block" type="submit">Enviarme el anexo</button>
-            </form>
-            <p class="aa-form-foot">Descarga pendiente de publicación. Si quieres el anexo antes, respóndeme por <a href="/blog">el blog</a>.</p>
+            <a class="aa-btn aa-btn-block" href="/aprendizaje-aumentado/anexo-aprendizaje-aumentado.pdf" download>Descargar el anexo (PDF)</a>
           </aside>
         </div>
       </section>
