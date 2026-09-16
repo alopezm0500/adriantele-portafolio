@@ -69,7 +69,7 @@ const bloques = [
   },
 ];
 
-const versionMinima = [
+const muestra = [
   {
     icono: '🧭',
     titulo: 'Los 3 movimientos',
@@ -188,7 +188,7 @@ const autor = {
             <a
               class="aa-btn"
               href="/aprendizaje-aumentado/version-minima-aprendizaje-aumentado.pdf"
-              download>Descargar la versión mínima (gratis)</a
+              download>Descargar la muestra (gratis)</a
             >
             <a class="aa-btn aa-btn-ghost" href="#libro">Ver de qué va</a>
           </div>
@@ -236,20 +236,20 @@ const autor = {
           <p class="aa-eyebrow">Material gratuito</p>
           <h2 class="aa-h2">Descargas</h2>
           <p class="aa-sub">
-            Sin registro y sin correo: los PDF se descargan directo. Si es tu primera vez, empieza por la versión
-            mínima; el anexo es el material que usarás mientras estudias.
+            Sin registro y sin correo: los PDF se descargan directo. Si es tu primera vez, empieza por la muestra;
+            el anexo, todavía en preparación, se comparte por link privado a quien lo solicite.
           </p>
 
           <div class="aa-dl-grid">
             <article class="aa-card aa-dl-card">
               <p class="aa-dl-badge">Empieza aquí · gratis</p>
-              <h3>Versión mínima (gratis)</h3>
+              <h3>Muestra (gratis)</h3>
               <p class="aa-dl-text">
                 Una pieza corta e independiente para empezar hoy: los tres movimientos de la guía, los cinco
                 arquetipos de IA y un reto de 7 días.
               </p>
               <ul class="aa-anexo-list aa-dl-list">
-                {versionMinima.map((v) => (
+                {muestra.map((v) => (
                   <li>
                     <span class="aa-card-icon">{v.icono}</span>
                     <div>
@@ -262,16 +262,16 @@ const autor = {
               <a
                 class="aa-btn aa-btn-block"
                 href="/aprendizaje-aumentado/version-minima-aprendizaje-aumentado.pdf"
-                download>Descargar la versión mínima (PDF)</a
+                download>Descargar la muestra (PDF)</a
               >
             </article>
 
             <article class="aa-card aa-dl-card">
-              <p class="aa-dl-badge aa-dl-badge-alt">Material de trabajo</p>
+              <p class="aa-dl-badge aa-dl-badge-alt">Próximamente · Por definir</p>
               <h3>El anexo práctico</h3>
               <p class="aa-dl-text">
-                El libro te explica el método; el anexo es lo que usarás mientras estudias. Gratis y lo actualizo
-                cuando algo mejora.
+                El libro te explica el método; el anexo es lo que usarás mientras estudias. Está en preparación y se
+                comparte por link privado a quien lo solicite.
               </p>
               <ul class="aa-anexo-list aa-dl-list">
                 {anexo.map((a) => (
@@ -284,11 +284,7 @@ const autor = {
                   </li>
                 ))}
               </ul>
-              <a
-                class="aa-btn aa-btn-ghost aa-btn-block"
-                href="/aprendizaje-aumentado/anexo-aprendizaje-aumentado.pdf"
-                download>Descargar el anexo (PDF)</a
-              >
+              <span class="aa-btn aa-btn-ghost aa-btn-block aa-btn-disabled" aria-disabled="true">Próximamente (por definir)</span>
             </article>
           </div>
         </div>
@@ -423,6 +419,16 @@ const autor = {
     display: block;
     width: 100%;
     text-align: center;
+  }
+  .aa-btn-disabled {
+    cursor: default;
+    opacity: 0.72;
+    color: var(--aa-muted);
+    border-style: dashed;
+  }
+  .aa-btn-disabled:hover {
+    transform: none;
+    filter: none;
   }
   .aa-note {
     font-size: 0.86rem;

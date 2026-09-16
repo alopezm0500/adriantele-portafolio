@@ -1,0 +1,202 @@
+---
+// Página privada del anexo práctico de "Aprendizaje Aumentado".
+// Ruta: /anexo — se comparte por link privado (noindex), no por buscadores ni correo.
+const site = Astro.site ?? new URL('https://adriantele-portafolio.pages.dev');
+const canonical = new URL('/anexo', site);
+const titulo = 'Anexo práctico — Aprendizaje Aumentado';
+const descripcion =
+  'Anexo práctico de Aprendizaje Aumentado: promptario de 20 prompts, plantillas, checklists y un plan de 4 semanas. En preparación; se comparte por link privado.';
+---
+
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{titulo}</title>
+    <meta name="description" content={descripcion} />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="canonical" href={canonical.href} />
+    <meta name="theme-color" content="#282828" />
+    <style is:global>
+      :root {
+        --gb-bg: #282828;
+        --gb-bg-soft: #32302f;
+        --gb-card: #3c3836;
+        --gb-line: #504945;
+        --gb-text: #ebdbb2;
+        --gb-muted: #a89984;
+        --gb-accent: #83a598;
+        --gb-accent-2: #d79921;
+        --gb-max: 860px;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--gb-bg);
+        color: var(--gb-text);
+        font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+      .gb-wrap {
+        width: 100%;
+        max-width: var(--gb-max);
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      a {
+        color: var(--gb-accent);
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="gb-bar">
+      <div class="gb-wrap gb-bar-in">
+        <a class="gb-brand" href="/aprendizaje-aumentado">
+          <span class="gb-brand-dot"></span> Aprendizaje Aumentado
+        </a>
+        <nav class="gb-bar-nav">
+          <a href="/aprendizaje-aumentado">← Volver al libro</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="gb-hero">
+        <div class="gb-wrap">
+          <p class="gb-eyebrow">Anexo práctico · link privado</p>
+          <h1>El anexo está en preparación</h1>
+          <p class="gb-lead">
+            El <strong>anexo práctico</strong> reúne el promptario de 20 prompts, las plantillas de estudio
+            (fichas de Feynman, repaso espaciado y mapas mentales), los checklists de sesión y un plan de 4
+            semanas día por día.
+          </p>
+          <p class="gb-lead">
+            Todavía no está publicado: lo estamos terminando. Cuando esté listo, se compartirá por
+            <strong>link privado</strong> a quien lo solicite, sin pasar por formularios ni correo.
+          </p>
+          <p class="gb-note">
+            Si llegaste aquí por el libro, escríbele a Adrian y te avisamos en cuanto esté disponible.
+          </p>
+          <p class="gb-cta-row">
+            <a class="gb-btn" href="/aprendizaje-aumentado">Volver a la página del libro</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="gb-foot">
+      <div class="gb-wrap">
+        <p>© {new Date().getFullYear()} Adrian López · Aprendizaje Aumentado</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .gb-bar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: color-mix(in srgb, var(--gb-bg) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--gb-line);
+  }
+  .gb-bar-in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    min-height: 62px;
+  }
+  .gb-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-weight: 650;
+    text-decoration: none;
+    color: var(--gb-text);
+    letter-spacing: -0.01em;
+  }
+  .gb-brand-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gb-accent), var(--gb-accent-2));
+  }
+  .gb-bar-nav a {
+    text-decoration: none;
+    color: var(--gb-muted);
+    font-size: 0.9rem;
+  }
+  .gb-bar-nav a:hover {
+    color: var(--gb-text);
+  }
+
+  .gb-hero {
+    padding: 76px 0 72px;
+    background:
+      radial-gradient(800px 300px at 12% -10%, rgba(131, 165, 152, 0.16), transparent 70%),
+      radial-gradient(700px 300px at 92% 0%, rgba(215, 153, 33, 0.12), transparent 70%);
+  }
+  .gb-eyebrow {
+    margin: 0 0 14px;
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gb-accent);
+  }
+  h1 {
+    margin: 0 0 20px;
+    font-size: clamp(1.8rem, 4.6vw, 2.8rem);
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    font-weight: 700;
+  }
+  .gb-lead {
+    max-width: 62ch;
+    font-size: 1.04rem;
+    color: #d5c4a1;
+    margin: 0 0 16px;
+  }
+  .gb-note {
+    max-width: 62ch;
+    font-size: 0.9rem;
+    color: var(--gb-muted);
+    margin: 22px 0 0;
+  }
+  .gb-cta-row {
+    margin: 26px 0 0;
+  }
+  .gb-btn {
+    display: inline-block;
+    padding: 13px 22px;
+    border: 1px solid var(--gb-line);
+    border-radius: 10px;
+    background: transparent;
+    color: var(--gb-text);
+    font-weight: 650;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+  .gb-btn:hover {
+    transform: translateY(-1px);
+    border-color: var(--gb-accent);
+  }
+
+  .gb-foot {
+    padding: 30px 0;
+    border-top: 1px solid var(--gb-line);
+    font-size: 0.86rem;
+    color: var(--gb-muted);
+  }
+</style>
