@@ -160,8 +160,8 @@ const autor = {
   <body>
     <header class="aa-bar">
       <div class="aa-wrap aa-bar-in">
-        <a class="aa-brand" href="/aprendizaje-aumentado">
-          <span class="aa-brand-dot"></span> Aprendizaje Aumentado
+        <a class="aa-brand" href="/" title="Ir al inicio de Tech con Sentido">
+          <span class="aa-brand-dot"></span> Tech con <span class="aa-brand-accent">Sentido</span>
         </a>
         <nav class="aa-bar-nav">
           <a href="#libro">El libro</a>
@@ -313,13 +313,44 @@ const autor = {
       </section>
 
       <section class="aa-section aa-section-alt" id="autor">
-        <div class="aa-wrap aa-autor">
-          <div>
-            <p class="aa-eyebrow">Quién lo escribe</p>
-            <h2 class="aa-h2">{autor.nombre}</h2>
-            <p class="aa-sub">{autor.rol}</p>
-            <p>{autor.bio}</p>
-            <p class="aa-note">Escribo de tecnología y sociedad en <a href="/blog">Tech con Sentido</a>.</p>
+        <div class="aa-wrap">
+          <div class="aa-autor">
+            <div>
+              <p class="aa-eyebrow">Quién lo escribe</p>
+              <h2 class="aa-h2">{autor.nombre}</h2>
+              <p class="aa-sub">{autor.rol}</p>
+              <p>{autor.bio}</p>
+              <p class="aa-note">Escribo de tecnología y sociedad en <a href="/blog">Tech con Sentido</a>.</p>
+            </div>
+            <aside class="aa-ik" aria-labelledby="aa-ik-title">
+              <p class="aa-ik-badge" id="aa-ik-title">Mi tarjeta Identik</p>
+              <div class="aa-ik-body">
+                <img
+                  class="aa-ik-photo"
+                  src="/identik/adrian.png"
+                  alt="Foto de perfil de Adrián en Identik"
+                  width="80"
+                  height="80"
+                />
+                <div class="aa-ik-id">
+                  <span class="aa-ik-name">Adrián López</span>
+                  <span class="aa-ik-user">@adrian_l_m · Identik</span>
+                </div>
+              </div>
+              <div class="aa-ik-foot">
+                <img
+                  class="aa-ik-qr"
+                  src="/identik/qr.png"
+                  alt="Código QR de mi tarjeta Identik"
+                  width="76"
+                  height="76"
+                />
+                <a class="aa-ik-cta" href="https://identik.lat/u/adrian_l_m" target="_blank" rel="noopener">
+                  Ver mi tarjeta
+                  <small>Pega. Toca. Conecta.</small>
+                </a>
+              </div>
+            </aside>
           </div>
           <blockquote class="aa-quote">
             “Aprender de adulto no es echarle más ganas. Es dejar de estudiar como te enseñaron a los quince.”
@@ -366,6 +397,10 @@ const autor = {
     height: 9px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--aa-accent), var(--aa-accent-2));
+  }
+  .aa-brand-accent {
+    color: var(--aa-accent);
+    font-weight: 700;
   }
   .aa-bar-nav {
     display: flex;
@@ -660,13 +695,87 @@ const autor = {
     align-items: center;
   }
   .aa-quote {
-    margin: 0;
+    margin: 30px 0 0;
     padding: 22px 24px;
     border-left: 3px solid var(--aa-accent);
     background: var(--aa-panel);
     border-radius: 0 14px 14px 0;
     font-size: 1.02rem;
     color: #e6dcc7;
+  }
+
+  .aa-ik {
+    padding: 22px;
+    border: 1px solid var(--aa-line);
+    border-radius: 16px;
+    background: var(--aa-panel);
+    box-shadow: 0 22px 50px rgba(0, 0, 0, 0.28);
+  }
+  .aa-ik-badge {
+    margin: 0 0 16px;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--aa-accent);
+  }
+  .aa-ik-body {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .aa-ik-photo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--aa-accent);
+  }
+  .aa-ik-id {
+    display: flex;
+    flex-direction: column;
+  }
+  .aa-ik-name {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .aa-ik-user {
+    font-size: 0.82rem;
+    color: var(--aa-muted);
+  }
+  .aa-ik-foot {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid var(--aa-line);
+  }
+  .aa-ik-qr {
+    box-sizing: border-box;
+    width: 76px;
+    height: 76px;
+    padding: 4px;
+    border-radius: 8px;
+    background: #fff;
+  }
+  .aa-ik-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 0.95rem;
+    font-weight: 650;
+    color: var(--aa-accent);
+    text-decoration: none;
+  }
+  .aa-ik-cta small {
+    font-size: 0.74rem;
+    font-weight: 500;
+    color: var(--aa-muted);
+  }
+  .aa-ik-cta:hover small {
+    color: var(--aa-text);
   }
 
   .aa-foot {
