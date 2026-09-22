@@ -237,7 +237,7 @@ const autor = {
           <h2 class="aa-h2">Descargas</h2>
           <p class="aa-sub">
             La muestra es libre: se descarga directo, sin registro ni correo. El anexo (promptario y plantillas)
-            no se descarga por separado: viene incluido al comprar el libro, que estará próximamente a la venta.
+            no se descarga por separado: viene incluido al comprar el libro, y la compra se acuerda por contacto directo.
           </p>
 
           <div class="aa-dl-grid">
@@ -267,7 +267,7 @@ const autor = {
             </article>
 
             <article class="aa-card aa-dl-card">
-              <p class="aa-dl-badge aa-dl-badge-alt">Incluido con el libro · próximamente</p>
+              <p class="aa-dl-badge aa-dl-badge-alt">Incluido al comprar el libro</p>
               <h3>El anexo práctico (incluido con el libro)</h3>
               <p class="aa-dl-text">
                 El libro te explica el método; el anexo es lo que usarás mientras estudias. Viene incluido al
@@ -294,20 +294,27 @@ const autor = {
       <section class="aa-section" id="libro-completo">
         <div class="aa-wrap">
           <p class="aa-eyebrow">El libro completo</p>
-          <h2 class="aa-h2">Próximamente a la venta</h2>
+          <h2 class="aa-h2">Ya disponible, con precio de introducción</h2>
           <p class="aa-sub">
             El anexo es el material de trabajo y la muestra es una pieza de arranque. El libro completo —los cuatro
-            bloques, con sus técnicas y su plan— es lo que sigue: lo estamos preparando para su venta e incluye el
-            acceso al anexo práctico.
+            bloques, con sus técnicas y su plan— incluye el acceso al anexo práctico.
           </p>
           <article class="aa-card aa-dl-card aa-card-solo">
-            <p class="aa-dl-badge aa-dl-badge-alt">Próximamente · Por definir</p>
+            <p class="aa-dl-badge aa-dl-badge-alt">Precio de introducción · $110 MXN</p>
             <h3>El libro completo — Aprendizaje Aumentado</h3>
             <p class="aa-dl-text">
               La guía en la que se basa todo este material: cómo aprende un adulto, los métodos que funcionan y un
               plan de cuatro semanas. Su compra incluye el acceso al anexo práctico.
             </p>
-            <span class="aa-btn aa-btn-ghost aa-btn-block aa-btn-disabled" aria-disabled="true">A la venta próximamente</span>
+            <p class="aa-buy-note">
+              Contáctame para acordar la compra: te paso el método de pago y los archivos (PDF y EPUB) con su anexo.
+            </p>
+            <a
+              class="aa-btn aa-btn-block"
+              href="https://identik.lat/u/adrian_l_m"
+              target="_blank"
+              rel="noopener">Contáctame en Identik</a
+            >
           </article>
         </div>
       </section>
@@ -486,6 +493,11 @@ const autor = {
   .aa-btn-disabled:hover {
     transform: none;
     filter: none;
+  }
+  .aa-buy-note {
+    margin: 0 0 18px;
+    font-size: 0.95rem;
+    color: var(--aa-muted);
   }
   .aa-note {
     font-size: 0.86rem;
