@@ -3,27 +3,35 @@ import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="Proyectos — Tech con Sentido">
   <h1>🚀 Proyectos</h1>
-  <p style="color:var(--muted);margin-top:.5rem">Mis proyectos open source y productos.</p>
+  <p style="color:var(--muted);margin-top:.5rem">Lo que estoy construyendo: productos y divulgación.</p>
   <section class="grid">
-    <div class="card">
-      <h3>🪪 Identik</h3>
-      <p>Identidad profesional NFC + QR + PWA.</p>
-      <span class="tag">identik.lat</span>
-    </div>
-    <div class="card">
-      <h3>📻 rAIdio</h3>
-      <p>Radio personalizada con IA.</p>
-      <span class="tag">IA · Audio</span>
-    </div>
-    <div class="card">
-      <h3>🐾 Xhunco</h3>
-      <p>App de salud para mascotas: expediente médico, recordatorios y conexión con tu veterinario.</p>
-      <span class="tag">Salud · Mascotas</span>
-    </div>
+    <a class="card" href="/aprendizaje-aumentado">
+      <h3>📘 Aprendizaje Aumentado</h3>
+      <p>Mi libro: aprende cualquier cosa usando inteligencia artificial y métodos científicos.</p>
+      <span class="tag">Libro</span>
+    </a>
+    <a class="card" href="/blog">
+      <h3>💬 Tech con Sentido</h3>
+      <p>Divulgación de tecnología con pensamiento crítico. Por una IA al servicio de la humanidad.</p>
+      <span class="tag">Blog · Divulgación</span>
+    </a>
     <div class="card">
       <h3>🧠 Tech para Mortales</h3>
       <p>Divulgación y consultoría de tecnología para público general. Asesoría 1:1, productos digitales y talleres.</p>
-      <span class="tag">Contenido · Consultoría</span>
+      <span class="tag" style="--cat:#a89984">Próximamente</span>
     </div>
+    <a class="card" href="https://identik.lat" target="_blank" rel="noopener">
+      <h3>🪪 Identik</h3>
+      <p>Identidad profesional NFC + QR + PWA.</p>
+      <span class="tag">identik.lat</span>
+    </a>
   </section>
 </Layout>
+
+<style>
+  .card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
