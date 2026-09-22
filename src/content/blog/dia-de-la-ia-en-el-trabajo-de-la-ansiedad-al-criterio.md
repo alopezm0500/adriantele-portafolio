@@ -30,7 +30,7 @@ Hay un matiz importante que conviene decir en voz alta: trabajo con datos reales
 
 Si la IA solo me hubiera quitado trabajo repetitivo, este artículo no tendría gracia. Lo que no esperaba fue lo que pasó del otro lado: en mi tiempo personal, el alcance.
 
-Trabajo de 9 a 6, tengo familia, y mis horas útiles para proyectos propios son dos o tres al día. Con ese presupuesto, hace un año yo no cabía en lo que hoy sostengo: una plataforma de tarjetas de presentación digitales con NFC y QR que ya está en producción y vendiendo, la aplicación de bienestar para mascotas de mi esposa (que es veterinaria), un blog de divulgación que ya va en más de ochenta artículos, dos libros en proceso y un par de ideas en validación.
+Trabajo de 9 a 6, tengo familia, y mis horas útiles para proyectos propios son dos o tres al día. Con ese presupuesto, hace un año yo no cabía en lo que hoy sostengo: un proyecto adicional, un blog de divulgación que ya va en más de ochenta artículos, dos libros en proceso y un par de ideas en validación.
 
 No lo hago solo, y quiero ser preciso en cómo lo digo porque de esto se habla mucho y se explica poco: trabajo con un asistente de IA que conoce mis proyectos, mis criterios y mi tono, y que documenta, redacta, investiga, corre números y automatiza. Yo pongo la dirección, el juicio y la responsabilidad; él pone la velocidad. Es la diferencia entre tener un equipo y tener un empleado imaginario: lo que no delego nunca es la decisión.
 
