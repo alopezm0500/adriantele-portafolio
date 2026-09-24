@@ -3,7 +3,7 @@ title: "La IA también se transporta: quién paga la red que la mueve"
 pubDate: "2026-09-17"
 description: "El Nokia Global Network Traffic Report 2026 proyecta que el tráfico entre centros de datos llegue a 3,260 exabytes mensuales en 2034 y que 67% de ese volumen viaje por redes de operadores. La IA no solo necesita chips y electricidad: necesita transporte, y el transporte tiene dueño."
 categories: [sociedad-y-telecom]
-heroImage: "../../assets/blog/la-ia-tambien-se-transporta-portada.png"
+heroImage: "../../assets/blog/la-ia-tambien-se-transporta-portada.jpg"
 ---
 
 Cuando hablo de que trabajo en Core de voz, la gente imagina antenas. Pero hay una parte del negocio que casi nunca aparece en la conversación pública y que acaba de volverse mucho más interesante: la red que mueve los datos entre un lugar y otro.
