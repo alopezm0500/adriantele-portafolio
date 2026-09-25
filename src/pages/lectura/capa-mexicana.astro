@@ -1,0 +1,156 @@
+---
+// Página temporal de lectura — carpeta "capa mexicana".
+// Ruta: /lectura/capa-mexicana/ — material de trabajo, noindex, no se enlaza desde el sitio.
+// Contenido importado tal cual desde src/data/capa-mexicana/*.md
+import Mapa from '../../data/capa-mexicana/01-mapa-contrapesos.md';
+import Capacidad from '../../data/capa-mexicana/02-capacidad-ecosistema.md';
+
+const site = Astro.site ?? new URL('https://adriantele-portafolio.pages.dev');
+const canonical = new URL('/lectura/capa-mexicana/', site);
+const titulo = 'Capa mexicana — notas de trabajo';
+const descripcion =
+  'Material de trabajo: mapa de contrapesos en privacidad y vigilancia en México, y entradas de capacidad para el ecosistema.';
+---
+
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{titulo}</title>
+    <meta name="description" content={descripcion} />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="canonical" href={canonical.href} />
+    <meta name="theme-color" content="#282828" />
+    <style is:global>
+      :root {
+        --gb-bg: #282828;
+        --gb-card: #3c3836;
+        --gb-line: #504945;
+        --gb-text: #ebdbb2;
+        --gb-muted: #a89984;
+        --gb-accent: #83a598;
+        --gb-mauve: #d3869b;
+        --gb-max: 820px;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--gb-bg);
+        color: var(--gb-text);
+        font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial,
+          sans-serif;
+        font-size: 17px;
+        line-height: 1.68;
+        -webkit-text-size-adjust: 100%;
+      }
+      main {
+        max-width: var(--gb-max);
+        margin: 0 auto;
+        padding: 28px 18px 96px;
+      }
+      .aviso {
+        border: 1px solid var(--gb-line);
+        background: var(--gb-card);
+        border-radius: 12px;
+        padding: 12px 16px;
+        color: var(--gb-muted);
+        font-size: 14.5px;
+        margin: 0 0 32px;
+      }
+      h1 {
+        font-size: clamp(1.6rem, 4.6vw, 2.1rem);
+        line-height: 1.24;
+        margin: 0 0 18px;
+      }
+      h2 {
+        font-size: clamp(1.22rem, 3.4vw, 1.5rem);
+        line-height: 1.3;
+        margin: 44px 0 12px;
+        padding-top: 20px;
+        border-top: 1px solid var(--gb-line);
+      }
+      h3 {
+        font-size: 1.06rem;
+        margin: 30px 0 10px;
+        color: var(--gb-text);
+      }
+      p {
+        margin: 0 0 15px;
+      }
+      ul,
+      ol {
+        margin: 0 0 16px;
+        padding-left: 22px;
+      }
+      li {
+        margin-bottom: 9px;
+      }
+      li > ul,
+      li > ol {
+        margin-top: 9px;
+      }
+      strong {
+        color: #fbf1c7;
+      }
+      em {
+        color: var(--gb-muted);
+      }
+      a {
+        color: var(--gb-accent);
+        text-decoration: none;
+        border-bottom: 1px solid color-mix(in srgb, var(--gb-accent) 45%, transparent);
+        word-break: break-word;
+      }
+      a:hover {
+        color: var(--gb-mauve);
+      }
+      hr {
+        border: 0;
+        border-top: 1px solid var(--gb-line);
+        margin: 36px 0;
+      }
+      blockquote {
+        margin: 0 0 16px;
+        padding: 2px 0 2px 16px;
+        border-left: 3px solid var(--gb-line);
+        color: var(--gb-muted);
+      }
+      code {
+        background: #1d2021;
+        border: 1px solid var(--gb-line);
+        border-radius: 5px;
+        padding: 1px 5px;
+        font-size: 0.9em;
+      }
+      /* separador entre los dos documentos */
+      .doc + .doc {
+        margin-top: 64px;
+        padding-top: 8px;
+        border-top: 3px double var(--gb-line);
+      }
+      .arriba {
+        display: inline-block;
+        margin-top: 40px;
+        font-size: 14.5px;
+        color: var(--gb-muted);
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="aviso">
+        Página temporal de lectura (noindex, no enlazada). Los dos documentos de abajo se muestran
+        tal cual, sin editar.
+      </p>
+      <article class="doc"><Mapa /></article>
+      <article class="doc"><Capacidad /></article>
+      <a class="arriba" href="#top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;"
+        >↑ Volver arriba</a
+      >
+    </main>
+  </body>
+</html>
