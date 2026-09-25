@@ -3,6 +3,7 @@ title: "El dinero no importará en 2036: la promesa de Musk y lo que dicen los d
 pubDate: "2026-09-14"
 description: "Elon Musk dijo en The Economist que el dinero no importará en 2036. Su argumento de abundancia tiene datos a favor y muchos más en contra: esto es lo que realmente muestra la evidencia."
 categories: [tech-humano, techco-e-ia]
+heroImage: "../../assets/blog/el-dinero-no-importara-en-2036.png"
 ---
 
 Elon Musk lo dijo sin pestañear: en 2036 el dinero no importará. No como metáfora, no como deseo. Como predicción con fecha.
