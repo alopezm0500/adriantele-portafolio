@@ -26,6 +26,8 @@ Los detalles que sí importan para el usuario:
 
 Es decir: lo que se vendió no fue una red. Fue una cartera de clientes con una marca encima.
 
+![Diagrama: la marca que factura y el operador dueño de la red son empresas distintas; en medio queda la plataforma en la nube y la cobertura satelital](../../assets/blog/el-operador-sin-red-capas.png)
+
 ## ¿Qué compró OXIO, entonces?
 
 El propio comprador lo explicó sin rodeos: planea migrar los millones de líneas a una **plataforma nativa de la nube**, sin que nadie tenga que cambiar su SIM, y que sea el software el que decida en cada momento qué red le conviene usar a esa línea. A eso le suma dos apuestas más: **conectividad satelital** para acercarse a una cobertura completa del territorio y **inteligencia artificial** para anticipar congestión y optimizar energía, capacidad y latencia.
@@ -55,6 +57,8 @@ Otero describe un mercado donde los modelos se separan por estructura de costos:
 - **Los proveedores regionales** se concentran en zonas donde captar y conservar usuarios sale más barato.
 - **Los operadores sin activos propios** reducen al mínimo el capital necesario para entrar; ahí está OXIO, y también los modelos híbridos como el de Boost Mobile en Estados Unidos, que combina red mayorista con un núcleo propio en la nube *(verificar)*.
 - **El operador nacional de tamaño intermedio** es el que enfrenta mayores dificultades: no tiene la escala de los grandes ni la especialización de los regionales.
+
+![Gráfica: los cuatro modelos de operación (grandes, regionales, sin activos y nacional mediano), con el operador nacional de tamaño intermedio como el que peor aguanta la estructura de costos](../../assets/blog/el-operador-sin-red-modelos.png)
 
 Ese último punto es el menos cómodo para México. Un mercado con pocos compradores, una escalera de movilidad corta y un operador mediano atrapado en medio es exactamente el terreno donde el modelo sin activos gana terreno, no por mérito tecnológico, sino porque es el único que no exige capital de red.
 
