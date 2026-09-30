@@ -24,13 +24,13 @@ Ahí la IA no reinventó nada de un día para otro. Entró por la puerta menos g
 
 Lo que antes era una hora de consola hoy es cosa de minutos. Y esos minutos no se convierten en más tareas: se van a lo que sí necesita criterio, que es decidir, priorizar y acompañar al equipo.
 
-Hay un matiz importante que conviene decir en voz alta: trabajo con datos reales de operación, y esos datos no salen de la red de la compañía. Lo que se puede contar hacia afuera es el método, no los números. Cualquiera que use IA en un entorno crítico debería tener esa misma línea clara, y ojalá que la conversación del próximo 30 de septiembre incluya algo de eso, porque el día está lleno de casos de oficina y muy vacío de casos con datos sensibles.
+Hay un matiz importante que conviene decir en voz alta: trabajo con datos reales de operación, y esos datos no salen de la red de la compañía. Lo que se puede contar hacia afuera es el método, no los números. Cualquiera que use IA en un entorno crítico debería tener esa misma línea clara, y ojalá que la conversación del 30 de septiembre incluya algo de eso, porque el día está lleno de casos de oficina y muy vacío de casos con datos sensibles.
 
 ## Lo que no me esperaba: el alcance
 
 Si la IA solo me hubiera quitado trabajo repetitivo, este artículo no tendría gracia. Lo que no esperaba fue lo que pasó del otro lado: en mi tiempo personal, el alcance.
 
-Trabajo de 9 a 6, tengo familia, y mis horas útiles para proyectos propios son dos o tres al día. Con ese presupuesto, hace un año yo no cabía en lo que hoy sostengo: un proyecto adicional, un blog de divulgación que ya va en más de ochenta artículos, dos libros en proceso y un par de ideas en validación.
+Trabajo de 9 a 6, tengo familia, y mis horas útiles para proyectos propios son dos o tres al día. Con ese presupuesto, hace un año yo no cabía en lo que hoy sostengo: proyectos adicionales, un blog de divulgación que ya va en más de ochenta artículos y un par de ideas en validación.
 
 No lo hago solo, y quiero ser preciso en cómo lo digo porque de esto se habla mucho y se explica poco: trabajo con un asistente de IA que conoce mis proyectos, mis criterios y mi tono, y que documenta, redacta, investiga, corre números y automatiza. Yo pongo la dirección, el juicio y la responsabilidad; él pone la velocidad. Es la diferencia entre tener un equipo y tener un empleado imaginario: lo que no delego nunca es la decisión.
 
