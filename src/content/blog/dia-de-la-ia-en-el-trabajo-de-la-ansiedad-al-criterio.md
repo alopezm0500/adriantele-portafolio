@@ -3,7 +3,7 @@ title: "Día de la IA en el Trabajo: no me hizo más inteligente, me devolvió t
 pubDate: "2026-09-21"
 description: "El 30 de septiembre se celebra el Día de la IA en el Trabajo, una fecha con dueño corporativo y con una pregunta real detrás: más de 40% de los profesionistas se siente rebasado por la velocidad de adopción. Lo que la IA cambió en mi trabajo técnico, lo que cambió en mi alcance y lo que sigue sin poder hacer."
 categories: [tech-humano]
-heroImage: "../../assets/blog/dia-de-la-ia-en-el-trabajo-de-la-ansiedad-al-criterio.png"
+heroImage: "../../assets/blog/dia-de-la-ia-en-el-trabajo-de-la-ansiedad-al-criterio.jpg"
 ---
 
 Cuando alguien me dice que el 30 de septiembre se celebra el Día de la IA en el Trabajo, mi primera reacción es la de siempre: ¿de verdad hay algo que celebrar o solo un calendario comercial buscando hashtags?
