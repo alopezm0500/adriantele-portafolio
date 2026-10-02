@@ -8,7 +8,7 @@ heroImage: "../../assets/blog/6g-cuanto-de-5g-vamos-a-conservar.jpg"
 
 Cuando se anuncia una generación nueva de telefonía, la conversación pública se llena de gigabits por segundo. Quienes operamos redes miramos otra cosa: cuántas arquitecturas distintas vamos a tener que mantener vivas al mismo tiempo.
 
-Por eso lo más importante que pasó alrededor de la 6G en septiembre no fue un anuncio de velocidad. Fue un documento de once páginas que pide frenar.
+Por eso lo más importante que pasó alrededor de la 6G en septiembre no fue un anuncio de velocidad. Fue un documento de nueve páginas que pide frenar.
 
 El 8 de septiembre de 2026, la alianza **NGMN** publicó una actualización de sus mensajes clave sobre arquitectura y migración hacia 6G, aprobada por su consejo el 3 de septiembre y dirigida expresamente a la plenaria de septiembre de **3GPP**, justo cuando ese organismo define las prioridades de la fase de estudio de la próxima generación. TeleSemana lo resumió sin rodeos: [NGMN pidió a 3GPP una migración de 5G a 6G más simple](https://www.telesemana.com/blog/2026/09/10/la-6g-entra-en-la-hora-de-las-decisiones-ngmn-pide-a-3gpp-una-migracion-de-5g-a-6g-mas-simple/).
 
