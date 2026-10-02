@@ -3,6 +3,7 @@ title: "6G: la discusión que importa no es la velocidad, es cuánto de 5G vamos
 pubDate: "2026-10-01"
 description: "NGMN pidió a 3GPP una migración de 5G a 6G más simple y dejó a MRSS como solución base. Detrás del tecnicismo hay una pregunta que decide el costo de la próxima década: cuánto de la red que ya existe habrá que reemplazar."
 categories: [sociedad-y-telecom, tech-en-rojo]
+heroImage: "../../assets/blog/6g-cuanto-de-5g-vamos-a-conservar.jpg"
 ---
 
 Cuando se anuncia una generación nueva de telefonía, la conversación pública se llena de gigabits por segundo. Quienes operamos redes miramos otra cosa: cuántas arquitecturas distintas vamos a tener que mantener vivas al mismo tiempo.
