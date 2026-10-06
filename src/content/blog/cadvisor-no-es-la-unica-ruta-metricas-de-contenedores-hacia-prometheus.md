@@ -143,6 +143,8 @@ Sospecho que ese es el verdadero aprendizaje del laboratorio: no encender la pil
 
 Esta pieza es el mapa; la aterrizo en la entrega 3 de la serie, cuando los contenedores aparezcan en el tablero.
 
+Queda una segunda mitad del problema que aquí no toqué, y es la que más importa cuando la aplicación es de verdad: el contador del contenedor no es el contador del negocio. De eso va [Quién cuenta las llamadas](/blog/quien-cuenta-las-llamadas-contadores-de-aplicacion-en-kubernetes/).
+
 ## Nota metodológica
 
 Los nombres de las métricas de cAdvisor citadas aquí los verifiqué contra el árbol de la versión **v0.60.6** (`lib/metrics/testdata/prometheus_metrics`), y los del demonio de Docker contra `daemon/internal/metrics/metrics.go` de Moby. La frase entrecomillada de Docker es traducción del aviso que aparece en su documentación oficial. Fuentes:
