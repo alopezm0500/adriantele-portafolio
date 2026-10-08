@@ -18,13 +18,13 @@ export const CAT_COLORS: Record<string, string> = {
   'tech-humano': '#fe8019',
   'techco-e-ia': '#83a598',
   'sociedad-y-telecom': '#689d6a',
-  technical: '#b16286',
-  portafolio: '#d3869b',
+  technical: '#d79921',
+  portafolio: '#b8bb26',
   'sin-categoria': '#a89984',
 };
 
 export function catColor(key: string): string {
-  return CAT_COLORS[key] ?? '#d3869b';
+  return CAT_COLORS[key] ?? '#83a598';
 }
 
 export function fmtDate(iso: string): string {

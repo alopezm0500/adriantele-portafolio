@@ -59,7 +59,13 @@ const jsonLdBlocks: Record<string, unknown>[] = jsonLd
         --bg: #282828;
         --card: #3c3836;
         --text: #ebdbb2;
-        --muted: #a89984;
+        /* Enlaces y acentos interactivos: amarillo Gruvbox.
+           Antes era el morado #d3869b (contraste 5.4:1 sobre el fondo);
+           este llega a 8.7:1 y se lee mucho mejor en texto pequeño. */
+        --link: #fabd2f;
+        /* Texto secundario (fechas, bajadas, pies): sube de #a89984
+           (5.3:1) a #bdae93 (6.8:1). */
+        --muted: #bdae93;
         /* Ancho del contenedor: en pantallas anchas el contenido ocupa
            el espacio muerto que dejaba el antiguo max-width de 900px. */
         --shell: 1240px;
@@ -108,7 +114,7 @@ const jsonLdBlocks: Record<string, unknown>[] = jsonLd
       .card h3 { margin-bottom: .5rem; }
       .card p { color: var(--muted); font-size: .95rem; }
       .tag {
-        --cat: #d3869b;
+        --cat: #83a598;
         display: inline-block;
         background: color-mix(in srgb, var(--cat) 20%, transparent);
         border: 1px solid color-mix(in srgb, var(--cat) 40%, transparent);
