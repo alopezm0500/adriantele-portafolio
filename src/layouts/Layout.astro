@@ -72,6 +72,10 @@ const jsonLdBlocks: Record<string, unknown>[] = jsonLd
         --pad: clamp(1rem, 4vw, 2.5rem);
       }
       * { box-sizing: border-box; margin: 0; padding: 0; }
+      /* Red de seguridad: ningún enlace debe caer al azul/morado por defecto del
+         navegador (el morado de "ya visitado" es ilegible sobre fondo oscuro).
+         Cada componente que quiera otro color lo declara explícitamente. */
+      :global(a) { color: inherit; }
       body {
         font-family: system-ui, -apple-system, sans-serif;
         background: var(--bg);
