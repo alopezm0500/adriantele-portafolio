@@ -3,6 +3,7 @@ title: "Redes industriales: qué licita México en 2.3 GHz y qué no puede garan
 pubDate: "2026-10-08"
 description: "El DOF publicó las bases de la licitación CRT-RRI-01-2026: 60 MHz en 2.3 GHz para redes industriales. Esto es lo que se subasta, lo que cambió tras la consulta pública y lo que la convocatoria no puede prometer."
 categories: [sociedad-y-telecom]
+heroImage: "../../assets/blog/redes-industriales-23-ghz-que-licita-mexico.png"
 ---
 
 El 7 de octubre el Diario Oficial de la Federación publicó el acuerdo con el que el Pleno de la Comisión Reguladora de Telecomunicaciones aprobó la convocatoria y las bases de la Licitación CRT-RRI-01-2026. En una frase: México pone en el mercado 60 MHz de la banda de 2.3 GHz para que alguien le venda capacidad de red a la industria.
