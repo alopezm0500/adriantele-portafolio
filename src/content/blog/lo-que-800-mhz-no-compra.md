@@ -3,6 +3,7 @@ title: "Lo que 800 MHz no compra: la física, la bolsa y el trabajo que no se su
 pubDate: "2026-10-09"
 description: "SpaceX acordó comprar el portafolio nacional de 800 MHz de Grain Management para volverse operador móvil en Estados Unidos. Los operadores cayeron más del 6.5% en bolsa: la parte económica de un anuncio que todavía no es una red."
 categories: [sociedad-y-telecom]
+heroImage: "../../assets/blog/lo-que-800-mhz-no-compra.jpg"
 ---
 
 El 8 de octubre SpaceX anunció que adquirió el portafolio nacional de 800 MHz de Grain Management: hasta 14 MHz pareados de banda baja en todo Estados Unidos, sujeto a la aprobación de la FCC y sin monto revelado. La reacción de Elon Musk en su propia red fue esta: "para el observador casual esto no parecerá gran cosa; para quien entiende las guerras del espectro, es un terremoto".
