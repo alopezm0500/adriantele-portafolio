@@ -3,6 +3,7 @@ title: "Tu llamada no entra más rápido en 5G: la paradoja que Ookla midió en 
 pubDate: "2026-10-12T10:00:00"
 description: "Pruebas controladas en ocho mercados dejan un resultado incómodo: la voz sobre 5G conecta en 1.96 segundos de mediana contra 1.87 de VoLTE. El mejor tiempo del estudio no es 5G: es una red 4G en Seúl."
 categories: [sociedad-y-telecom]
+heroImage: "../../assets/blog/tu-llamada-no-entra-mas-rapido-en-5g.jpg"
 ---
 
 Hay un número que no va a aparecer en ninguna diapositiva de promoción. En pruebas controladas sobre ocho mercados, la voz sobre 5G —VoNR— conecta en 1.96 segundos de mediana. La voz sobre 4G —VoLTE— conecta en 1.87. La tecnología nueva es, en el agregado, ligeramente más lenta que la vieja. Y de los operadores con volumen suficiente en las dos tecnologías, solo seis de ocho conectaron más rápido en 5G que en 4G.
