@@ -3,6 +3,7 @@ title: "Televisa compra AT&T México: la aritmética de los 2,000 millones y la 
 pubDate: "2026-10-13"
 description: "AT&T acordó vender su operación mexicana a Grupo Televisa y Fintech Holdings por 2,000 millones de dólares en efectivo. El precio se entiende mejor por línea que por titular: sale alrededor de 85 dólares por suscriptor, y el capital que lo hace posible viene de un tercero que ya estaba sentado en el consejo."
 categories: [sociedad-y-telecom]
+heroImage: "../../assets/blog/televisa-compra-att-mexico-la-aritmetica-de-los-2000-millones.jpg"
 ---
 
 El 13 de octubre AT&T anunció que vende AT&T México a Grupo Televisa y a Fintech Holdings por **2,000 millones de dólares en efectivo al cierre**, sujeto a ciertos ajustes, "más beneficios contractuales y contingentes adicionales". Así, en una sola línea, con esa última frase que casi nadie lee: el precio que se anunció no es necesariamente el precio que se va a pagar.
