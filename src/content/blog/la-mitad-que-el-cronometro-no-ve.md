@@ -3,6 +3,7 @@ title: "La mitad que el cronómetro no ve: cómo se atribuye la causa de una lla
 pubDate: "2026-10-12T09:00:00"
 description: "Ookla mide cuánto tarda una llamada; lo que no puede medir es por qué tarda. La distancia entre la mediana y la cola de un operador se explica en el core: paging, señalización, portadores y temporizadores de retransmisión."
 categories: [technical]
+heroImage: "../../assets/blog/la-mitad-que-el-cronometro-no-ve.jpg"
 ---
 
 En la [primera parte de esta serie](/blog/tu-llamada-no-entra-mas-rapido-en-5g/) quedó el dato incómodo: en pruebas controladas sobre ocho mercados, la voz sobre 5G conecta en 1.96 segundos de mediana y la voz sobre 4G en 1.87. Y quedó una pregunta abierta que ningún cronómetro externo puede responder: cómo un operador puede tener 1.82 segundos de mediana y 6.33 segundos en su percentil 95, como Starhub en Singapur.
