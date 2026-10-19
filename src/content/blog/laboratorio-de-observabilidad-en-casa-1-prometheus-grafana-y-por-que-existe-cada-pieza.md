@@ -3,6 +3,7 @@ title: "Laboratorio de observabilidad en casa (1): Prometheus, Grafana y por qu�
 pubDate: "2026-10-06"
 description: "Empiezo un laboratorio de observabilidad en mi propia laptop: Prometheus, Grafana y node_exporter corriendo como contenedores, definidos por completo en archivos. En esta primera entrega: la estructura, los YAML que la sostienen y qué decisión implica cada uno."
 categories: [technical]
+heroImage: "../../assets/blog/laboratorio-observabilidad-entrega1-portada.jpg"
 ---
 
 Llevo años usando tableros de monitoreo. Los heredé montados: cuando llegué a operaciones, Prometheus y Grafana ya estaban ahí, con sus dashboards, sus alertas y sus reglas escritas por alguien más. Los sé leer, sé qué significan y sé cuándo un indicador está mintiendo. Lo que nunca había hecho era **levantar la pila yo mismo, desde cero, en mi propia casa**.
