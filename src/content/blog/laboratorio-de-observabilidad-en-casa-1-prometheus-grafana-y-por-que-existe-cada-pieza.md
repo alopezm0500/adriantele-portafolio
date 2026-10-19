@@ -217,4 +217,8 @@ Es un taller, no un servicio. Su valor no está en vigilar mi laptop, sino en qu
 
 Escribo esto mientras la pila todavía no está encendida, que es el momento más honesto para documentar una decisión: cuando aún no sé qué me va a salir mal.
 
+![Captura del tablero del laboratorio en Grafana: varios paneles con las gráficas de las métricas del bastión, ya con la pila encendida y Prometheus almacenando series](../../assets/blog/laboratorio-observabilidad-evidencia.jpg)
+
+*Captura posterior a la publicación: el tablero del laboratorio ya con la pila en marcha, leyendo de Prometheus los datos de la laptop.*
+
 *Nota: las versiones fijadas (Prometheus v3.15.0, Grafana 13.2.3, node-exporter v1.12.1) se verificaron en los registros oficiales al momento de escribir esta entrega, el 6 de octubre de 2026. Los consumos estimados de memoria y disco son cálculos sobre una laptop con 7.7 GB de RAM, no mediciones del despliegue en marcha.*
