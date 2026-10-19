@@ -3,6 +3,7 @@ title: "Laboratorio de observabilidad en casa (2): el arranque, los tres tropiez
 pubDate: "2026-10-06"
 description: "La pila quedó encendida el mismo día. Lo difícil no fue Prometheus ni Grafana: fue el plugin de compose que no estaba, el grupo de Docker que nunca me agregaron y un archivo .env que faltaba. Aquí está el arranque completo, con las salidas reales y la lectura del primer tablero."
 categories: [technical]
+heroImage: "../../assets/blog/laboratorio-observabilidad-panel-grafana.jpg"
 ---
 
 Pensé que esto iba a ser mucho más complicado. La parte de Prometheus y Grafana fue casi anticlimática: los archivos estaban escritos, las imágenes bajaron, el servicio levantó. Lo que me costó veinte minutos no fue la observabilidad, fue **la plomería**.
@@ -111,6 +112,10 @@ Lo que más me gusta del diseño no es que todo esté en verde: es que el script
 ## El primer tablero, y cómo se lee
 
 `127.0.0.1:3000` → Dashboards → Homelab → "Bastión · básico". Cuatro paneles, y estos son los valores de esta máquina en el momento de escribir:
+
+![Captura del tablero del laboratorio en Grafana: varios paneles con las gráficas de las métricas del bastión, ya con la pila encendida y Prometheus almacenando series](../../assets/blog/laboratorio-observabilidad-evidencia.jpg)
+
+*El primer tablero del laboratorio, ya con la pila en marcha: los paneles leyendo de Prometheus los datos de la laptop.*
 
 - **RAM usada: 45.7 %**
 - **Disco libre en `/`: 42.5 %**

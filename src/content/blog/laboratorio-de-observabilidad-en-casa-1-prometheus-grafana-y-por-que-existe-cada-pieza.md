@@ -3,7 +3,6 @@ title: "Laboratorio de observabilidad en casa (1): Prometheus, Grafana y por qu�
 pubDate: "2026-10-06"
 description: "Empiezo un laboratorio de observabilidad en mi propia laptop: Prometheus, Grafana y node_exporter corriendo como contenedores, definidos por completo en archivos. En esta primera entrega: la estructura, los YAML que la sostienen y qué decisión implica cada uno."
 categories: [technical]
-heroImage: "../../assets/blog/laboratorio-observabilidad-panel-grafana.jpg"
 ---
 
 Llevo años usando tableros de monitoreo. Los heredé montados: cuando llegué a operaciones, Prometheus y Grafana ya estaban ahí, con sus dashboards, sus alertas y sus reglas escritas por alguien más. Los sé leer, sé qué significan y sé cuándo un indicador está mintiendo. Lo que nunca había hecho era **levantar la pila yo mismo, desde cero, en mi propia casa**.
@@ -217,9 +216,5 @@ Es un taller, no un servicio. Su valor no está en vigilar mi laptop, sino en qu
 - **Y una posible entrega 5:** Grafana leyendo directo una base de datos PostgreSQL, para tableros de negocio sin pasar por Prometheus.
 
 Escribo esto mientras la pila todavía no está encendida, que es el momento más honesto para documentar una decisión: cuando aún no sé qué me va a salir mal.
-
-![Captura del tablero del laboratorio en Grafana: varios paneles con las gráficas de las métricas del bastión, ya con la pila encendida y Prometheus almacenando series](../../assets/blog/laboratorio-observabilidad-evidencia.jpg)
-
-*Captura posterior a la publicación: el tablero del laboratorio ya con la pila en marcha, leyendo de Prometheus los datos de la laptop.*
 
 *Nota: las versiones fijadas (Prometheus v3.15.0, Grafana 13.2.3, node-exporter v1.12.1) se verificaron en los registros oficiales al momento de escribir esta entrega, el 6 de octubre de 2026. Los consumos estimados de memoria y disco son cálculos sobre una laptop con 7.7 GB de RAM, no mediciones del despliegue en marcha.*
