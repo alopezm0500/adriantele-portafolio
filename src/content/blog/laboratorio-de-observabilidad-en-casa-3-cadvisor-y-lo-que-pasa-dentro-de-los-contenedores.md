@@ -65,7 +65,7 @@ En mi caso el cálculo es explícito y lo dejo escrito: esta máquina es mi lapt
 
 Lo que necesita no es capricho. Para leer los cgroups reales de cada contenedor —y no solo lo que Docker dice que hay— tiene que entrar a `/sys/fs/cgroup`, y para saber qué contenedor corresponde a cada grupo consulta el socket de Docker en `/var/run`. `/dev/kmsg` es el menos obvio: ahí están los eventos del kernel, incluidos los OOM. Si algún día un contenedor muere por falta de memoria, la explicación está en ese buffer, no en el log de la aplicación.
 
-Le puse `mem_limit: 256m` como al resto, y en la práctica no llega ni a la quinta parte: ronda los **41 MB**. Es la pieza más barata de toda la pila y la que más me dice.
+Le puse `mem_limit: 256m` como al resto, y en la práctica no llega ni a la quinta parte: el día del montaje marcaba **41 MB** y hoy, con la pila en reposo, se queda en **33.65 MiB**, osea el 13 % de su límite. Es la pieza más barata de toda la pila y la que más me dice.
 
 ## Tercera trampa: la que no aparece en ningún tutorial
 
@@ -135,6 +135,20 @@ De ahí sale una lección que me costó entender en el trabajo y que ahora veo c
 ## Lo que cambió al ponerlo a trabajar
 
 Antes de este tablero, mi lectura del laboratorio era una fotografía: `docker stats` en el momento en que se me ocurre mirar. Ahora es una película: sé que Grafana subió de forma escalonada durante la primera tarde mientras construía índices, y sé que mis otros tres contenedores ni se movieron.
+
+La foto de hoy, con la pila ya en reposo después de doce días apagada, dice esto:
+
+```
+NAME                CPU %     MEM USAGE / LIMIT     MEM %
+obs-grafana         1.09%     285.3MiB / 700MiB     40.76%
+obs-cadvisor        0.00%      33.65MiB / 256MiB    13.15%
+obs-prometheus      0.47%      57.93MiB / 512MiB    11.31%
+obs-node-exporter   1.74%       9.39MiB / 128MiB     7.33%
+```
+
+Y aquí hay una corrección que me debo a mí mismo, porque en la entrega anterior escribí que mi límite de Grafana se había quedado corto. **No se había quedado corto: estaba viendo el peor momento.** Aquel 511.5 MB era el arranque en frío, con la base SQLite construyendo índices. En reposo, Grafana vive en 285 MB, osea el 40 % de su límite. La decisión de subirlo de 512 a 700 sigue siendo correcta, pero por otra razón: no porque el servicio lo necesite todo el tiempo, sino porque un pico de arranque con el límite justo lo habría matado en el momento más inoportuno.
+
+El total de los cuatro contenedores hoy es de **386 MiB**, contra los 572 MB que medí el día del montaje. Dos cifras, el mismo sistema, y la diferencia no es una mejora: es que una la tomé con el laboratorio caliente y la otra en reposo. Esto es exactamente lo que un tablero de series temporales resuelve y una captura de `docker stats` no puede resolver, y me parece la mejor justificación de todo este proyecto.
 
 Ese es el verdadero intercambio, y no es que cAdvisor mida mejor que `docker stats` —están leyendo el mismo cgroup— sino que uno guarda y el otro no. `docker stats` te dice "ahorita". cAdvisor más Prometheus te dice "desde cuándo y a qué hora empezó", que es la única pregunta que sirve cuando algo se degrada sin romperse.
 
