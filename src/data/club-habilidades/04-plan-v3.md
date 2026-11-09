@@ -25,7 +25,7 @@ Regla de diseño que sostiene todo: **el ciclo es el mismo; la barra cambia.** N
 
 Lo que cambia por programa:
 
-- **Duración.** Niños: 4 a 6 semanas, sesiones de 45 minutos. Jóvenes: 6 a 8 semanas, sesiones de 60 a 75.
+- **Duración.** Seis semanas para las tres bandas en el arranque (fijado en la v4). Sesiones de 45 minutos en niños y de 60 a 75 en jóvenes.
 - **Artefacto.** Niños: más chico y con público conocido. Jóvenes: con desconocidos y con video publicado.
 - **Autonomía.** Niños: el papá acompaña una tarea a la semana. Jóvenes: cero acompañamiento; el papá solo aparece en el acto.
 
@@ -35,7 +35,7 @@ Lo que cambia por programa:
 
 **Estudiar con IA**
 
-- *Niños (9-12).* Una materia del colegio que se le atravesó. Artefacto: un plan de estudio de cuatro semanas con fechas, cumplido, y una calificación o un trabajo entregado mejor que la línea base. Cuatro semanas.
+- *Niños (9-12).* Una materia del colegio que se le atravesó. Artefacto: un plan de estudio de seis semanas con fechas, cumplido, y una calificación o un trabajo entregado mejor que la línea base.
 - *Jóvenes (13-15).* Un examen de la escuela con fecha, o el hábito de estudio para todas las materias. Artefacto: plan ejecutado más un examen simulado resuelto, y el sistema escrito en una página para el siguiente examen.
 - *Jóvenes (16-18).* Un examen con consecuencia real: admisión, certificación, o la carga de la universidad. Artefacto: plan de ocho semanas ejecutado y resultado contra la línea base.
 
@@ -127,10 +127,12 @@ Confirmado: **Pensar y Sostenerse viajan dentro de los tres ciclos.** Dos ejempl
 
 ---
 
-## 10. Decisiones abiertas
+## 10. Decisiones (resueltas el 2026-11-09)
 
-1. ¿Se acepta la división en dos cohortes de jóvenes (13-15 y 16-18) o se mantiene un solo grupo de 13 a 18?
-2. ¿El ciclo de niños dura cuatro o seis semanas?
-3. ¿Los precios de arriba son la hipótesis de trabajo?
-4. ¿El jurado del acto son los papás invitados, un juez externo, o ambos?
-5. ¿Nombre de la oferta y si vive dentro de Tech para Mortales?
+1. Cohortes de jóvenes separadas: **13-15 y 16-18**. Sí.
+2. Duración: **seis semanas** en las tres bandas para el arranque.
+3. Precios: **hipótesis de trabajo**, se ajustan con el primer piloto.
+4. Jurado: **según el nivel** — papás para Suficiente y Buen trabajo; papás más juez externo para Excelente.
+5. Nombre: **sin definir**. Vive en Tech para Mortales mientras no haya nombre propio.
+
+El crecimiento del catálogo se ordena en la v4.
