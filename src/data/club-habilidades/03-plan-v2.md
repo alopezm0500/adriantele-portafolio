@@ -1,141 +1,112 @@
-# Plan v2 — la habilidad como artefacto
+# Plan v2.1 — el club integral, vendido por ciclos
 
-v2 · 2026-11-09 · Reemplaza el eje de `plan_columna_v1_20261109.md`
-El objetivo del proyecto queda fijado: preparar a un joven para un mundo digitalizado, de modo que **destaque** —no que reciba asesoría.
-
----
-
-## 1. El cambio de eje, y por qué
-
-La v1 vendía **remedio**: el examen que viene, la materia que se atraviesa. Era correcta en el diagnóstico —la categoría de estatus tiene urgencia débil— y equivocada en la conclusión: la salida no es elegir la categoría de remedio, es **fabricarle el marcador a la categoría de estatus**.
-
-Un papá no compra "que mi hijo destaque". Compra algo que puede ver, mostrar y presumir. Si no existe ese algo, la venta depende de la capacidad de inspirar de quien la da, y eso no escala, no se replica y no sobrevive a un mes malo.
-
-**Un producto de estatus sin marcador es una opinión. Con marcador, es un producto.**
+v2.1 · 2026-11-09 · Corrige el alcance de la v2.0
+La v2.0 confundió un ejemplo con el producto: tomó "dar una charla" como si fuera el club. No lo es. El club sigue cubriendo los cuatro ejes del diseño v0 con la columna de IA; lo que cambia es **cómo se vende**: en ciclos cortos, cada uno con una habilidad que los papás ya quieren pagar.
 
 ---
 
-## 2. El producto en una frase
+## 1. La corrección
 
-> En ocho semanas, tu hijo da una charla de diez minutos, de pie, ante treinta desconocidos, y la puedes ver.
+- **El club es integral** y se mide en años, con el mapa por edades del v0.1: Pensar, Decidir, Expresar, Sostenerse, y la columna de aprender a aprender con IA encima de las cuatro.
+- **La oferta comercial es por ciclos** de seis a ocho semanas. Cada ciclo se centra en **una habilidad demostrable**, con su artefacto público.
+- Hablar en público no es el producto: es **la habilidad del primer ciclo**, y el modelo de cómo se ve un ciclo bien hecho.
 
-Si un papá no puede repetir esa frase en la comida familiar sin explicarla, la oferta todavía no está lista.
-
----
-
-## 3. Las tres piezas del marcador
-
-1. **Audiencia real.** Treinta desconocidos, con fecha y lugar. No cuenta la familia ni los compañeros de clase. La audiencia la traen las familias: cada alumno invita a tres o cuatro personas.
-2. **Video publicado.** El artefacto. Es lo que se comparte, lo que se presume y lo que se le manda al socio.
-3. **Competencia externa.** Torneo de oratoria, debate o modelo de Naciones Unidas. Es el segundo nivel, no el requisito: da prueba social que no se inventa y un marcador que nadie discute.
-
-Por qué importa el tercero: en México ya existe un circuito pagado de oratoria, debate y MUN en preparatorias privadas. Enlazarse a él da legitimidad instantánea. Precios y calendario de esos circuitos: (verificar).
+El riesgo de la v2.0 era real: un club integral que se vende como un solo curso deja de ser integral. El riesgo de la v1 era el opuesto: integral sin nada que comprar. La arquitectura de dos capas resuelve los dos.
 
 ---
 
-## 4. La habilidad elegida: hablar en público
+## 2. Las dos capas
 
-Tres razones, en orden de peso.
-- Es su oficio real. Da charlas, enseña, explica cosas difíciles a gente que no sabe del tema.
-- El marcador es objetivo y barato: un acto, un video, un torneo. No hace falta construir un examen.
-- El artefacto es el más vendible y el más fotografiado de todos los candidatos.
+**Capa 1 — El club.** Integral, por años, según el mapa v0.1. No se vende por partes ni se promete en un anuncio. Es el diseño de fondo y la vara con la que se juzga cada ciclo.
 
-Descartadas, con motivo:
-- **Negociación.** El marcador es difícil de observar y el artefacto es invisible.
-- **Dinero y finanzas.** Exige riesgo real con menores de edad; no se puede correr en ocho semanas.
-- **IA.** Se percibe como clase de tecnología y compite contra contenido gratuito. Además, la IA es el método, no el escaparate.
+**Capa 2 — La oferta.** Ciclos de seis a ocho semanas. Una habilidad principal, un artefacto, un acto o entrega con público. La columna siempre por debajo, aplicada al trabajo real del ciclo.
+
+La regla que las une: **ningún ciclo enseña solo su habilidad.** Cada ciclo declara una capacidad principal y al menos una de soporte, de modo que el alumno nunca hace "un curso de oratoria" sino un tramo del mapa.
 
 ---
 
-## 5. La columna baja a método
+## 3. El catálogo: qué habilidad por capacidad (propuesta)
 
-El alumno no lleva una materia llamada "aprender a aprender". La usa. Cada semana tiene una tarea real de adquisición —investigar, estructurar, memorizar, ensayar— y ahí aplica las reglas.
+El criterio no es qué es más importante, es **qué paga un papá y qué artefacto lo demuestra**. Ordenado por atractivo de venta real, no por valor pedagógico.
 
-Reglas anti-dependencia, específicas para este producto:
-- **El guion lo escribe él.** La IA puede ayudarle a investigar y a encontrar huecos; no a redactar lo que va a decir.
-- Preguntar a la máquina después de diez minutos de intento propio.
-- Verificar en dos fuentes cualquier dato que vaya a decir en voz alta.
-- Declaración de uso al final de cada entrega: qué hizo él y qué la máquina.
-- El ensayo final se hace **sin apuntes y sin teleprompter**. Ahí se mide de verdad.
+**Expresar**
+- **Hablar en público.** Artefacto: charla pública grabada ante desconocidos. Venta: alta y probada — ya se paga en oratoria, debate y MUN.
+- **Contenido y video.** Artefacto: una pieza publicada con métricas. Venta: alta y creciente; es el lenguaje de su generación.
+- **Escribir claro.** Artefacto: un texto publicado. Venta: baja por sí sola, alta como soporte de los otros dos.
 
-Lo que la IA sí puede hacer aquí, y es mucho: simular al público hostil, hacerle preguntas difíciles, escuchar su ensayo y devolverle qué se entendió y qué no. Eso es tutoría real y no le quita autoría.
+**Decidir**
+- **Mi primer negocio.** Artefacto: una venta real, con clientes y un número. Venta: alta; el emprendimiento adolescente ya se vende como campamento.
+- **Dinero propio.** Artefacto: tres meses de presupuesto registrado y una primera compra o venta. Venta: media-alta.
+- **Negociar.** Artefacto: una negociación real documentada. Venta: baja para papás, alta para adolescentes. Entra como soporte.
 
----
+**Pensar**
+- **Estudiar con IA.** Artefacto: un plan de estudio de seis semanas ejecutado y un examen simulado resuelto. Venta: media-alta, con la advertencia de que compite de frente contra la tutoría.
+- **Números que importan.** Artefacto: el análisis de una decisión económica real de su casa. Venta: media.
+- **Detectar mentiras.** Artefacto: una verificación publicada. Venta: baja como ciclo, alta como contenido.
 
-## 6. Las ocho semanas
+**Sostenerse**
+- **Primeros auxilios y seguridad.** Artefacto: una práctica certificable. Venta: alta, porque los papás pagan seguridad sin discutir.
+- **Cuerpo y disciplina.** Artefacto: ocho semanas de entrenamiento con marca personal. Venta: media.
+- **Emociones y presión.** No tiene artefacto público natural. Venta: baja como ciclo suelto → **se cuela dentro de los demás ciclos**, no se vende aparte.
 
-- **Semana 0 — Diagnóstico y línea base.** Treinta minutos y una grabación de sesenta segundos. Se guarda. Es la mitad del antes-y-después.
-- **1. La idea.** Qué quiero que la gente recuerde, en una sola frase. Prohibido empezar por las diapositivas.
-- **2. La estructura.** Apertura, tres puntos, cierre. Contada sin notas.
-- **3. La evidencia.** Un dato propio, una historia propia, una cifra que pueda defender.
-- **4. El cuerpo.** Voz, pausa, mirada, ritmo, manos. Se graba y se ve.
-- **5. El miedo.** Qué hacer con la voz que tiembla, la pregunta hostil, el silencio incómodo.
-- **6. El ensayo hostil.** Cinco personas que interrumpen y preguntan de mala fe.
-- **7. La producción.** Escenario, luz, quién invita a quién, logística del acto.
-- **8. El acto.** Público real, video, y entrega del antes y el después juntos.
-
-Cada semana: una sesión en vivo de 60 a 75 minutos, una tarea de 30 a 45, y un entregable grabado.
+Consecuencia honesta de este catálogo: dos de las cuatro capacidades (Pensar y Sostenerse) casi no se venden solas. Eso no es un defecto del club, es la razón por la que el club es integral y la oferta es por ciclos: los ciclos que pagan arrastran a los que no.
 
 ---
 
-## 7. Lo que se vende, en realidad: el antes y el después
+## 4. El portafolio: lo que hace integral lo que se vende por partes
 
-El minuto uno y el minuto final, lado a lado. Ese par de videos es el producto comercial, el caso de estudio, la pieza de contenido y la prueba que se le enseña a un socio. Sin antes-y-después no hay venta; hay conversación agradable.
+Al terminar cada ciclo, el alumno guarda su artefacto en un **portafolio**: la charla, el pitch del negocio, el presupuesto de tres meses, la verificación publicada, el video.
 
-Consecuencia de diseño: **la grabación de la semana 0 no es opcional**. Si no se graba el punto de partida, no hay producto que mostrar.
+Ese portafolio hace tres cosas:
+1. Es el argumento de renovación. El papá no sigue pagando por cariño: sigue porque el portafolio está incompleto.
+2. Es la prueba de que el club es integral aunque se venda por ciclos.
+3. Es el material del socio y del siguiente papá.
 
----
-
-## 8. Precio y economía (cifras por verificar)
-
-- Cohorte de 5 a 8. Ocho semanas.
-- Precio hipótesis: paquete cerrado del orden de $3,000 a $4,500 por las ocho semanas, **no mensualidad**. Un paquete con fecha de entrega se percibe como resultado; una mensualidad se percibe como curso.
-- Ocho alumnos a $3,500 ≈ $28,000 por cohorte, con unas 35 a 45 horas de trabajo total (sesiones, revisión, producción del acto). Del orden de $600 a $800 por hora. Es una prueba que se paga sola y un negocio pequeño viable.
-- El costo del acto es casi cero: lugar prestado, cámara que ya existe, y la audiencia la ponen las familias.
-- Antes de publicar cualquier cifra: medir precios de oratoria, debate y MUN en México (verificar).
+Sin portafolio, el club se convierte en un menú de cursos sueltos y muere en el tercer ciclo.
 
 ---
 
-## 9. Socios con este diseño
+## 5. Orden sugerido de los primeros ciclos
 
-Ahora sí hay algo que licenciar, y es concreto: el guion de las ocho semanas, la rúbrica del acto, la plantilla de invitación, cómo grabar y cómo cerrar la venta con el video del antes-y-después.
+1. **Hablar en público.** Es donde él tiene oficio real, el artefacto es barato y el marcador es indiscutible. Sirve para probar el modelo completo.
+2. **Mi primer negocio.** La aspiración más vendible, y produce el artefacto con número: cuánto ganó.
+3. **Contenido y video.** Alcance hacia adolescentes y el artefacto que más se comparte.
 
-El socio pone alumnos y un lugar. El acto público es replicable en cualquier ciudad, y eso es justamente lo que no se podía replicar cuando el producto eran horas de asesoría.
-
-Lo que no se entrega: exclusividad sin pago.
-
----
-
-## 10. Riesgos
-
-- **La logística se come el diseño.** El acto es el marcador, no el negocio. Si se vuelve producción de eventos, se perdió el producto.
-- **Sin audiencia no hay producto.** Compuerta explícita: el primer acto se hace aunque lleguen ocho personas. Si no se puede garantizar un acto, la oferta no existe y no se vende.
-- **El alumno que no quiere hablar.** Se filtra en el diagnóstico y se dice con claridad. Este producto no es para todos, y prometerlo para todos lo destruye.
-- **Que se perciba como curso de comunicación.** Si se ve como curso, compite con academia y con YouTube. Se vende como acto con fecha.
-- **Que él se vuelva el espectáculo.** El que habla es el chico. El facilitador no da la charla de muestra al final del acto.
+Primeros auxilios entra como ciclo de temporada cuando haya demanda; es el más fácil de vender y el más fácil de subcontratar.
 
 ---
 
-## 11. Secuencia
+## 6. Precio y economía por ciclo (cifras por verificar)
 
-1. **Protocolo en ocho páginas.** Una por semana, con tarea y entregable. Una semana de trabajo.
-2. **El acto.** Lugar, fecha y formato de invitación. Dos días.
-3. **Tres pilotos.** Ocho semanas corridas, con acto final aunque sea con ocho personas.
-4. **El video antes-y-después.** La pieza de venta.
-5. **Manual del socio.** Escrito con lo que pasó, no con lo que se imaginó.
-
----
-
-## 12. Decisiones abiertas
-
-1. ¿El acto es presencial o en línea? Presencial vende más; en línea escala.
-2. ¿Competencia externa desde el primer cohorte o desde el segundo?
-3. ¿Precio de paquete o mensualidad?
-4. ¿Nombre de la oferta, y vive dentro de Tech para Mortales o con nombre propio?
-5. ¿Entra Chris en esta fase o queda fuera?
+- Ciclo de seis a ocho semanas, cohorte de 5 a 8, paquete cerrado (no mensualidad): del orden de $3,000 a $4,500 por ciclo.
+- Ocho alumnos a $3,500 ≈ $28,000 por ciclo, con 35 a 45 horas de trabajo. Del orden de $600 a $800 por hora.
+- Un alumno que hace tres ciclos al año deja $10,500; el portafolio es lo que sostiene la recompra.
+- Antes de publicar cifras: medir precios de oratoria, debate, MUN, campamentos de emprendimiento y cursos de video para adolescentes en México (verificar).
 
 ---
 
-## 13. Lo que no cambia
+## 7. Lo que no cambia de la v2.0
 
-El mapa por edades sigue congelado como diseño. No hay marca, logo ni dominio. No hay video de marca. Una habilidad, un artefacto, un cohorte.
+- Artefacto público con audiencia real y fecha.
+- Video del antes y el después; la grabación de la semana 0 no es opcional.
+- Columna de IA aplicada al trabajo real, con las reglas anti-dependencia: el guion lo escribe él, diez minutos de intento antes de preguntar, verificación en dos fuentes, declaración de uso, ensayo final sin apuntes.
+- Una habilidad principal por ciclo.
+
+---
+
+## 8. Riesgos
+
+- **El catálogo se vuelve menú.** Si no hay portafolio ni capacidades de soporte, son cursos sueltos y pierde la única cosa que lo distingue.
+- **El ciclo que no vende.** Pensar y Sostenerse necesitan caballo: van dentro de un ciclo que paga, o no van.
+- **Portafolio sin criterio.** Un álbum de fotos no es evidencia. Cada artefacto necesita su rúbrica de una página.
+- **Sobreoferta de habilidades.** Arrancar con tres ciclos y no con doce. Doce es catálogo de escuela; tres es un club que se está probando.
+
+---
+
+## 9. Decisiones abiertas
+
+1. ¿Cuáles tres habilidades entran al catálogo inicial?
+2. ¿Se acepta que Pensar y Sostenerse viajen dentro de los otros ciclos en vez de venderse solas?
+3. ¿El portafolio lleva rúbrica por artefacto o solo se acumula?
+4. ¿El acto del ciclo es presencial o en línea?
+5. ¿Nombre de la oferta, y vive dentro de Tech para Mortales o con nombre propio?
