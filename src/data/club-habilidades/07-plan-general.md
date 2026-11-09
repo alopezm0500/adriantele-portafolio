@@ -1,173 +1,194 @@
-# Plan general del club
+# Club Vértice — plan general
 
-v1 operativo · 2026-11-09
-Consolida los cinco documentos anteriores (diseño, mapa, arquitectura, ciclos por edad y catálogo) en un solo plan de operación. **El club va en línea desde el inicio, y está diseñado para que lo opere un facilitador, no Adrián.** Los números son hipótesis: se ajustan con el primer piloto.
+v2 operativo · 2026-11-09 · Reemplaza el plan general v1
+Cambia la unidad del club: **el periodo de doce semanas**, no el ciclo. Un periodo tiene un proyecto elegido por el joven, dos o tres habilidades y un acto. El club va en línea desde el inicio y está diseñado para que lo opere un facilitador, no Adrián. Los números son hipótesis: se ajustan con el primer piloto.
 
 ---
 
-## 1. Qué es y qué no es
+## 1. Qué es Club Vértice
 
-**Es** un club de habilidades para adolescentes, organizado en ciclos de seis semanas. Cada ciclo enseña **una** habilidad que un papá ya quiere pagar, y termina en un **artefacto público**: algo que un desconocido puede ver, usar o responder. El alumno acumula artefactos en un portafolio, y ese portafolio es la razón por la que sigue.
+**Es** un club de habilidades para jóvenes de 13 a 18 años. Cada **periodo de doce semanas** toma un proyecto real que el joven elige, lo trabaja con dos o tres habilidades del catálogo, y lo cierra con un **acto público** y un portafolio.
 
 **No es** cuatro cosas, y conviene decirlas juntas:
 
-- **No es tutoría.** La tutoría resuelve la tarea de hoy. Aquí el artefacto es que el alumno enseñe el sistema a otro.
-- **No es un curso suelto.** Cada ciclo declara una capacidad principal y al menos una de soporte, sobre el mapa de cuatro capacidades del diseño original.
-- **No es terapia ni orientación vocacional.** Trabaja emociones y presión, pero dentro del acto, no como sesión.
-- **No es una plataforma.** La tecnología es Zoom, un cuaderno y una tarjeta de rúbrica. El producto es el método y la evidencia.
+- **No es tutoría.** La tutoría resuelve la tarea de hoy; aquí el joven presenta un proyecto propio frente a desconocidos.
+- **No es un curso suelto de una habilidad.** El periodo es integral: el proyecto exige más de una capacidad a la vez.
+- **No es terapia ni orientación vocacional.** Trabaja presión y constancia dentro del proyecto, no como sesión aparte.
+- **No es una plataforma.** La tecnología es una videollamada, un cuaderno y una tarjeta de rúbrica. El producto es el método y la evidencia.
+
+El nombre es **Club Vértice**: el punto donde se cruzan las capacidades. Provisional hasta verificar dominio y usuario social.
 
 ---
 
 ## 2. A quién sirve
 
-Arranque: **jóvenes de 13 a 18**, en dos cohortes, 13-15 y 16-18. Se empieza por jóvenes porque es la banda más fácil de operar en línea: ya sostienen una sesión de 75 minutos frente a una pantalla, ya pueden presentarse frente a desconocidos conectados y su artefacto se publica sin permiso de por medio.
+Arranque en **jóvenes de 13 a 18**, en dos cohortes, 13-15 y 16-18. Se empieza por jóvenes porque es la banda que sostiene una sesión de 75 minutos frente a una pantalla y puede presentarse ante desconocidos conectados sin permiso de por medio. Niños de 9 a 12 entra después, con sesiones más cortas y acompañamiento del papá.
 
-Niños de 9 a 12 entra después, cuando el ciclo esté probado: exige sesiones más cortas, acompañamiento del papá y un artefacto de menor alcance.
+**Perfil que aprovecha:** tiene algo real que quiere lograr en los próximos tres meses, puede sostener 25 minutos de trabajo cuatro veces por semana, y en su casa alguien pregunta por el avance.
 
-**Perfil del alumno que aprovecha:** tiene un examen, un proyecto o una meta con fecha; puede sostener 25 minutos de trabajo cuatro veces por semana; y en su casa alguien le pregunta por el avance.
-
-**Perfil que no aprovecha** —y hay que decirlo en la inscripción, no en la semana tres—: el que llega porque lo mandaron, sin nada que medir, y el que necesita que un adulto le administre cada minuto.
+**Perfil que no aprovecha** —y se dice en la entrevista de entrada, no en la semana cuatro—: el que llega mandado y sin proyecto, y el que necesita que un adulto le administre cada minuto.
 
 ---
 
-## 3. La arquitectura del club
+## 3. El periodo: la unidad del club
 
-Cuatro capacidades en el mapa: **Pensar, Decidir, Expresar y Sostenerse**, con la columna de aprender a aprender con IA encima de las cuatro.
+Doce semanas. Una sesión en vivo por semana, de 75 a 90 minutos. Seis jóvenes por cohorte, mínimo cinco.
 
-Cada ciclo se apoya en tres piezas fijas:
+**Anatomía del periodo:**
 
-- **El acto.** Un artefacto público con audiencia real y fecha. Es lo que se ve y lo que se recuerda.
-- **La rúbrica.** Tres niveles —Suficiente, Buen trabajo, Excelente— con una definición que se distingue por algo verificable. Excelente exige que **un tercero haga algo**: pregunte, compre, invite o comparta.
-- **El portafolio.** Una página por artefacto: qué es, fecha, nivel, quién lo calificó y una línea de "qué haría distinto" escrita por el alumno.
+- **Semana 0 — Entrada.** Entrevista de 20 minutos con el joven y su papá o mamá: se define el proyecto y se eligen dos o tres habilidades. Se graba el video de arranque y se toma la línea base.
+- **Semanas 1 a 6 — Módulo 1.** La habilidad principal del proyecto, con su protocolo completo.
+- **Semanas 7 a 12 — Módulo 2.** La segunda habilidad, corriendo sobre el mismo proyecto. Si hay tercera habilidad, ocupa las semanas 10 a 12 en formato taller intensivo.
+- **Transversal todo el periodo — el hábito.** Una práctica de doce semanas con registro semanal fotografiado: sueño, constancia, cuerpo. Es la capa que no se vende sola y por eso va incrustada.
+- **Semana 12 — El acto.** Una sola presentación pública con todas las evidencias del proyecto juntas, rúbrica aplicada en vivo y portafolio cerrado.
 
-Quién califica: papás para Suficiente y Buen trabajo; papás más juez externo para Excelente. Nunca solo el facilitador.
+El periodo es integral por construcción: el proyecto obliga a pensar, decidir y expresar, y el hábito sostiene. Lo que se elige son las habilidades que se estudian con método; lo que no se elige es dejar capacidades fuera.
 
 ---
 
-## 4. El catálogo y su secuencia
+## 4. El proyecto lo define el joven
 
-Ocho ciclos, **dos por capacidad**, que es el mínimo para que una capacidad se sienta trabajada y no visitada una vez.
+Es la decisión de diseño que hace que el club sea un club y no una escuela: **el proyecto es del joven**. Su participación empieza ahí, no en la primera tarea.
+
+Cuatro reglas para que un proyecto sea aceptable:
+
+1. **Real y con fecha.** Un examen, un negocio, una presentación, un torneo, algo que ya tiene un cuándo.
+2. **Alguien más lo ve.** Un público, un cliente, un jurado, un maestro. Sin testigo no hay artefacto.
+3. **Se puede medir el antes y el después.** Aunque sea con un número simple.
+4. **Cabe en doce semanas.** Si no cabe, se recorta el proyecto, no el periodo.
+
+El facilitador puede rechazar un proyecto que no cumpla esto, y ahí empieza su autoridad. No puede elegir el proyecto en su lugar.
+
+---
+
+## 5. Las habilidades: cómo se eligen dos o tres
+
+El catálogo son ocho habilidades, dos por capacidad:
 
 - **Pensar:** Estudiar con IA · Números que importan
 - **Decidir:** Mi primer negocio · Dinero propio
 - **Expresar:** Hablar en público · Contenido y video
 - **Sostenerse:** Primeros auxilios y seguridad · Cuerpo y disciplina
 
-Cuatro habilidades más viven **como módulos dentro de los ciclos**, nunca como producto propio: escribir claro, negociar, detectar mentiras y emociones y presión. Dos de las cuatro capacidades casi no se venden solas, y eso no es un defecto: los ciclos que pagan arrastran a los que no.
+Más cuatro módulos que viven dentro de las habilidades y nunca se venden aparte: escribir claro, negociar, detectar mentiras y emociones y presión.
 
-**Entrada por año, dos ciclos nuevos máximo:**
+En la semana 0, el joven y el facilitador eligen **dos o tres** habilidades mirando lo que el proyecto exige. Dos reglas garantizan la integralidad pase lo que pase:
 
-- **Año 1:** Estudiar con IA · Hablar en público · Mi primer negocio. El objetivo no es vender, es tener tres ciclos probados y portafolios reales.
-- **Año 2:** Dinero propio (reusa medio protocolo de Mi primer negocio) · Primeros auxilios y seguridad (el más fácil de vender y el más fácil de subcontratar).
-- **Año 3:** Contenido y video · Números que importan · Cuerpo y disciplina.
+- **Todo proyecto termina en acto público**, así que *Expresar* siempre está presente.
+- **Todo periodo lleva el hábito de doce semanas con registro**, así que *Sostenerse* siempre está presente.
 
-**Ningún ciclo se vende antes de su cohorte piloto.** Si dos pilotos no producen el artefacto, el ciclo se convierte en módulo o se retira.
-
----
-
-## 5. La unidad de operación: la cohorte
-
-Todo el club se opera en cohortes. La ficha:
-
-- **Seis alumnos** (mínimo cinco, máximo ocho). Nunca se abre con menos de cinco.
-- **Seis semanas**, una sesión en vivo de 75 minutos por semana.
-- **Seis a nueve horas** de trabajo del facilitador por sesión en total, incluyendo preparación, revisión de tareas y el acto.
-- **Un facilitador** y un asistente opcional para el acto.
-
-Calendario tipo de un ciclo:
-
-1. **Semana −2:** convocatoria y entrevista de inscripción de 15 minutos (aquí se descarta al perfil que no aprovecha).
-2. **Semana −1:** cobro, kit enviado y video de la semana 0 grabado por el alumno.
-3. **Semanas 1 a 6:** las sesiones del protocolo. En la semana 3 se llama al papá: es la llamada que evita la deserción.
-4. **Semana 6:** acto en vivo con público conectado, rúbrica aplicada y artefacto cerrado.
-5. **Semana +2:** una sola llamada de reactivación: qué sigue en el catálogo y qué le falta al portafolio.
+De las cuatro capacidades, dos quedan garantizadas y dos entran según el proyecto. El joven siente que elige; el club no pierde el diseño.
 
 ---
 
-## 6. El sistema es del club, no del facilitador
+## 6. Evidencias, rúbrica y portafolio
 
-Esto es lo que hace que el club sea un negocio y no un empleo de Adrián. Cuatro mecanismos:
+Cada periodo deja un portafolio con **una pieza por habilidad trabajada, más el proyecto y el hábito**. Cada pieza lleva su rúbrica de tres niveles:
 
-- **Manual del facilitador.** Sesión por sesión: objetivo, guion, tiempos, qué preguntar y qué no contestar, errores típicos. El facilitador no improvisa el método.
-- **Entrenamiento y certificación.** Del orden de 12 a 16 horas de formación más una cohorte co-facilitada. Se certifica con dos criterios: aplica las siete reglas anti-dependencia sin recordarlas y **no responde preguntas que el alumno puede resolver**.
-- **Control de calidad.** Grabación de las seis sesiones con consentimiento, tarjeta de rúbrica archivada por alumno, encuesta al papá en la semana 3 y al cierre, y auditoría por el club de uno de cada tres videos de acto.
-- **Reglas que no se negocian.** No se promete calificación; no se califica Excelente sin juez externo; no se abre cohorte con menos de cinco; el facilitador nunca hace la tarea del alumno.
+- **Suficiente.** El artefacto existe, se sostiene solo y se puede mostrar sin vergüenza. Nadie tuvo que rescatar al joven.
+- **Buen trabajo.** Además, funciona para alguien que no sabía del tema: un desconocido lo entiende o lo usa sin explicación del adulto. Hubo una decisión propia y sabe explicarla.
+- **Excelente.** Además, **un tercero hace algo**: pregunta, compra, invita, comparte o pide otra vez. Sin reacción de un tercero no hay Excelente.
 
----
+Quién califica: los papás para Suficiente y Buen trabajo; papás más juez externo para Excelente. El facilitador nunca califica Excelente a su propio alumno.
 
-## 7. Cómo se ve en línea
-
-El club nace en línea, con reglas de operación propias:
-
-- **Cámara encendida y seis alumnos como máximo.** Más de seis en pantalla y la sesión se vuelve un seminario.
-- **Cambio de actividad cada 12 a 15 minutos.** Nadie sostiene 75 minutos de explicación frente a una pantalla, y menos un adolescente.
-- **El cuaderno es físico y se fotografía.** Cada semana el alumno manda la foto de sus bloques y de su cuaderno de errores al chat del club. El facilitador no puede ver el cuaderno por la cámara; esta es la solución.
-- **Kit enviado a casa al inicio:** cuaderno, hoja de plan, rúbrica impresa y tarjeta del club. Cuesta poco y hace que lo digital se sienta real.
-- **El acto es en vivo con público conectado.** Diez a treinta personas, invitadas por el alumno, con el video grabado y publicado.
-
-Lo que se pierde en línea: la presión física de un salón y el público de carne y hueso. **Cómo se compensa:** el público conectado es obligatorio y tiene nombre, la rúbrica se aplica en vivo delante de todos, y el video se publica. Y si algún día hay sede, el acto pasa a presencial sin cambiar el método: **híbrido es sumar sala, no cambiar el club.**
+Y cada pieza lleva una línea escrita por el joven: **qué haría distinto**. Sin esa línea el portafolio es un álbum de fotos.
 
 ---
 
-## 8. La economía: el cálculo con un facilitador
+## 7. Operación en línea
 
-Precio hipótesis del ciclo de jóvenes: **$3,500**. Cohortes de seis a ocho.
+- **Seis jóvenes por cohorte.** Más de seis en pantalla y la sesión se vuelve un seminario.
+- **Cámara encendida.** Sin cámara no hay acto posible en la semana 12.
+- **Cambio de actividad cada 12 a 15 minutos.** Nadie sostiene 75 minutos de explicación frente a una pantalla.
+- **El cuaderno es físico y se fotografía.** Cada semana el joven manda la foto de sus bloques y de su cuaderno de errores al chat del club: por cámara el facilitador no lo ve.
+- **Kit enviado a casa al inicio.** Cuaderno, hoja de plan, rúbrica impresa, tarjeta del club.
+- **El acto es en vivo con público conectado.** De diez a treinta personas invitadas por el joven, con el video grabado y publicado.
 
-**Por cohorte de seis alumnos:**
-
-- Ingreso: **$21,000**
-- Comisión de cobro (≈3.7% + cargo fijo): **−$780**
-- Plataforma, kit enviado y materiales: **−$600**
-- Juez externo del acto: **−$800**
-- Facilitador, 60% del neto: **−$11,300**
-- Adquisición de alumnos (variable, ≈10%): **−$2,100**
-- **Margen del club: ≈$5,400**
-
-Con ocho alumnos el margen sube a ≈$7,400; por eso el mínimo son cinco y la meta son seis a ocho.
-
-**Cuánto gana un facilitador.** $11,300 por cohorte, con 17 a 20 horas de trabajo completo: entre $560 y $660 la hora, que es alta para el mercado mexicano de coaching y por eso el ciclo tiene que estar bien vendido. Con dos cohortes simultáneas y ciclos encadenados sostiene del orden de **$12,000 a $16,000 brutos al mes** con unas 30 horas semanales. Con tres simultáneas llega a $22,000, pero ahí ya no queda tiempo para vender, y vender es lo primero que se cae.
-
-**Dos modos de contratación**, y esto es clave para que el modelo escale:
-
-- Facilitador con alumnos propios: **75% del neto**. El club pone el método, la marca y la calidad.
-- Facilitador con alumnos del club: **60% del neto**. El club pone también la adquisición.
-
-**El margen del club no viene de cobrar más por cohorte, viene de más cohortes.** Con cinco facilitadores a ocho cohortes al año cada uno —cuarenta cohortes— el sistema deja del orden de **$216,000 al año** antes de impuestos y antes del tiempo de quien lo diseñó. Es un negocio de sistema, no un negocio rico: encaja con el portafolio de negocios pequeños semi-autónomos, y su techo no son los alumnos, son los facilitadores certificados.
-
-Lo que hay que verificar antes de publicar cualquier precio: comisión real de la pasarela, costo real del kit con envío, honorario real del juez externo y disposición a pagar en la banda 13-18 en México.
+Lo que se pierde en línea es la presión física del salón. Se compensa con público con nombre, rúbrica aplicada delante de todos y video publicado. Si algún día hay sede, el acto pasa a presencial sin cambiar nada del método: **híbrido es sumar sala, no cambiar el club.**
 
 ---
 
-## 9. El nombre
+## 8. El sistema es del club, no del facilitador
 
-Va con nombre propio, no dentro de Tech para Mortales. Criterios para cuando se decida: se pronuncia en español sin deletrear; funciona con la palabra "club"; no choca con una marca educativa existente en México; el dominio y el usuario en TikTok están libres; y no promete resultado ("aprende", "método", "sistema" sí; "garantizado", "éxito" no). Mientras no haya nombre, el piloto corre con nombre provisional interno y no se publica marca.
+Esto es lo que lo hace un negocio y no el empleo de nadie:
 
----
-
-## 10. Los primeros noventa días
-
-1. Nombre, dominio y usuario social (decisión de Adrián; la verificación de disponibilidad la hago yo cuando lo pida).
-2. Manual del facilitador del ciclo 1 a partir del protocolo de Estudiar con IA.
-3. Kit del alumno: cuaderno, hoja de plan, rúbrica impresa, tarjeta.
-4. Cobro con Mercado Pago en paquete cerrado y aviso de privacidad.
-5. Dos candidatos a facilitador identificados y entrenados.
-6. Convocatoria del piloto: dos cohortes de jóvenes, enero de 2027, precio reducido, cinco a seis alumnos.
-7. Piloto, acto y números publicados —salga bien o salga mal—.
+- **Manual del facilitador.** Sesión por sesión: objetivo, guion, tiempos, qué preguntar y qué no contestar, errores típicos.
+- **Entrenamiento y certificación.** De 12 a 16 horas de formación más un periodo co-facilitado. Se certifica con dos criterios: aplica las reglas anti-dependencia sin recordarlas y no responde preguntas que el joven puede resolver.
+- **Control de calidad.** Grabación de las doce sesiones con consentimiento, tarjetas de rúbrica archivadas, encuesta en la semana 6 y al cierre, y auditoría por el club de uno de cada tres videos de acto.
+- **Reglas intocables.** No se promete calificación; no hay Excelente sin juez externo; no se abre cohorte con menos de cinco; el facilitador nunca hace la tarea del joven.
 
 ---
 
-## 11. Riesgos
+## 9. La economía del periodo
 
-- **Depender de Adrián.** Se mitiga con manual, certificación y auditoría; es el riesgo que mata al club si se ignora.
-- **En línea sin presión real.** El acto en vivo con público conectado es obligatorio, no opcional.
+Precio hipótesis del periodo: **$6,800**. Cohorte de seis a ocho jóvenes.
+
+**Por cohorte de seis:**
+
+- Ingreso: **$40,800**
+- Comisión de cobro (≈3.7% + cargo fijo): **−$1,500**
+- Plataforma, kits enviados y materiales: **−$1,000**
+- Juez externo del acto: **−$1,500**
+- Facilitador, 60% del neto: **−$23,100**
+- Adquisición de jóvenes (variable, ≈10%): **−$4,000**
+- **Margen del club: ≈$9,700**
+
+Con ocho jóvenes el margen sube a ≈$14,000; por eso el mínimo son cinco y la meta seis a ocho.
+
+**Cuánto gana un facilitador.** $23,100 por cohorte, con del orden de 45 horas de trabajo completo: entre $500 y $520 la hora. Con dos cohortes simultáneas y periodos encadenados sostiene del orden de **$15,000 a $18,000 brutos al mes** con unas 30 horas semanales de trabajo efectivo. Con tres simultáneas sube a $23,000, pero ahí ya no queda tiempo para traer alumnos, que es lo primero que se cae.
+
+**Dos modos de contratación:** facilitador con alumnos propios, 75% del neto; facilitador con alumnos del club, 60%.
+
+**El margen no viene de cobrar más, viene de más cohortes.** Con cinco facilitadores a ocho periodos al año —cuarenta periodos— el sistema deja del orden de **$388,000 al año** antes de impuestos y antes del tiempo de quien lo diseñó. Es un negocio de sistema, no un negocio rico, y su techo son los facilitadores certificados, no los jóvenes inscritos.
+
+Verificar antes de publicar cualquier precio: comisión real de la pasarela, costo real del kit con envío, honorario real del juez externo y disposición a pagar $6,800 por doce semanas en la banda 13-18 en México.
+
+---
+
+## 10. Crecimiento
+
+- **Año 1.** Dos habilidades con protocolo completo (Estudiar con IA y Hablar en público), dos o tres periodos piloto, dos cohortes de jóvenes, un facilitador entrenado además de Adrián.
+- **Año 2.** Tercera y cuarta habilidad (Mi primer negocio y Dinero propio), de tres a seis facilitadores certificados.
+- **Año 3.** Catálogo completo de ocho habilidades, con los módulos internos ya probados dentro de los periodos.
+
+Regla de crecimiento, sin excepción: **dos habilidades nuevas por año, cada una entrada con cohorte piloto.** Una habilidad que no produce artefacto en dos pilotos se convierte en módulo o se retira.
+
+---
+
+## 11. Nombre y marca
+
+**Club Vértice.** Criterios que ya cumple en concepto: se pronuncia en español sin deletrear, funciona con la palabra club, no promete resultado y no se confunde con academia o escuela.
+
+Pendiente de verificación real, no de memoria: dominio disponible (`clubvertice.mx`, `clubvertice.com`, `vertice.com.mx` y variantes), usuario libre en TikTok e Instagram, y que no exista una marca educativa registrada con ese nombre en México.
+
+---
+
+## 12. Los primeros noventa días
+
+1. Verificar nombre, dominio y usuarios sociales; reservar lo que esté libre.
+2. Manual del facilitador del primer módulo (Estudiar con IA), reescalado de seis sesiones a módulo dentro del periodo.
+3. Manual de la semana 0: cómo se entrevista al joven, cómo se elige el proyecto y cómo se rechaza uno.
+4. Kit del alumno: cuaderno, hoja de plan de doce semanas, rúbrica impresa, tarjeta.
+5. Cobro en paquete cerrado y aviso de privacidad.
+6. Dos candidatos a facilitador identificados y en entrenamiento.
+7. Convocatoria del piloto: dos cohortes de jóvenes, enero de 2027, precio reducido, cinco a seis por cohorte.
+8. Piloto, acto y números publicados, salga bien o salga mal.
+
+---
+
+## 13. Riesgos
+
+- **Depender de Adrián.** Se mitiga con manual, certificación y auditoría.
+- **Proyecto que no cumple las cuatro reglas.** Se rechaza en la semana 0; aceptarlo arrastra doce semanas.
+- **En línea sin presión real.** El acto en vivo con público con nombre es obligatorio.
 - **La rúbrica se infla.** Excelente con juez externo o no es Excelente.
-- **Cohorte incompleta.** Con cuatro alumnos el facilitador cobra igual y el club pierde dinero: no se abre.
-- **El ciclo se vuelve tutoría.** Si el artefacto es "subió la calificación", ya se perdió el punto.
-- **Catálogo de fantasía.** Dos ciclos nuevos al año, con piloto, nada más.
-- **Facilitador que se lleva a los alumnos.** Se mitiga con el portafolio y la marca del club, no con cláusulas.
+- **Cohorte incompleta.** Con cuatro jóvenes el facilitador cobra igual y el club pierde: no se abre.
+- **El periodo se vuelve tutoría con proyecto decorativo.** Si el artefacto es "subió la calificación", se perdió el punto.
+- **Catálogo de fantasía.** Dos habilidades nuevas al año, con piloto, nada más.
+- **El facilitador se lleva a los alumnos.** Se mitiga con portafolio y marca del club, no con cláusulas.
 
 ---
 
-## 12. Lo que sigue abierto
+## 14. Lo que sigue abierto
 
-Nombre, precio definitivo tras el piloto, plataforma de cobro y de sesiones, y el reparto exacto con el primer facilitador. El resto de este plan está decidido.
+Precio definitivo tras el piloto, plataforma de cobro y de sesiones, y el reparto exacto con el primer facilitador. El nombre queda como Club Vértice hasta la verificación. El resto de este plan está decidido.

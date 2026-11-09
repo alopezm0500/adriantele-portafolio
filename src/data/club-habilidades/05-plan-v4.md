@@ -57,7 +57,7 @@ Cada ciclo nuevo se evalúa con los cinco, en este orden:
 **Año 1 — los tres iniciales.** Estudiar con IA, Hablar en público, Mi primer negocio. Un piloto por ciclo, dos cohortes por ciclo, un acto por cohorte. El objetivo del año no es vender: es tener tres ciclos probados y un portafolio real que mostrar.
 
 **Año 2 — los dos que ya se venden solos.**
-- **Dinero propio** (Decidir). Es la continuación natural de Mi primer negocio: el chavo ya sabe vender, ahora aprende a administrar lo que ganó. Reusa la mitad del protocolo y la mitad de los materiales.
+- **Dinero propio** (Decidir). Es la continuación natural de Mi primer negocio: el joven ya sabe vender, ahora aprende a administrar lo que ganó. Reusa la mitad del protocolo y la mitad de los materiales.
 - **Primeros auxilios y seguridad** (Sostenerse). Es el más fácil de vender de todo el catálogo y el más fácil de subcontratar: un instructor certificado lo facilita y él opera la logística. Entra segundo y no primero porque depende de un aliado que todavía no existe.
 
 **Año 3 — los que exigen más producción o más alianza.**

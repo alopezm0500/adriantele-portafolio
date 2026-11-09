@@ -17,7 +17,7 @@ Los tres son ciclos completos: seis a ocho semanas, una sesión en vivo por sema
 
 ## 2. Dos programas, tres cohortes
 
-Dos programas como quiere: **Niños (9 a 12)** y **Jóvenes (13 a 18)**. Pero el de jóvenes se abre en dos cohortes, **13 a 15** y **16 a 18**, porque un chavo de 13 y uno de 17 en la misma sala producen dos malas experiencias a la vez: el chico se intimida y el grande se aburre.
+Dos programas como quiere: **Niños (9 a 12)** y **Jóvenes (13 a 18)**. Pero el de jóvenes se abre en dos cohortes, **13 a 15** y **16 a 18**, porque un joven de 13 y uno de 17 en la misma sala producen dos malas experiencias a la vez: el chico se intimida y el grande se aburre.
 
 Lo que sí se conserva del modelo multiedad: **el acto es conjunto.** Los mayores hacen de jurado y de mentores de los chicos en la presentación final. Así se gana el efecto de "el grande enseña" sin mezclar los grupos de trabajo, que es donde la mezcla estorba.
 
@@ -74,7 +74,7 @@ Reglas anti-inflación, que es lo único que hace útil una rúbrica de tres niv
 **Estudiar con IA**
 - *Suficiente:* plan con fechas, cumplido en sus dos primeras semanas, y sabe decir qué método usó y por qué.
 - *Buen trabajo:* el plan se corrige solo cuando algo falla; distingue lo que entendió de lo que memorizó; declara qué le preguntó a la IA.
-- *Excelente:* el resultado medido mejora contra la línea base, y puede enseñarle el sistema a otro chavo sin ayuda.
+- *Excelente:* el resultado medido mejora contra la línea base, y puede enseñarle el sistema a otro joven sin ayuda.
 
 **Hablar en público**
 - *Suficiente:* se para, se le escucha, dice lo que quería decir en el tiempo asignado y sin leer.

@@ -1,7 +1,7 @@
 # Ciclo 1 — Estudiar con IA
 
 Protocolo completo · 2026-11-09
-Seis semanas, una sesión en vivo por semana, un artefacto público. Es el primer ciclo del club y el que fija el estándar de los demás.
+Seis sesiones en vivo repartidas en un **módulo de seis semanas** dentro del periodo de doce del Club Vértice. El módulo entrega una habilidad; el periodo entrega el proyecto, la segunda habilidad, el hábito y el acto. Es el primer módulo del club y el que fija el estándar de los demás.
 
 ---
 
@@ -9,7 +9,7 @@ Seis semanas, una sesión en vivo por semana, un artefacto público. Es el prime
 
 En una línea, la que se le dice al papá:
 
-> "Tu hijo no va a salir sabiendo más de una materia. Va a salir sabiendo cómo se estudia — y lo va a demostrar enseñándole el sistema a otro chavo."
+> "Tu hijo no va a salir sabiendo más de una materia. Va a salir sabiendo cómo se estudia — y lo va a demostrar enseñándole el sistema a otro joven."
 
 Lo que se mide: la diferencia entre el diagnóstico de la semana 1 y el simulacro de la semana 5. Nada más. No se promete calificación, se promete sistema y evidencia.
 
@@ -21,7 +21,7 @@ Tres cosas y ninguna es opcional:
 
 1. **Materia elegida.** La más atravesada, con un examen real a la vista.
 2. **Línea base.** Examen de diagnóstico de 20 preguntas, sin estudiar, sin calificación. Es la foto del punto de partida y se guarda.
-3. **Video de dos minutos.** El chavo explica cómo estudia hoy, a cámara, sin guion. Este video es la mitad del antes y después.
+3. **Video de dos minutos.** El joven explica cómo estudia hoy, a cámara, sin guion. Este video es la mitad del antes y después.
 
 Materiales por alumno: cuaderno físico (no app), el examen de diagnóstico, la hoja de plan de seis semanas, la hoja de cuaderno de errores y la tarjeta de rúbrica impresa.
 
@@ -94,7 +94,7 @@ Dos reglas de sostenimiento que van aquí:
 
 ### Sesión 6 — El acto: enseñar el sistema
 
-*Objetivo:* el artefacto. Diez minutos enseñando el sistema a alguien que no sabe nada de él — otro chavo del club, un hermano chico o un papá.
+*Objetivo:* el artefacto. Diez minutos enseñando el sistema a alguien que no sabe nada de él — otro joven del club, un hermano chico o un papá.
 
 Después, tres minutos mostrando el plan, el cuaderno y el número: diagnóstico contra simulacro. Sin diapositivas, sin leer.
 
@@ -108,7 +108,7 @@ Al final del acto se proyectan los dos videos, el de la semana 0 y el de hoy, un
 
 - **Suficiente.** Plan con fechas, cumplido en sus dos primeras semanas, y sabe decir qué método usó y por qué.
 - **Buen trabajo.** El plan se corrige solo cuando algo falla; distingue lo que entendió de lo que memorizó; declara qué le preguntó a la IA.
-- **Excelente.** El resultado medido mejora contra la línea base **y** puede enseñarle el sistema a otro chavo sin ayuda. Se califica con juez externo presente.
+- **Excelente.** El resultado medido mejora contra la línea base **y** puede enseñarle el sistema a otro joven sin ayuda. Se califica con juez externo presente.
 
 Quién califica: papás para Suficiente y Buen trabajo; papás más juez externo para Excelente.
 
@@ -170,15 +170,15 @@ Tres minutos, en primera persona. Los números marcados como hipótesis lo son: 
 
 ## Versión de tres minutos
 
-"Los chavos ya estudian con IA. La usan para la tarea, para el ensayo, para el resumen. Y están aprendiendo algo que nadie les enseñó: a entregar sin entender.
+"Los jóvenes ya estudian con IA. La usan para la tarea, para el ensayo, para el resumen. Y están aprendiendo algo que nadie les enseñó: a entregar sin entender.
 
-Ese es el problema que me trajo aquí, y no es un problema de tecnología. Es un problema de método. La IA puede ser el mejor tutor que ha existido o la manera más rápida de no aprender nada, y la diferencia no está en la herramienta: está en si alguien le enseña al chavo a usarla.
+Ese es el problema que me trajo aquí, y no es un problema de tecnología. Es un problema de método. La IA puede ser el mejor tutor que ha existido o la manera más rápida de no aprender nada, y la diferencia no está en la herramienta: está en si alguien le enseña al joven a usarla.
 
-Hoy el mercado tiene dos cosas. Tutoría, que resuelve la tarea de hoy y deja al chavo igual de dependiente mañana. Y cursos sueltos — oratoria, emprendimiento, primeros auxilios — que están bien, pero cada uno vive en su caja y ninguno forma un chavo completo.
+Hoy el mercado tiene dos cosas. Tutoría, que resuelve la tarea de hoy y deja al joven igual de dependiente mañana. Y cursos sueltos — oratoria, emprendimiento, primeros auxilios — que están bien, pero cada uno vive en su caja y ninguno forma un joven completo.
 
-Lo que estamos armando es un club. No un curso: un club, con ciclos de seis semanas. Cada ciclo enseña una habilidad que un papá ya quiere pagar, con un artefacto público al final. En el de estudiar con IA, el chavo no sale con un resumen: sale con su plan ejecutado, su cuaderno de errores, la diferencia medida entre el examen de la semana uno y el simulacro de la semana cinco, y diez minutos enseñándole el sistema a otro chavo. Si no puede enseñarlo, no lo aprendió: esa es la vara.
+Lo que estamos armando es un club. No un curso: un club, con ciclos de seis semanas. Cada ciclo enseña una habilidad que un papá ya quiere pagar, con un artefacto público al final. En el de estudiar con IA, el joven no sale con un resumen: sale con su plan ejecutado, su cuaderno de errores, la diferencia medida entre el examen de la semana uno y el simulacro de la semana cinco, y diez minutos enseñándole el sistema a otro joven. Si no puede enseñarlo, no lo aprendió: esa es la vara.
 
-Hay tres cosas que hacen que esto no sea otra tutoría con nombre bonito. Uno, el artefacto: no se califica esfuerzo, se califica algo que un desconocido puede ver. Dos, la rúbrica: suficiente, buen trabajo, excelente, y el excelente lo tiene que confirmar alguien de fuera, porque si lo califica la familia se infla en la primera cohorte. Tres, el portafolio: el chavo acumula artefactos, y el papá renueva porque el portafolio está incompleto, no porque le caiga bien el facilitador.
+Hay tres cosas que hacen que esto no sea otra tutoría con nombre bonito. Uno, el artefacto: no se califica esfuerzo, se califica algo que un desconocido puede ver. Dos, la rúbrica: suficiente, buen trabajo, excelente, y el excelente lo tiene que confirmar alguien de fuera, porque si lo califica la familia se infla en la primera cohorte. Tres, el portafolio: el joven acumula artefactos, y el papá renueva porque el portafolio está incompleto, no porque le caiga bien el facilitador.
 
 La economía es de paquete cerrado, no mensualidad. Un ciclo de seis semanas, cohorte de cinco a ocho, del orden de tres mil a cuatro mil quinientos pesos según la banda de edad. Ocho alumnos son unos veintiocho mil pesos por ciclo, con treinta y cinco a cuarenta y cinco horas de trabajo. Eso es entre seiscientos y ochocientos pesos la hora, y el techo lo pone cuántas cohortes puedes sostener, no cuántos alumnos caben.
 
@@ -188,7 +188,7 @@ Lo que no voy a hacer es lanzar ocho ciclos de golpe. Van dos nuevos por año, c
 
 ## Versión de cuarenta segundos
 
-"Los chavos ya hacen la tarea con IA y están aprendiendo a entregar sin entender. Armo un club de ciclos de seis semanas donde cada ciclo enseña una habilidad que el papá ya paga —estudiar con IA, hablar en público, primer negocio— y termina en un artefacto público: el chavo enseña el sistema a otro chavo. No es tutoría: hay rúbrica, hay jurado de fuera y hay portafolio. Arranco con un piloto y busco una cohorte real y un nombre que avale, no dinero."
+"Los jóvenes ya hacen la tarea con IA y están aprendiendo a entregar sin entender. Armo un club de ciclos de seis semanas donde cada ciclo enseña una habilidad que el papá ya paga —estudiar con IA, hablar en público, primer negocio— y termina en un artefacto público: el joven enseña el sistema a otro joven. No es tutoría: hay rúbrica, hay jurado de fuera y hay portafolio. Arranco con un piloto y busco una cohorte real y un nombre que avale, no dinero."
 
 ## Lo que se le pide a cada tipo de socio
 
@@ -198,13 +198,13 @@ Lo que no voy a hacer es lanzar ocho ciclos de golpe. Van dos nuevos por año, c
 
 ## Las ocho preguntas que le van a hacer
 
-1. **¿En qué se diferencia de una tutoría?** La tutoría resuelve la tarea de hoy. Aquí el artefacto es que el chavo enseñe el sistema. Si sigue necesitando tutoría después del ciclo, no funcionó.
-2. **¿Por qué no lo hace solo con ChatGPT?** Porque el chavo no sabe qué preguntarle ni cuándo está equivocado. Y porque nadie lo va a poner a prueba frente a otros. La herramienta es gratis; el método, la presión y el jurado no.
+1. **¿En qué se diferencia de una tutoría?** La tutoría resuelve la tarea de hoy. Aquí el artefacto es que el joven enseñe el sistema. Si sigue necesitando tutoría después del ciclo, no funcionó.
+2. **¿Por qué no lo hace solo con ChatGPT?** Porque el joven no sabe qué preguntarle ni cuándo está equivocado. Y porque nadie lo va a poner a prueba frente a otros. La herramienta es gratis; el método, la presión y el jurado no.
 3. **¿Por qué seis semanas y no un curso anual?** Porque un ciclo se puede probar, medir y matar. Un curso anual se defiende por cariño durante once meses.
 4. **¿Garantizas que sube la calificación?** No. Garantizo medición: hay diagnóstico, hay simulacro y hay diferencia publicada. Con una materia y seis semanas, prometer calificación es mentir.
 5. **¿No es caro?** Comparado con tutoría semanal durante un semestre, sale igual o menos, y deja un artefacto y un portafolio en lugar de cuadernos resueltos.
 6. **¿Cuál es la barrera de entrada?** Ninguna técnica: cualquiera copia un plan de estudio. La barrera es la rúbrica con jurado externo, el portafolio acumulado y la credibilidad de quien facilita. Se copia el temario, no la evidencia.
-7. **¿Qué pasa si el chavo no hace las tareas?** Se le dice al papá en la semana dos, con el registro en la mano. Si no hay registro, no hay acto: el artefacto no se regala.
+7. **¿Qué pasa si el joven no hace las tareas?** Se le dice al papá en la semana dos, con el registro en la mano. Si no hay registro, no hay acto: el artefacto no se regala.
 8. **¿Y si el piloto falla?** Se publica igual y se corrige. Un ciclo que se mata a tiempo es información; uno que se defiende, un costo.
 
 ---
