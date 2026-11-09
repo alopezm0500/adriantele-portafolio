@@ -5,6 +5,7 @@
 import Diseno from '../../data/club-habilidades/01-diseno.md';
 import Mapa from '../../data/club-habilidades/02-mapa.md';
 import PlanV2 from '../../data/club-habilidades/03-plan-v2.md';
+import PlanV3 from '../../data/club-habilidades/04-plan-v3.md';
 
 const site = Astro.site ?? new URL('https://adriantele-portafolio.pages.dev');
 const canonical = new URL('/lectura/club-habilidades/', site);
@@ -145,11 +146,13 @@ const descripcion =
     <main id="top">
       <p class="aviso">
         Página privada (noindex, no enlazada desde el sitio). Parte 1: el diseño. Parte 2: el mapa
-        por edades. Parte 3: el plan v2.1, que reemplaza el alcance de la v2.0.
+        por edades. Parte 3: el plan v2.1, que reemplaza el alcance de la v2.0. Parte 4: el plan
+        v3, con los tres ciclos, los programas por edad y la rúbrica.
       </p>
       <article class="doc"><Diseno /></article>
       <article class="doc"><Mapa /></article>
       <article class="doc"><PlanV2 /></article>
+      <article class="doc"><PlanV3 /></article>
       <a class="arriba" href="#top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;"
         >↑ Volver arriba</a
       >
