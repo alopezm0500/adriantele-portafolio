@@ -92,6 +92,18 @@ Con ocho ciclos y tres bandas quedan 24 casillas de mapa. Al final del año 3 es
 
 ---
 
+## 8.1 Candidato en fila para Pensar: atención propia
+
+Añadido el 2026-11-09, a propuesta de Adrián. La atención es la única habilidad que **todos los demás ciclos necesitan antes de empezar**: un joven que no aguanta seis sesiones no completa ningún artefacto.
+
+- **Capacidad:** Pensar. Sería su tercer ciclo, después de Estudiar con IA y Números que importan.
+- **Artefacto —el más barato del catálogo, criterio 4—:** prueba de fuego de 45 minutos de trabajo profundo sobre una tarea que no domina, frente a un testigo y sin pantalla auxiliar; más 10 minutos sosteniendo la atención de desconocidos sin apoyo de pantalla; más doce semanas de minutos de foco anotados a mano y fotografiados.
+- **Diferenciación obligatoria (criterio 5):** *Estudiar con IA* es método y verificación —aprender más rápido y no tragarse lo inventado—; *atención propia* es poder aprender algo lento. Si esa línea no se sostiene en la venta, el ciclo canibaliza al primero y no entra.
+- **Estado:** no entra al catálogo todavía. Mientras tanto vive en la capa transversal —el hábito por defecto del periodo— y en el bloque de doce minutos que abre cada sesión de Estudiar con IA. Se promueve a ciclo cuando esos registros muestren avance medible y exista un nombre que se entienda en una línea.
+- **Discurso:** no se puede vender con el mito de los «8 segundos» ni con «el video corto daña el cerebro». Lo defendible es el costo del cambio de tarea y la atención parcial continua. Y el mensaje es de decisión, no de abstinencia: el celular no es el enemigo; el problema es no poder soltarlo cuando tú decides.
+
+---
+
 ## 9. Siguiente paso, no decisión abierta
 
 Escribir el protocolo completo del primer ciclo —Estudiar con IA— con sus seis sesiones, sus tareas, su rúbrica impresa y su acto. Es lo único que bloquea el piloto.

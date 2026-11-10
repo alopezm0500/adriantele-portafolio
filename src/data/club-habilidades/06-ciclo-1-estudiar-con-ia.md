@@ -17,17 +17,29 @@ Lo que se mide: la diferencia entre el diagnóstico de la semana 1 y el simulacr
 
 ## 2. Antes de la primera sesión (semana 0)
 
-Tres cosas y ninguna es opcional:
+Cuatro cosas y ninguna es opcional:
 
 1. **Materia elegida.** La más atravesada, con un examen real a la vista.
 2. **Línea base.** Examen de diagnóstico de 20 preguntas, sin estudiar, sin calificación. Es la foto del punto de partida y se guarda.
 3. **Video de dos minutos.** El joven explica cómo estudia hoy, a cámara, sin guion. Este video es la mitad del antes y después.
+4. **Línea base de atención.** Se le pone una tarea sencilla de su materia y se mide con cronómetro cuántos minutos pasa antes de la primera interrupción: mirar el celular, levantarse, cambiar de hoja. Se anota el número tal cual, sin comentario. Es el mismo número que se vuelve a medir en la sesión 6.
 
 Materiales por alumno: cuaderno físico (no app), el examen de diagnóstico, la hoja de plan de seis semanas, la hoja de cuaderno de errores y la tarjeta de rúbrica impresa.
 
 ---
 
 ## 3. Las seis sesiones
+
+### El bloque de los doce minutos (abre todas las sesiones)
+
+Cada sesión empieza con **doce minutos de trabajo en silencio, sin teléfono a la vista y con el cronómetro sobre la mesa**. Se trabaja sobre la tarea de la semana, no sobre material nuevo: la hoja del plan, el cuaderno de errores, el intento escrito de un problema. El facilitador no habla, no corrige y no interrumpe; su única función es poner el cronómetro y anotar cuántos minutos pasaron antes de la primera interrupción.
+
+- En la sesión 1 el bloque es el examen de diagnóstico, que ya se resuelve en silencio y sin teléfono.
+- El teléfono se deja en una caja o en otra mesa, **no boca abajo sobre la mesa**: boca abajo sigue siendo un objeto que se vigila.
+- Al final, el alumno anota en su registro los minutos sostenidos y qué lo interrumpió: nada, el celular, una pregunta, sus propios pensamientos.
+- La interrupción no se castiga ni se comenta en público. Solo se registra; el número hace el trabajo.
+
+Esto no es una sesión sobre atención: es atención practicada como condición de la sesión. El registro alimenta el hábito transversal del periodo y da el segundo número del antes y después.
 
 ### Sesión 1 — Dónde está tu borde
 
@@ -146,9 +158,10 @@ Van impresas y se repiten en cada sesión. Son el corazón del ciclo; sin ellas 
 
 ## 8. Cómo se sabe si el ciclo funcionó
 
-Dos números, ninguno inventado:
+Tres números, ninguno inventado:
 - **Diferencia entre diagnóstico y simulacro**, en aciertos.
 - **Bloques cumplidos sobre bloques planeados.**
+- **Minutos sostenidos sin interrupción**, medidos con cronómetro en la semana 0 y en la sesión 6, y anotados sesión por sesión.
 
 Y una señal cualitativa que vale más que las dos: si el alumno siguió usando el sistema dos semanas después de terminar el ciclo, sin que nadie se lo pida, el ciclo funcionó.
 

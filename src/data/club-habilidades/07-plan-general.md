@@ -36,10 +36,10 @@ Doce semanas. Una sesión en vivo por semana, de 75 a 90 minutos. Seis jóvenes 
 
 **Anatomía del periodo:**
 
-- **Semana 0 — Entrada.** Entrevista de 20 minutos con el joven y su papá o mamá: se define el proyecto y se eligen dos o tres habilidades. Se graba el video de arranque y se toma la línea base.
+- **Semana 0 — Entrada.** Entrevista de 20 minutos con el joven y su papá o mamá: se define el proyecto y se eligen dos o tres habilidades. Se graba el video de arranque y se toma la línea base, incluida la de atención: cuántos minutos sostiene hoy el joven en una tarea sin cambiar de estímulo, medidos con cronómetro.
 - **Semanas 1 a 6 — Módulo 1.** La habilidad principal del proyecto, con su protocolo completo.
 - **Semanas 7 a 12 — Módulo 2.** La segunda habilidad, corriendo sobre el mismo proyecto. Si hay tercera habilidad, ocupa las semanas 10 a 12 en formato taller intensivo.
-- **Transversal todo el periodo — el hábito.** Una práctica de doce semanas con registro semanal fotografiado: sueño, constancia, cuerpo. Es la capa que no se vende sola y por eso va incrustada.
+- **Transversal todo el periodo — el hábito.** Una práctica de doce semanas con registro semanal fotografiado: sueño, constancia, cuerpo. Es la capa que no se vende sola y por eso va incrustada. **Cuando el proyecto y las habilidades no sugieran un hábito mejor, el hábito por defecto es atención sostenida:** minutos de trabajo sin interrupción por sesión, anotados a mano y fotografiados cada semana.
 - **Semana 12 — El acto.** Una sola presentación pública con todas las evidencias del proyecto juntas, rúbrica aplicada en vivo y portafolio cerrado.
 
 El periodo es integral por construcción: el proyecto obliga a pensar, decidir y expresar, y el hábito sostiene. Lo que se elige son las habilidades que se estudian con método; lo que no se elige es dejar capacidades fuera.
@@ -78,6 +78,8 @@ En la semana 0, el joven y el facilitador eligen **dos o tres** habilidades mira
 - **Todo periodo lleva el hábito de doce semanas con registro**, así que *Sostenerse* siempre está presente.
 
 De las cuatro capacidades, dos quedan garantizadas y dos entran según el proyecto. El joven siente que elige; el club no pierde el diseño.
+
+**La atención, por ahora, vive en la capa transversal.** No es una quinta capacidad ni un noveno ciclo: es la condición que todos los demás necesitan antes de empezar. Se trabaja en dos lugares y ninguno cuesta un ciclo nuevo: el hábito por defecto del periodo (minutos de foco con registro) y el bloque de doce minutos sin teléfono con el que abren las sesiones de «Estudiar con IA». Su mitad pública —sostener la atención de otros— ya está cubierta por *Expresar*, en el acto de la semana 12. Entra como ciclo propio de *Pensar* solo cuando existan registros que muestren avance y un nombre que se entienda en una línea (ver plan v4, sección 8.1).
 
 ---
 
