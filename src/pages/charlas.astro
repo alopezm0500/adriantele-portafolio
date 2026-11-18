@@ -1,0 +1,142 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const charlas = [
+  {
+    titulo: 'El core invisible: cómo viaja una llamada y hacia dónde se mueve la red',
+    track: 'Infraestructura',
+    duracion: '25–30 min + 10 de preguntas (hay versión de 10 min)',
+    resumen:
+      'Cuando marcas y del otro lado suena pasaron menos de tres segundos y una docena de sistemas: el teléfono le pide permiso a la red, la red verifica identidad y servicios, la llamada se enruta y, si el número es de otra compañía, se entrega en un punto de interconexión con reglas y dinero de por medio. Nadie lo ve. Recorremos la ruta completa y después los cinco puntos donde de verdad se rompe. De ahí al movimiento de fondo: la voz dejó de tener red propia y hoy es una aplicación sobre IP desplegada como software. Ese trueque nos dio capacidad y flexibilidad, y nos quitó aislamiento: antes una caída de datos no te dejaba sin llamadas, hoy sí.',
+    seLlevan: [
+      'Explicar una llamada VoLTE de punta a punta y ubicar en el diagrama dónde suele fallar.',
+      'El trueque real de la voz sobre IP: capacidad y costo a cambio de aislamiento.',
+      'Dónde está el negocio del 5G fuera del teléfono y qué implica para quien opera la red.',
+      'Tres métricas para evaluar una automatización de operación sin autoengañarse.',
+    ],
+  },
+  {
+    titulo: 'La red que no existe: cien años construyendo algo que nadie ve',
+    track: 'Nerd / historia técnica',
+    duracion: '10–12 min, formato corto para meetups',
+    resumen:
+      'Hay una infraestructura que usamos todos los días y que nadie ha visto: la que decide a dónde va una llamada. Empezó siendo personas conectando cables a mano, siguió con máquinas electromecánicas, luego con circuitos dedicados donde cada llamada reservaba su propio camino físico, después con paquetes, y hoy vive en contenedores que se despliegan con versiones y plan de reversa como cualquier aplicación. Cada generación hizo el mismo trueque: ganó flexibilidad y perdió aislamiento, y en cada una alguien dijo que eso iba a matar la calidad. Algunas veces tuvo razón.',
+    seLlevan: [
+      'Una línea de tiempo mental de la red de voz: de la operadora humana al contenedor.',
+      'El patrón que se repite en cada salto tecnológico: qué se gana y qué se pierde siempre.',
+      'Una respuesta corta a «¿por qué se cae mi llamada si tengo datos?».',
+    ],
+  },
+];
+---
+
+<Layout title="Charlas — Adrián López Mendoza">
+  <section class="hero">
+    <h1>Charlas<span class="accent">.</span></h1>
+    <p>
+      Hablo de la infraestructura que nadie ve: la red que decide a dónde va una llamada.
+      Desde la operación, no desde el catálogo.
+    </p>
+  </section>
+
+  <section style="margin-top:3rem">
+    <h2>Sobre mí</h2>
+    <p style="color:var(--muted);max-width:70ch">
+      Soy ingeniero en telecomunicaciones por el IPN y coordino la operación del IMS y del CS Core
+      de una operadora en México, con cinco ingenieros a cargo: todo lo que tiene que pasar entre
+      que alguien marca un número y del otro lado suena. Antes trabajé integrando core para
+      operadores de LATAM, acompañé migraciones Core a Core y convertí en scripts buena parte de lo
+      que se hacía a mano. Divulgo en <a href="/blog">Tech con Sentido</a>.
+    </p>
+    <p style="color:var(--muted);max-width:70ch">
+      Doy charlas en español, para público técnico o mixto, con diagramas y ejemplos conceptuales:
+      nada de la red de mi empleador sale del edificio.
+    </p>
+  </section>
+
+  <section style="margin-top:3rem">
+    <h2>Charlas</h2>
+    <div class="grid">
+      {charlas.map((c) => (
+        <article class="card charla">
+          <span class="tag">{c.track}</span>
+          <h3>{c.titulo}</h3>
+          <p class="dur">{c.duracion}</p>
+          <p>{c.resumen}</p>
+          <p class="lleva-titulo">Qué se lleva la audiencia</p>
+          <ul>
+            {c.seLlevan.map((t) => <li>{t}</li>)}
+          </ul>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section style="margin-top:3rem">
+    <h2>Formatos</h2>
+    <ul class="lista">
+      <li>Presencial en CDMX y zona metropolitana, o remoto desde donde haga falta.</li>
+      <li>Versiones de 10, 25 y 40 minutos de la misma charla.</li>
+      <li>Charla grabada si el evento lo necesita.</li>
+      <li>Se puede acompañar de un taller práctico de observabilidad de laboratorio propio.</li>
+    </ul>
+  </section>
+
+  <section style="margin-top:3rem">
+    <h2>Para organizadores</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Qué entrego</h3>
+        <ul class="lista">
+          <li>Bio en tres longitudes y foto en alta resolución.</li>
+          <li>Resumen y puntos clave por escrito, con fecha de entrega lo antes posible.</li>
+          <li>Diapositivas en PDF antes del evento.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Qué necesito</h3>
+        <ul class="lista">
+          <li>Proyector con HDMI y sonido si hay video.</li>
+          <li>Sin demostraciones en vivo ni acceso a sistemas reales: todo va con diagramas.</li>
+          <li>Aviso temprano si hay panel o moderador para prepararlo.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top:3rem">
+    <h2>Contacto</h2>
+    <p style="color:var(--muted)">
+      Para invitaciones o dudas sobre alguna charla:
+      <a href="mailto:alopezm0500@gmail.com">alopezm0500@gmail.com</a>
+    </p>
+  </section>
+</Layout>
+
+<style>
+  .charla h3 {
+    margin: .6rem 0 .4rem;
+    line-height: 1.3;
+  }
+  .charla .dur {
+    font-size: .85rem;
+    color: var(--muted);
+    margin-bottom: .8rem;
+  }
+  .charla .lleva-titulo {
+    color: #fbf1c7;
+    font-weight: 600;
+    font-size: .9rem;
+    margin: 1rem 0 .4rem;
+  }
+  .charla ul,
+  .lista {
+    color: var(--muted);
+    font-size: .93rem;
+    padding-left: 1.1rem;
+  }
+  .charla li,
+  .lista li {
+    margin-bottom: .4rem;
+  }
+</style>
