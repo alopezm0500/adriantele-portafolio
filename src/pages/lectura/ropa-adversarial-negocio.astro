@@ -1,12 +1,12 @@
 ---
-// Página personal de lectura — "La ropa que te vuelve invisible no existe (todavía)".
-// Ruta: /lectura/ropa-adversarial/ — uso privado de Adrián, noindex, no se enlaza desde el sitio.
-import Hoja from '../../data/ropa-adversarial/hoja.md';
+// Página personal de lectura — "Ropa adversarial como marca de gesto" (análisis de negocio).
+// Ruta: /lectura/ropa-adversarial-negocio/ — uso privado de Adrián, noindex, no se enlaza desde el sitio.
+import Hoja from '../../data/ropa-adversarial-negocio/hoja.md';
 
 const site = Astro.site ?? new URL('https://adriantele-portafolio.pages.dev');
-const canonical = new URL('/lectura/ropa-adversarial/', site);
-const titulo = 'La ropa que te vuelve invisible no existe (todavía)';
-const descripcion = 'Ropa adversarial y vigilancia: qué sostiene la investigación de 2026, por qué la prenda de 35 dólares no te protege y qué sí reduce tu huella ante una cámara.';
+const canonical = new URL('/lectura/ropa-adversarial-negocio/', site);
+const titulo = 'Ropa adversarial como marca de gesto';
+const descripcion = 'Análisis del posible negocio: una marca mexicana que venda el gesto adversarial a público geek. Unit economics, riesgo legal, umbral de preventa y veredicto.';
 ---
 
 <!doctype html>
@@ -103,7 +103,7 @@ const descripcion = 'Ropa adversarial y vigilancia: qué sostiene la investigaci
     <main>
       <article><Hoja /></article>
       <p class="pie">
-        Lectura · 23-nov-2026 · Página privada (noindex, no enlazada desde el sitio).
+        Análisis de negocio · 23-nov-2026 · Página privada (noindex, no enlazada desde el sitio).
       </p>
     </main>
   </body>

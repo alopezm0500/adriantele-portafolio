@@ -1,4 +1,9 @@
-# La ropa que te vuelve invisible no existe (todavía)
+---
+title: "La ropa que te vuelve invisible no existe (todavía)"
+pubDate: "2026-11-23"
+description: "Hay una playera de 35 dólares que promete volverte invisible para las cámaras. La investigación de 2026 dice otra cosa: la frontera se movió a sistemas con dos sensores y memoria. Qué sí reduce tu huella y por qué la privacidad no se compra en una prenda."
+categories: [tech-humano, sociedad-y-telecom]
+---
 
 Hay una playera que promete volverte invisible para las cámaras. Cuesta 34.99 dólares, tiene un patrón que parece arte generativo de 2019 y en su página se explica el método en cinco pasos: «estudiamos la mente de la máquina, diseñamos para la clasificación errónea, imprimimos con precisión, confundimos a los que vigilan, caminas libre».
 
@@ -16,7 +21,7 @@ En la calle hay luz variable, ángulos, distancia, movimiento, cámaras de disti
 
 El trabajo más honesto que leí este año es una revisión sobre ataques físicos a sistemas de vigilancia (arXiv 2604.06865, abril de 2026). Su tesis central desarma la fantasía del producto: suprimir un detector en un fotograma sirve de poco si el seguimiento multiobjeto te recupera a lo largo del tiempo; y un resultado en visible no dice nada de un sistema nocturno que combina cámara normal e infrarrojo.
 
-De ahí sale toda la línea reciente. Ropa con patrón visible e infrarrojo que no se solapa para no perder señal térmica (arXiv 2605.04675, mayo de 2026). Prendas térmicas optimizadas con modelado 3D para aguantar varios ángulos (arXiv 2608.30839, agosto). Camuflaje con mosaicos que además se ve natural (arXiv 2608.06801). Y hace cuatro días, un trabajo donde un logo de ropa —sin cambiar su silueta— se convierte en portador de un ataque contra modelos de visión y lenguaje que operan en visible e infrarrojo (arXiv 2611.25437, 19 de noviembre de 2026).
+De ahí sale toda la línea reciente. Ropa con patrón visible e infrarrojo que no se solapa para no perder señal térmica (arXiv 2605.04675, mayo de 2026). Prendas térmicas optimizadas con modelado 3D para aguantar varios ángulos (arXiv 2608.30839, agosto). Camuflaje con mosaicos que además se ve natural (arXiv 2608.06801). Y el 19 de noviembre de 2026, un trabajo donde un logo de ropa —sin cambiar su silueta— se convierte en portador de un ataque contra modelos de visión y lenguaje que operan en visible e infrarrojo (arXiv 2611.25437).
 
 Es decir: la frontera se movió de «engañar una red» a «engañar un sistema con dos sensores y memoria». Y eso es exactamente lo que hace más difícil el producto de consumo, no más fácil.
 
