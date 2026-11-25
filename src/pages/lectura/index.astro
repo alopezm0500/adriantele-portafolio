@@ -1,0 +1,223 @@
+---
+// Índice de lecturas privadas.
+// Ruta: /lectura/ — uso privado de Adrián, noindex, no aparece en sitemap ni RSS
+// y no se enlaza desde ninguna página pública del sitio.
+// Para agregar una lectura nueva: crear su página en src/pages/lectura/<slug>.astro
+// y sumar una entrada a la lista LECTURAS de abajo.
+const site = Astro.site ?? new URL('https://adriantele-portafolio.pages.dev');
+const canonical = new URL('/lectura/', site);
+const titulo = 'Lecturas privadas — índice';
+const descripcion = 'Índice de lecturas privadas: material de trabajo, análisis y notas que no se publican.';
+
+type Lectura = {
+  slug: string;
+  titulo: string;
+  resumen: string;
+  tipo: string;
+  alta: string;
+  actualizado?: string;
+};
+
+// Ordenadas de la más reciente a la más antigua por fecha de alta.
+const LECTURAS: Lectura[] = [
+  {
+    slug: 'ropa-adversarial-negocio',
+    titulo: 'Ropa adversarial como marca de gesto',
+    resumen:
+      'Análisis del posible negocio: una marca mexicana que venda el gesto adversarial a público geek. Unit economics, riesgo legal, umbral de preventa y veredicto.',
+    tipo: 'Negocio',
+    alta: '2026-11-23',
+  },
+  {
+    slug: 'ocho-caidas-seis-dias',
+    titulo: 'Ocho caídas en seis días',
+    resumen:
+      'Nota de lectura sobre el cluster de apagones de noviembre de 2026: qué sostiene la tesis, dónde falla y qué preguntar en la operación.',
+    tipo: 'Trabajo',
+    alta: '2026-11-20',
+  },
+  {
+    slug: 'club-habilidades',
+    titulo: 'Club de habilidades — diseño, mapa y plan',
+    resumen:
+      'Diseño v0, mapa por edades y plan v2.1 del club: el diseño integral vendido por ciclos, cada ciclo con su artefacto público.',
+    tipo: 'Club Vértice',
+    alta: '2026-11-09',
+    actualizado: '2026-11-10',
+  },
+  {
+    slug: 'plan-general-club',
+    titulo: 'Club Vértice — plan general',
+    resumen:
+      'Plan operativo del periodo de doce semanas: proyecto elegido por el joven, dos o tres habilidades, acto público, operación en línea, economía con facilitador y primeros noventa días.',
+    tipo: 'Club Vértice',
+    alta: '2026-11-09',
+  },
+  {
+    slug: 'ciclo-estudiar-con-ia',
+    titulo: 'Ciclo 1 — Estudiar con IA: protocolo y discurso para socios',
+    resumen:
+      'Protocolo completo del primer ciclo: seis sesiones, rúbrica, reglas anti-dependencia de la IA y el discurso para venderlo a socios.',
+    tipo: 'Club Vértice',
+    alta: '2026-11-09',
+  },
+  {
+    slug: 'sobrepensar',
+    titulo: 'La cabeza que piensa de más',
+    resumen: 'Hoja personal de una página sobre rumiación: qué es, qué no es y cinco palancas.',
+    tipo: 'Personal',
+    alta: '2026-10-21',
+  },
+  {
+    slug: 'capa-mexicana',
+    titulo: 'Capa mexicana — notas de trabajo',
+    resumen:
+      'Mapa de contrapesos en privacidad y vigilancia en México, y entradas de capacidad para el ecosistema.',
+    tipo: 'Trabajo',
+    alta: '2026-09-25',
+    actualizado: '2026-10-08',
+  },
+];
+
+const MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+
+/** Convierte '2026-11-23' en '23-nov-2026'. */
+function fecha(iso: string) {
+  const [a, m, d] = iso.split('-');
+  return `${Number(d)}-${MESES[Number(m) - 1]}-${a}`;
+}
+---
+
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{titulo}</title>
+    <meta name="description" content={descripcion} />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <link rel="canonical" href={canonical.href} />
+    <meta name="theme-color" content="#282828" />
+    <style is:global>
+      :root {
+        --gb-bg: #282828;
+        --gb-card: #32302f;
+        --gb-line: #504945;
+        --gb-text: #ebdbb2;
+        --gb-muted: #bdae93;
+        --gb-accent: #83a598;
+        --gb-link: #fabd2f;
+        --gb-max: 760px;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--gb-bg);
+        color: var(--gb-text);
+        font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial,
+          sans-serif;
+        font-size: 17px;
+        line-height: 1.68;
+        -webkit-text-size-adjust: 100%;
+      }
+      main {
+        max-width: var(--gb-max);
+        margin: 0 auto;
+        padding: 28px 18px 96px;
+      }
+      h1 {
+        font-size: clamp(1.6rem, 4.6vw, 2.1rem);
+        line-height: 1.24;
+        margin: 0 0 10px;
+      }
+      .entrada {
+        margin: 0 0 6px;
+        color: var(--gb-muted);
+      }
+      a {
+        color: var(--gb-accent);
+        text-decoration: none;
+        border-bottom: 1px solid color-mix(in srgb, var(--gb-accent) 45%, transparent);
+      }
+      a:hover {
+        color: var(--gb-link);
+      }
+      ul.lista {
+        list-style: none;
+        margin: 34px 0 0;
+        padding: 0;
+      }
+      ul.lista li {
+        padding: 18px 0 16px;
+        border-top: 1px solid var(--gb-line);
+      }
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: baseline;
+        margin-bottom: 4px;
+        font-size: 13px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--gb-muted);
+      }
+      .tipo {
+        color: #d3869b;
+      }
+      .titulo-lectura {
+        display: block;
+        font-size: 1.08rem;
+        font-weight: 600;
+        line-height: 1.35;
+        margin-bottom: 4px;
+      }
+      .resumen {
+        margin: 0;
+        font-size: 15.5px;
+        color: var(--gb-muted);
+      }
+      .pie {
+        margin-top: 44px;
+        padding-top: 16px;
+        border-top: 1px solid var(--gb-line);
+        color: var(--gb-muted);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Lecturas privadas</h1>
+      <p class="entrada">
+        Material que no se publica: análisis de negocio, notas de trabajo y documentos personales. Nada
+        de esta lista aparece en el blog, el sitemap ni el RSS, y no hay enlace a ella desde el sitio.
+      </p>
+
+      <ul class="lista">
+        {
+          LECTURAS.map((l) => (
+            <li>
+              <div class="meta">
+                <span>{fecha(l.alta)}</span>
+                <span class="tipo">{l.tipo}</span>
+                {l.actualizado && <span>actualizado {fecha(l.actualizado)}</span>}
+              </div>
+              <a class="titulo-lectura" href={`/lectura/${l.slug}/`}>
+                {l.titulo}
+              </a>
+              <p class="resumen">{l.resumen}</p>
+            </li>
+          ))
+        }
+      </ul>
+
+      <p class="pie">
+        Índice privado ({LECTURAS.length} lecturas) · noindex, fuera de sitemap y RSS · sin enlaces
+        desde el sitio público.
+      </p>
+    </main>
+  </body>
+</html>
