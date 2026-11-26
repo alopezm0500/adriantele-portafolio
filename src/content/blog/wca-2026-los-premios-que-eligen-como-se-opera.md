@@ -3,6 +3,7 @@ title: "24 premios de telecom y ningún oro latinoamericano: lo que los WCA 2026
 pubDate: "2026-11-26"
 description: "Jio se llevó tres oros, Singtel tres, y ningún operador con casa matriz en América Latina ganó. Al leer las 24 categorías de los World Communication Awards 2026 aparece un patrón: lo que se premia ya no es desplegar tecnología, es operarla con números medibles."
 categories: [sociedad-y-telecom, techco-e-ia]
+heroImage: "../../assets/blog/wca-2026-los-premios-que-eligen-como-se-opera.jpg"
 ---
 
 Total Telecom publicó hoy la lista de ganadores de los World Communication Awards 2026: 24 categorías, más de 80 jueces, dos décadas de historia y un jurado que presume de revisar impacto real y no folletos.
