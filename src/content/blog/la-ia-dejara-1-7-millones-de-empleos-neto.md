@@ -3,6 +3,7 @@ title: "La IA dejará 1.7 millones de empleos netos. El número que te toca es o
 pubDate: "2026-11-22"
 description: "Gartner pronostica 10.6 millones de empleos creados y 8.9 millones destruidos por IA hacia 2030. El saldo es positivo y también irrelevante para quien pierde el suyo. El dato que sí importa son los 435.5 millones de personas cuyo trabajo va a cambiar de forma, y los 5 millones que nunca fueron contratados."
 categories: [techco-e-ia, sociedad-y-telecom]
+heroImage: "../../assets/blog/la-ia-dejara-1-7-millones-de-empleos-neto.jpg"
 ---
 
 El 10 de noviembre, en Barcelona, Gartner soltó la cifra que medio mundo estaba esperando para calmarse: la inteligencia artificial generará 10.6 millones de empleos y eliminará 8.9 millones hacia 2030. Saldo neto: 1.7 millones a favor.
